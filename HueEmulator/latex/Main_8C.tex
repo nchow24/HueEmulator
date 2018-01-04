@@ -1,0 +1,74 @@
+\hypertarget{Main_8C}{}\section{Main.\+C File Reference}
+\label{Main_8C}\index{Main.\+C@{Main.\+C}}
+
+
+The main to run the server.  
+
+
+{\ttfamily \#include $<$Wt/\+W\+Application$>$}\\*
+{\ttfamily \#include $<$Wt/\+W\+Server$>$}\\*
+{\ttfamily \#include $<$Wt/\+W\+Anchor$>$}\\*
+{\ttfamily \#include \char`\"{}Hue\+App.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Session.\+h\char`\"{}}\\*
+Include dependency graph for Main.\+C\+:
+% FIG 0
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Wt\+::\+W\+Application $\ast$ \hyperlink{Main_8C_ae1aa0ff35ce684521720eff1477893fd}{create\+Application} (const Wt\+::\+W\+Environment \&env)
+\begin{DoxyCompactList}\small\item\em Create the application that is based off wt. \end{DoxyCompactList}\item 
+int \hyperlink{Main_8C_a3c04138a5bfe5d72780bb7e82a18e627}{main} (int argc, char $\ast$$\ast$argv)
+\begin{DoxyCompactList}\small\item\em Starting our wt application. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The main to run the server. 
+
+It includes the bare essentials to start our server and the resources that are used in our application.
+
+\begin{DoxyAuthor}{Author}
+Nicole Chow 
+
+Paul Li 
+
+Weija Zhou 
+
+Daniel Le 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+Nov 28, 2017 
+\end{DoxyDate}
+
+
+\subsection{Function Documentation}
+\index{Main.\+C@{Main.\+C}!create\+Application@{create\+Application}}
+\index{create\+Application@{create\+Application}!Main.\+C@{Main.\+C}}
+\subsubsection[{\texorpdfstring{create\+Application(const Wt\+::\+W\+Environment \&env)}{createApplication(const Wt::WEnvironment &env)}}]{\setlength{\rightskip}{0pt plus 5cm}Wt\+::\+W\+Application$\ast$ create\+Application (
+\begin{DoxyParamCaption}
+\item[{const Wt\+::\+W\+Environment \&}]{env}
+\end{DoxyParamCaption}
+)}\hypertarget{Main_8C_ae1aa0ff35ce684521720eff1477893fd}{}\label{Main_8C_ae1aa0ff35ce684521720eff1477893fd}
+
+
+Create the application that is based off wt. 
+
+Creates the application and addes the resources that will be used in the application
+
+
+\begin{DoxyParams}{Parameters}
+{\em env} & the Wt enviornment. \\
+\hline
+\end{DoxyParams}
+\index{Main.\+C@{Main.\+C}!main@{main}}
+\index{main@{main}!Main.\+C@{Main.\+C}}
+\subsubsection[{\texorpdfstring{main(int argc, char $\ast$$\ast$argv)}{main(int argc, char **argv)}}]{\setlength{\rightskip}{0pt plus 5cm}int main (
+\begin{DoxyParamCaption}
+\item[{int}]{argc, }
+\item[{char $\ast$$\ast$}]{argv}
+\end{DoxyParamCaption}
+)}\hypertarget{Main_8C_a3c04138a5bfe5d72780bb7e82a18e627}{}\label{Main_8C_a3c04138a5bfe5d72780bb7e82a18e627}
+
+
+Starting our wt application. 
+
+The main function is to simple start our server by creating our wt application 

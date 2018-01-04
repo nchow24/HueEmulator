@@ -1,0 +1,256 @@
+\hypertarget{classSchedulerControlWidget}{}\section{Scheduler\+Control\+Widget Class Reference}
+\label{classSchedulerControlWidget}\index{Scheduler\+Control\+Widget@{Scheduler\+Control\+Widget}}
+
+
+Inheritance diagram for Scheduler\+Control\+Widget\+:
+% FIG 0
+
+
+Collaboration diagram for Scheduler\+Control\+Widget\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classSchedulerControlWidget_a88824ef71ef84e9e5bdb85ab3f4f9952}{Scheduler\+Control\+Widget} (\hyperlink{classSession}{Session} $\ast$session, Wt\+::\+W\+Container\+Widget $\ast$parent=0)
+\begin{DoxyCompactList}\small\item\em creates a \hyperlink{classSchedulerControlWidget}{Scheduler\+Control\+Widget} \end{DoxyCompactList}\item 
+void \hyperlink{classSchedulerControlWidget_acca1c74b4dc6fa16c079da6b2e946f4b}{update} ()
+\begin{DoxyCompactList}\small\item\em loads Single\+Schedules\+Control\+Widget page \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Wt\+::\+Http\+::\+Client $\ast$ \hyperlink{classSchedulerControlWidget_ace95dce867b19128d2ac1d9b7f6af2df}{connect} ()
+\begin{DoxyCompactList}\small\item\em creates an H\+T\+TP Client \end{DoxyCompactList}\item 
+void \hyperlink{classSchedulerControlWidget_a9b2cb5e76ca840104928a5016741cd4c}{handle\+Http\+Response} (boost\+::system\+::error\+\_\+code err, const Wt\+::\+Http\+::\+Message \&response)
+\begin{DoxyCompactList}\small\item\em handles response and displays group information \end{DoxyCompactList}\item 
+void \hyperlink{classSchedulerControlWidget_a608cf1aa0348a5a9db24b199136beff6}{handle\+Http\+Response\+V\+O\+ID} (boost\+::system\+::error\+\_\+code err, const Wt\+::\+Http\+::\+Message \&response)
+\begin{DoxyCompactList}\small\item\em handles response and displays group information \end{DoxyCompactList}\item 
+void \hyperlink{classSchedulerControlWidget_afbf344c96240de973c3f4bdc2f49c23c}{create\+Schedule} ()
+\begin{DoxyCompactList}\small\item\em creates a schedule \end{DoxyCompactList}\item 
+void \hyperlink{classSchedulerControlWidget_a3f4447117c1338a01e90c582f2666713}{return\+Bridge} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classSchedulerControlWidget_a9743fedba173a1b29604e315d06d97fd}{num\+Of\+Schedules}
+\item 
+\hyperlink{classSession}{Session} $\ast$ \hyperlink{classSchedulerControlWidget_a288a93234db52da45170f791c9014459}{session\+\_\+}
+\item 
+std\+::string \hyperlink{classSchedulerControlWidget_a320557ef7428e36682b21d9ad3b877ba}{ip} = \char`\"{}\char`\"{}
+\item 
+std\+::string \hyperlink{classSchedulerControlWidget_af73ee1b98fb7944ae193d5e880a59f31}{user\+ID} = \char`\"{}\char`\"{}
+\item 
+std\+::string \hyperlink{classSchedulerControlWidget_add76e052c3bbb0bedfef92ff5121e8b0}{port} = \char`\"{}\char`\"{}
+\item 
+bool \hyperlink{classSchedulerControlWidget_a52ee400ee7ef67590ab5e2d3aa095335}{one} = false
+\item 
+bool \hyperlink{classSchedulerControlWidget_a77776c015d36da02cf252e0f08d9fe48}{two} = false
+\item 
+bool \hyperlink{classSchedulerControlWidget_ae7a161cbb41cbe616f44be386c0bf011}{three} = false
+\item 
+Wt\+::\+W\+Line\+Edit $\ast$ \hyperlink{classSchedulerControlWidget_afb6d2313419723521e39ee1d778efc3c}{name\+Edit\+\_\+}
+\item 
+Wt\+::\+W\+Push\+Button $\ast$ \hyperlink{classSchedulerControlWidget_ae2609c02e0649a2fc866746427e00967}{create\+Button}
+\item 
+Wt\+::\+W\+Text $\ast$ \hyperlink{classSchedulerControlWidget_acdfb4ed24b3c2ea60fe91a48390e6235}{status\+\_\+}
+\item 
+Wt\+::\+W\+Text $\ast$ \hyperlink{classSchedulerControlWidget_ad90a2e60df5fed38f2c824c443866f6c}{Schedules\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Scheduler\+Control\+Widget@{Scheduler\+Control\+Widget}!Scheduler\+Control\+Widget@{Scheduler\+Control\+Widget}}
+\index{Scheduler\+Control\+Widget@{Scheduler\+Control\+Widget}!Scheduler\+Control\+Widget@{Scheduler\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{Scheduler\+Control\+Widget(\+Session $\ast$session, Wt\+::\+W\+Container\+Widget $\ast$parent=0)}{SchedulerControlWidget(Session *session, Wt::WContainerWidget *parent=0)}}]{\setlength{\rightskip}{0pt plus 5cm}Scheduler\+Control\+Widget\+::\+Scheduler\+Control\+Widget (
+\begin{DoxyParamCaption}
+\item[{{\bf Session} $\ast$}]{session, }
+\item[{Wt\+::\+W\+Container\+Widget $\ast$}]{parent = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}\hypertarget{classSchedulerControlWidget_a88824ef71ef84e9e5bdb85ab3f4f9952}{}\label{classSchedulerControlWidget_a88824ef71ef84e9e5bdb85ab3f4f9952}
+
+
+creates a \hyperlink{classSchedulerControlWidget}{Scheduler\+Control\+Widget} 
+
+creates a \hyperlink{classSchedulerControlWidget}{Scheduler\+Control\+Widget} that is tied to a database session. The Widget also has a parent Container Widget
+
+
+\begin{DoxyParams}{Parameters}
+{\em session} & the database session \\
+\hline
+{\em parent} & the parent Widget Container \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classSchedulerControlWidget}{Scheduler\+Control\+Widget} 
+\end{DoxyReturn}
+
+
+\subsection{Member Function Documentation}
+\index{Scheduler\+Control\+Widget@{Scheduler\+Control\+Widget}!connect@{connect}}
+\index{connect@{connect}!Scheduler\+Control\+Widget@{Scheduler\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{connect()}{connect()}}]{\setlength{\rightskip}{0pt plus 5cm}Http\+::\+Client $\ast$ Scheduler\+Control\+Widget\+::connect (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classSchedulerControlWidget_ace95dce867b19128d2ac1d9b7f6af2df}{}\label{classSchedulerControlWidget_ace95dce867b19128d2ac1d9b7f6af2df}
+
+
+creates an H\+T\+TP Client 
+
+creates an H\+T\+TP client that will be used to send either a post request to create a new group or a get request to retrieve the currently existing groups
+
+\begin{DoxyReturn}{Returns}
+Http\+::\+Client 
+\end{DoxyReturn}
+\index{Scheduler\+Control\+Widget@{Scheduler\+Control\+Widget}!create\+Schedule@{create\+Schedule}}
+\index{create\+Schedule@{create\+Schedule}!Scheduler\+Control\+Widget@{Scheduler\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{create\+Schedule()}{createSchedule()}}]{\setlength{\rightskip}{0pt plus 5cm}void Scheduler\+Control\+Widget\+::create\+Schedule (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classSchedulerControlWidget_afbf344c96240de973c3f4bdc2f49c23c}{}\label{classSchedulerControlWidget_afbf344c96240de973c3f4bdc2f49c23c}
+
+
+creates a schedule 
+
+Creates a schedule based on information you enter
+
+
+\begin{DoxyParams}{Parameters}
+{\em err} & the response\textquotesingle{}s error code \\
+\hline
+{\em response} & the response \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Void 
+\end{DoxyReturn}
+\index{Scheduler\+Control\+Widget@{Scheduler\+Control\+Widget}!handle\+Http\+Response@{handle\+Http\+Response}}
+\index{handle\+Http\+Response@{handle\+Http\+Response}!Scheduler\+Control\+Widget@{Scheduler\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{handle\+Http\+Response(boost\+::system\+::error\+\_\+code err, const Wt\+::\+Http\+::\+Message \&response)}{handleHttpResponse(boost::system::error_code err, const Wt::Http::Message &response)}}]{\setlength{\rightskip}{0pt plus 5cm}void Scheduler\+Control\+Widget\+::handle\+Http\+Response (
+\begin{DoxyParamCaption}
+\item[{boost\+::system\+::error\+\_\+code}]{err, }
+\item[{const Wt\+::\+Http\+::\+Message \&}]{response}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classSchedulerControlWidget_a9b2cb5e76ca840104928a5016741cd4c}{}\label{classSchedulerControlWidget_a9b2cb5e76ca840104928a5016741cd4c}
+
+
+handles response and displays group information 
+
+gets the list of groups and displays each one as button that leads to the \hyperlink{classSingleSchedulerControlWidget}{Single\+Scheduler\+Control\+Widget} where user can edit a specific group
+
+
+\begin{DoxyParams}{Parameters}
+{\em err} & the response\textquotesingle{}s error code \\
+\hline
+{\em response} & the response \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Void 
+\end{DoxyReturn}
+\index{Scheduler\+Control\+Widget@{Scheduler\+Control\+Widget}!handle\+Http\+Response\+V\+O\+ID@{handle\+Http\+Response\+V\+O\+ID}}
+\index{handle\+Http\+Response\+V\+O\+ID@{handle\+Http\+Response\+V\+O\+ID}!Scheduler\+Control\+Widget@{Scheduler\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{handle\+Http\+Response\+V\+O\+I\+D(boost\+::system\+::error\+\_\+code err, const Wt\+::\+Http\+::\+Message \&response)}{handleHttpResponseVOID(boost::system::error_code err, const Wt::Http::Message &response)}}]{\setlength{\rightskip}{0pt plus 5cm}void Scheduler\+Control\+Widget\+::handle\+Http\+Response\+V\+O\+ID (
+\begin{DoxyParamCaption}
+\item[{boost\+::system\+::error\+\_\+code}]{err, }
+\item[{const Wt\+::\+Http\+::\+Message \&}]{response}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classSchedulerControlWidget_a608cf1aa0348a5a9db24b199136beff6}{}\label{classSchedulerControlWidget_a608cf1aa0348a5a9db24b199136beff6}
+
+
+handles response and displays group information 
+
+gets the list of groups and displays each one as button that leads to the Single\+Scheduler\+Widget where user can edit a specific group
+
+
+\begin{DoxyParams}{Parameters}
+{\em err} & the response\textquotesingle{}s error code \\
+\hline
+{\em response} & the response \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Void 
+\end{DoxyReturn}
+\index{Scheduler\+Control\+Widget@{Scheduler\+Control\+Widget}!return\+Bridge@{return\+Bridge}}
+\index{return\+Bridge@{return\+Bridge}!Scheduler\+Control\+Widget@{Scheduler\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{return\+Bridge()}{returnBridge()}}]{\setlength{\rightskip}{0pt plus 5cm}void Scheduler\+Control\+Widget\+::return\+Bridge (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classSchedulerControlWidget_a3f4447117c1338a01e90c582f2666713}{}\label{classSchedulerControlWidget_a3f4447117c1338a01e90c582f2666713}
+to bridge page
+
+Returns to \hyperlink{classBridge}{Bridge} Page
+
+
+\begin{DoxyParams}{Parameters}
+{\em err} & the response\textquotesingle{}s error code \\
+\hline
+{\em response} & the response \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Void 
+\end{DoxyReturn}
+\index{Scheduler\+Control\+Widget@{Scheduler\+Control\+Widget}!update@{update}}
+\index{update@{update}!Scheduler\+Control\+Widget@{Scheduler\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{update()}{update()}}]{\setlength{\rightskip}{0pt plus 5cm}void Scheduler\+Control\+Widget\+::update (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classSchedulerControlWidget_acca1c74b4dc6fa16c079da6b2e946f4b}{}\label{classSchedulerControlWidget_acca1c74b4dc6fa16c079da6b2e946f4b}
+
+
+loads Single\+Schedules\+Control\+Widget page 
+
+loads the \hyperlink{classSchedulerControlWidget}{Scheduler\+Control\+Widget} page which displays the list of current groups and the option to create a new group
+
+\begin{DoxyReturn}{Returns}
+Void 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\index{Scheduler\+Control\+Widget@{Scheduler\+Control\+Widget}!create\+Button@{create\+Button}}
+\index{create\+Button@{create\+Button}!Scheduler\+Control\+Widget@{Scheduler\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{create\+Button}{createButton}}]{\setlength{\rightskip}{0pt plus 5cm}Wt\+::\+W\+Push\+Button$\ast$ Scheduler\+Control\+Widget\+::create\+Button\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classSchedulerControlWidget_ae2609c02e0649a2fc866746427e00967}{}\label{classSchedulerControlWidget_ae2609c02e0649a2fc866746427e00967}
+displays a button to create Schedule \index{Scheduler\+Control\+Widget@{Scheduler\+Control\+Widget}!ip@{ip}}
+\index{ip@{ip}!Scheduler\+Control\+Widget@{Scheduler\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{ip}{ip}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Scheduler\+Control\+Widget\+::ip = \char`\"{}\char`\"{}\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classSchedulerControlWidget_a320557ef7428e36682b21d9ad3b877ba}{}\label{classSchedulerControlWidget_a320557ef7428e36682b21d9ad3b877ba}
+keeps track of IP \index{Scheduler\+Control\+Widget@{Scheduler\+Control\+Widget}!name\+Edit\+\_\+@{name\+Edit\+\_\+}}
+\index{name\+Edit\+\_\+@{name\+Edit\+\_\+}!Scheduler\+Control\+Widget@{Scheduler\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{name\+Edit\+\_\+}{nameEdit_}}]{\setlength{\rightskip}{0pt plus 5cm}Wt\+::\+W\+Line\+Edit$\ast$ Scheduler\+Control\+Widget\+::name\+Edit\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classSchedulerControlWidget_afb6d2313419723521e39ee1d778efc3c}{}\label{classSchedulerControlWidget_afb6d2313419723521e39ee1d778efc3c}
+displays name \index{Scheduler\+Control\+Widget@{Scheduler\+Control\+Widget}!num\+Of\+Schedules@{num\+Of\+Schedules}}
+\index{num\+Of\+Schedules@{num\+Of\+Schedules}!Scheduler\+Control\+Widget@{Scheduler\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{num\+Of\+Schedules}{numOfSchedules}}]{\setlength{\rightskip}{0pt plus 5cm}int Scheduler\+Control\+Widget\+::num\+Of\+Schedules\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classSchedulerControlWidget_a9743fedba173a1b29604e315d06d97fd}{}\label{classSchedulerControlWidget_a9743fedba173a1b29604e315d06d97fd}
+keeps track of number of Schedules \index{Scheduler\+Control\+Widget@{Scheduler\+Control\+Widget}!one@{one}}
+\index{one@{one}!Scheduler\+Control\+Widget@{Scheduler\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{one}{one}}]{\setlength{\rightskip}{0pt plus 5cm}bool Scheduler\+Control\+Widget\+::one = false\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classSchedulerControlWidget_a52ee400ee7ef67590ab5e2d3aa095335}{}\label{classSchedulerControlWidget_a52ee400ee7ef67590ab5e2d3aa095335}
+keeps track of light 1 \index{Scheduler\+Control\+Widget@{Scheduler\+Control\+Widget}!port@{port}}
+\index{port@{port}!Scheduler\+Control\+Widget@{Scheduler\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{port}{port}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Scheduler\+Control\+Widget\+::port = \char`\"{}\char`\"{}\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classSchedulerControlWidget_add76e052c3bbb0bedfef92ff5121e8b0}{}\label{classSchedulerControlWidget_add76e052c3bbb0bedfef92ff5121e8b0}
+keeps track of Port Number \index{Scheduler\+Control\+Widget@{Scheduler\+Control\+Widget}!Schedules\+\_\+@{Schedules\+\_\+}}
+\index{Schedules\+\_\+@{Schedules\+\_\+}!Scheduler\+Control\+Widget@{Scheduler\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{Schedules\+\_\+}{Schedules_}}]{\setlength{\rightskip}{0pt plus 5cm}Wt\+::\+W\+Text$\ast$ Scheduler\+Control\+Widget\+::\+Schedules\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classSchedulerControlWidget_ad90a2e60df5fed38f2c824c443866f6c}{}\label{classSchedulerControlWidget_ad90a2e60df5fed38f2c824c443866f6c}
+displays the schedules \index{Scheduler\+Control\+Widget@{Scheduler\+Control\+Widget}!session\+\_\+@{session\+\_\+}}
+\index{session\+\_\+@{session\+\_\+}!Scheduler\+Control\+Widget@{Scheduler\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{session\+\_\+}{session_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Session}$\ast$ Scheduler\+Control\+Widget\+::session\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classSchedulerControlWidget_a288a93234db52da45170f791c9014459}{}\label{classSchedulerControlWidget_a288a93234db52da45170f791c9014459}
+keeps track of current session \index{Scheduler\+Control\+Widget@{Scheduler\+Control\+Widget}!status\+\_\+@{status\+\_\+}}
+\index{status\+\_\+@{status\+\_\+}!Scheduler\+Control\+Widget@{Scheduler\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{status\+\_\+}{status_}}]{\setlength{\rightskip}{0pt plus 5cm}Wt\+::\+W\+Text$\ast$ Scheduler\+Control\+Widget\+::status\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classSchedulerControlWidget_acdfb4ed24b3c2ea60fe91a48390e6235}{}\label{classSchedulerControlWidget_acdfb4ed24b3c2ea60fe91a48390e6235}
+displays current status \index{Scheduler\+Control\+Widget@{Scheduler\+Control\+Widget}!three@{three}}
+\index{three@{three}!Scheduler\+Control\+Widget@{Scheduler\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{three}{three}}]{\setlength{\rightskip}{0pt plus 5cm}bool Scheduler\+Control\+Widget\+::three = false\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classSchedulerControlWidget_ae7a161cbb41cbe616f44be386c0bf011}{}\label{classSchedulerControlWidget_ae7a161cbb41cbe616f44be386c0bf011}
+keeps track of light 3 \index{Scheduler\+Control\+Widget@{Scheduler\+Control\+Widget}!two@{two}}
+\index{two@{two}!Scheduler\+Control\+Widget@{Scheduler\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{two}{two}}]{\setlength{\rightskip}{0pt plus 5cm}bool Scheduler\+Control\+Widget\+::two = false\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classSchedulerControlWidget_a77776c015d36da02cf252e0f08d9fe48}{}\label{classSchedulerControlWidget_a77776c015d36da02cf252e0f08d9fe48}
+keeps track of light 2 \index{Scheduler\+Control\+Widget@{Scheduler\+Control\+Widget}!user\+ID@{user\+ID}}
+\index{user\+ID@{user\+ID}!Scheduler\+Control\+Widget@{Scheduler\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{user\+ID}{userID}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Scheduler\+Control\+Widget\+::user\+ID = \char`\"{}\char`\"{}\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classSchedulerControlWidget_af73ee1b98fb7944ae193d5e880a59f31}{}\label{classSchedulerControlWidget_af73ee1b98fb7944ae193d5e880a59f31}
+keeps track of User\+ID 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{SchedulerControl_8h}{Scheduler\+Control.\+h}\item 
+\hyperlink{SchedulerControl_8C}{Scheduler\+Control.\+C}\end{DoxyCompactItemize}

@@ -1,0 +1,59 @@
+\hypertarget{Session_8h}{}\section{Session.\+h File Reference}
+\label{Session_8h}\index{Session.\+h@{Session.\+h}}
+
+
+\hyperlink{classSession}{Session} handling for the application.  
+
+
+{\ttfamily \#include $<$vector$>$}\\*
+{\ttfamily \#include $<$string$>$}\\*
+{\ttfamily \#include $<$Wt/\+Auth/\+Login$>$}\\*
+{\ttfamily \#include $<$Wt/\+Dbo/\+Session$>$}\\*
+{\ttfamily \#include $<$Wt/\+Dbo/ptr$>$}\\*
+{\ttfamily \#include $<$Wt/\+Dbo/backend/\+Sqlite3$>$}\\*
+{\ttfamily \#include \char`\"{}User.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Bridge.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Bridge\+User\+Ids.\+h\char`\"{}}\\*
+Include dependency graph for Session.\+h\+:
+% FIG 0
+This graph shows which files directly or indirectly include this file\+:
+% FIG 1
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classSession}{Session}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef Wt\+::\+Auth\+::\+Dbo\+::\+User\+Database$<$ Auth\+Info $>$ {\bfseries User\+Database}\hypertarget{Session_8h_a34c01062ebe1a5567ef968ff473f0354}{}\label{Session_8h_a34c01062ebe1a5567ef968ff473f0354}
+
+\item 
+typedef Wt\+::\+Dbo\+::collection$<$ Wt\+::\+Dbo\+::ptr$<$ \hyperlink{classBridge}{Bridge} $>$ $>$ {\bfseries Bridges\+\_\+\+Collection}\hypertarget{Session_8h_abbbfa0e30b90094dadff981d6c31ed92}{}\label{Session_8h_abbbfa0e30b90094dadff981d6c31ed92}
+
+\item 
+typedef Wt\+::\+Dbo\+::collection$<$ Wt\+::\+Dbo\+::ptr$<$ \hyperlink{classBridgeUserIds}{Bridge\+User\+Ids} $>$ $>$ {\bfseries Bridge\+User\+Ids\+\_\+\+Collection}\hypertarget{Session_8h_a3c4eaa668a80bb8f2858db0705099a28}{}\label{Session_8h_a3c4eaa668a80bb8f2858db0705099a28}
+
+\item 
+typedef Wt\+::\+Dbo\+::ptr$<$ \hyperlink{classBridge}{Bridge} $>$ {\bfseries Bridge\+Ptr}\hypertarget{Session_8h_a15006d3a9415c7f3dfe0ec98392b203b}{}\label{Session_8h_a15006d3a9415c7f3dfe0ec98392b203b}
+
+\item 
+typedef Wt\+::\+Dbo\+::ptr$<$ \hyperlink{classUser}{User} $>$ {\bfseries User\+Ptr}\hypertarget{Session_8h_a77c2314618869f4f8e0b0a2a97cd6d70}{}\label{Session_8h_a77c2314618869f4f8e0b0a2a97cd6d70}
+
+\item 
+typedef Wt\+::\+Dbo\+::ptr$<$ \hyperlink{classBridgeUserIds}{Bridge\+User\+Ids} $>$ {\bfseries Bridge\+User\+Ids\+\_\+\+Ptr}\hypertarget{Session_8h_aae35eb66c4e595d6946a53df91de454b}{}\label{Session_8h_aae35eb66c4e595d6946a53df91de454b}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classSession}{Session} handling for the application. 
+
+Handles the Users who are able to access the database and create a persistent environment for our application using sqlite3. It hashes user passwords and stores tokens. The is also a multitude of functions to help access and store information into the applications database. Through out the app session is used to authorize each user to a page.
+
+\begin{DoxyAuthor}{Author}
+Paul Li 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+Nov 28, 2017 
+\end{DoxyDate}

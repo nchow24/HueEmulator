@@ -1,0 +1,720 @@
+\hypertarget{classSession}{}\section{Session Class Reference}
+\label{classSession}\index{Session@{Session}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classSession_ad92ef09b872c9227e38a6efdd4d8a837}{Session} ()
+\begin{DoxyCompactList}\small\item\em Constructor of the \hyperlink{classSession}{Session}. \end{DoxyCompactList}\item 
+\hyperlink{classSession_a8753bb9dee966b7d39abc9b7237cd665}{$\sim$\+Session} ()
+\begin{DoxyCompactList}\small\item\em Deconstructor of the \hyperlink{classSession}{Session}. \end{DoxyCompactList}\item 
+Wt\+::\+Auth\+::\+Abstract\+User\+Database \& \hyperlink{classSession_af91c8b22a14acf05e46265698deb8af4}{users} ()
+\begin{DoxyCompactList}\small\item\em Getter method for user authorization information. \end{DoxyCompactList}\item 
+Wt\+::\+Auth\+::\+Login \& {\bfseries login} ()\hypertarget{classSession_ac9b69619756936d8f27bc6702c334b1f}{}\label{classSession_ac9b69619756936d8f27bc6702c334b1f}
+
+\item 
+std\+::string \hyperlink{classSession_a4e3ae70e1af1b975bb0cb11c48f8d0a0}{user\+Name} () const 
+\begin{DoxyCompactList}\small\item\em Get the username of the currently logged in user. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classSession_a353b32ca0ddd116b436b900cb0c798b6}{first\+Name} ()
+\begin{DoxyCompactList}\small\item\em Get the first name of the currently logged in user. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classSession_ad4845846398dee6ae4cdffdd0870ccb5}{last\+Name} ()
+\begin{DoxyCompactList}\small\item\em Get the last name of the currently logged in user. \end{DoxyCompactList}\item 
+void \hyperlink{classSession_a646f3f09d40303c6539c7bbacb93893e}{update\+User} (\hyperlink{classUser}{User} $\ast$new\+User)
+\begin{DoxyCompactList}\small\item\em Update the currently logged in user with the data in new\+User. \end{DoxyCompactList}\item 
+\hyperlink{classUser}{User} $\ast$ \hyperlink{classSession_aa01be017bbea5350214c2ddff5512073}{get\+User} ()
+\begin{DoxyCompactList}\small\item\em Get a \hyperlink{classUser}{User} object of the currently logged in user. \end{DoxyCompactList}\item 
+void \hyperlink{classSession_aeaa52fe80f71a9c299a7fe10a1568568}{add\+Bridge\+User\+Id} (\hyperlink{classBridge}{Bridge} $\ast$y, std\+::string bridge\+User\+Id)
+\begin{DoxyCompactList}\small\item\em Add a Bridge\+User\+Id to the database. \end{DoxyCompactList}\item 
+std\+::vector$<$ \hyperlink{classBridgeUserIds}{Bridge\+User\+Ids} $>$ \hyperlink{classSession_a6f9e5ceea5b79487e7c9fdbd9f7b2491}{get\+Bridge\+User\+Id} ()
+\begin{DoxyCompactList}\small\item\em Gets a vector list of all the \hyperlink{classBridgeUserIds}{Bridge\+User\+Ids} of the currently logged in user in the database. \end{DoxyCompactList}\item 
+\hyperlink{classBridgeUserIds}{Bridge\+User\+Ids} $\ast$ \hyperlink{classSession_a23fa8d97108b7a713ca7dcf9808cccbe}{get\+Bridge\+User\+Id} (std\+::string ip, std\+::string port)
+\begin{DoxyCompactList}\small\item\em Gets the \hyperlink{classBridgeUserIds}{Bridge\+User\+Ids} record of the currently logged in user in the database and belong to bridge with ip + port. \end{DoxyCompactList}\item 
+\hyperlink{classBridgeUserIds}{Bridge\+User\+Ids} $\ast$ \hyperlink{classSession_a9ffa12700d2c5c76d182def0889bb78f}{get\+Bridge\+User\+Id} (\hyperlink{classBridge}{Bridge} $\ast$bridge\+Obj)
+\begin{DoxyCompactList}\small\item\em Gets the \hyperlink{classBridgeUserIds}{Bridge\+User\+Ids} record of the currently logged in user in the database and belong to bridge object bridge\+Obj. \end{DoxyCompactList}\item 
+std\+::vector$<$ \hyperlink{classBridgeUserIds}{Bridge\+User\+Ids} $>$ \hyperlink{classSession_a38d17c83c95082958506a5879eff7c93}{get\+All\+Bridge\+User\+Id} ()
+\begin{DoxyCompactList}\small\item\em Gets a vector list of all the \hyperlink{classBridgeUserIds}{Bridge\+User\+Ids} in the database. \end{DoxyCompactList}\item 
+std\+::vector$<$ \hyperlink{classBridgeUserIds}{Bridge\+User\+Ids} $>$ \hyperlink{classSession_a0c60934144d2e92258c33f3560642293}{get\+All\+Bridge\+User\+Id} (std\+::string ip, std\+::string port)
+\begin{DoxyCompactList}\small\item\em Gets a vector list of all the \hyperlink{classBridgeUserIds}{Bridge\+User\+Ids} in the database with a bridge of ip + port. \end{DoxyCompactList}\item 
+std\+::vector$<$ \hyperlink{classBridgeUserIds}{Bridge\+User\+Ids} $>$ \hyperlink{classSession_aebdcfdb0abc3e0eff515fcf274eec8b7}{get\+All\+Bridge\+User\+Id} (\hyperlink{classBridge}{Bridge} $\ast$bridge\+Obj)
+\begin{DoxyCompactList}\small\item\em Gets a vector list of all the \hyperlink{classBridgeUserIds}{Bridge\+User\+Ids} in the database with a bridge of bridge\+Obj. \end{DoxyCompactList}\item 
+void \hyperlink{classSession_a66b9558368c410a57959d34b95d92d85}{update\+Bridge\+User\+Id} (std\+::string ip, std\+::string port, std\+::string new\+Bridge\+User\+Id)
+\begin{DoxyCompactList}\small\item\em Update a Bridge\+User\+ID\textquotesingle{}s userid of a currently logged in user with ip and port. \end{DoxyCompactList}\item 
+void \hyperlink{classSession_a0ce543e30e589f57f424b223e78d7727}{delete\+Bridge\+User\+Id} ()
+\begin{DoxyCompactList}\small\item\em Deletes all the records in the \hyperlink{classBridgeUserIds}{Bridge\+User\+Ids} database identified by the the logged in user. \end{DoxyCompactList}\item 
+void \hyperlink{classSession_ae72de69f3e1a148bc633b348e984bf63}{delete\+Bridge\+User\+Id} (std\+::string ip, std\+::string port)
+\begin{DoxyCompactList}\small\item\em Deletes a record in the \hyperlink{classBridgeUserIds}{Bridge\+User\+Ids} database identified by ip,port and the the logged in user. \end{DoxyCompactList}\item 
+void \hyperlink{classSession_add42d80da3d9dd34278e753ef623a7c8}{delete\+Bridge\+User\+Id} (\hyperlink{classBridge}{Bridge} $\ast$bridge\+Obj)
+\begin{DoxyCompactList}\small\item\em Deletes a record in the \hyperlink{classBridgeUserIds}{Bridge\+User\+Ids} database identified by bridge\+Obj and the the logged in user. \end{DoxyCompactList}\item 
+void \hyperlink{classSession_ab7c1c96f6cc41a6f9bbf8915ddd3a171}{delete\+All\+Bridge\+User\+Id} ()
+\begin{DoxyCompactList}\small\item\em Deletes all the records in the \hyperlink{classBridgeUserIds}{Bridge\+User\+Ids} database. \end{DoxyCompactList}\item 
+void \hyperlink{classSession_a6331ee5838df2948eb6d92423ba7f976}{delete\+All\+Bridge\+User\+Id} (std\+::string ip, std\+::string port)
+\begin{DoxyCompactList}\small\item\em Deletes all the records in the \hyperlink{classBridgeUserIds}{Bridge\+User\+Ids} database that include have ip and port. \end{DoxyCompactList}\item 
+void \hyperlink{classSession_ad209a3bf4d24d5f1aff23a011ef25f6f}{delete\+All\+Bridge\+User\+Id} (\hyperlink{classBridge}{Bridge} $\ast$bridge\+Obj)
+\begin{DoxyCompactList}\small\item\em Deletes all the records in the \hyperlink{classBridgeUserIds}{Bridge\+User\+Ids} database that include the bridge\+Obj. \end{DoxyCompactList}\item 
+std\+::vector$<$ \hyperlink{classBridge}{Bridge} $>$ \hyperlink{classSession_a44ef564f39f3b819313e339c0b174f4f}{get\+Bridges} ()
+\begin{DoxyCompactList}\small\item\em Gets a vector list of the bridges in the database of currently logged in user. \end{DoxyCompactList}\item 
+std\+::vector$<$ \hyperlink{classBridge}{Bridge} $>$ \hyperlink{classSession_aecaecc666ef5e3344420b36e40d5b0cc}{get\+All\+Bridges} ()
+\begin{DoxyCompactList}\small\item\em Gets a vector list of all the bridges in the database. \end{DoxyCompactList}\item 
+\hyperlink{classBridge}{Bridge} $\ast$ \hyperlink{classSession_a5731961d665ab9e0a01f5c95b1114f88}{get\+Bridge} (std\+::string ip, std\+::string port)
+\begin{DoxyCompactList}\small\item\em Get a bridge from the database. \end{DoxyCompactList}\item 
+void \hyperlink{classSession_a617d2b434c7aade62e7bd0c0ee78ea9c}{update\+Bridge} (\hyperlink{classBridge}{Bridge} $\ast$old\+Bridge, \hyperlink{classBridge}{Bridge} $\ast$new\+Bridge)
+\begin{DoxyCompactList}\small\item\em Updates one of the pre-\/existing bridges in our database. \end{DoxyCompactList}\item 
+bool \hyperlink{classSession_af578feecff75f6eabc70d4110d04b04c}{add\+Bridge} (\hyperlink{classBridge}{Bridge} $\ast$new\+Bridge)
+\begin{DoxyCompactList}\small\item\em Add bridge to the database. \end{DoxyCompactList}\item 
+bool \hyperlink{classSession_ab227752536d56a50a7b54373098dccd3}{delete\+Bridge} (std\+::string ip, std\+::string port)
+\begin{DoxyCompactList}\small\item\em Removes a bridge from the database. \end{DoxyCompactList}\item 
+Wt\+::\+Dbo\+::ptr$<$ \hyperlink{classUser}{User} $>$ \hyperlink{classSession_a8869e1a43a0131699f9dc234c96b45c9}{user} ()
+\begin{DoxyCompactList}\small\item\em Get the database object of \hyperlink{classUser}{User} of the currently logged in user. \end{DoxyCompactList}\item 
+Wt\+::\+Dbo\+::ptr$<$ \hyperlink{classUser}{User} $>$ \hyperlink{classSession_af4b107688e55ec0614d8181688c7dee7}{user} (const Wt\+::\+Auth\+::\+User \&auth\+User)
+\begin{DoxyCompactList}\small\item\em Get the database object of \hyperlink{classUser}{User} of the currently logged in user. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{classSession_a02ee7e0bfcaf6470f35661ec30b8cf8b}{configure\+Auth} ()
+\begin{DoxyCompactList}\small\item\em Configure the authorization services for the app. \end{DoxyCompactList}\item 
+static const Wt\+::\+Auth\+::\+Auth\+Service \& \hyperlink{classSession_a7fe071d1b3aee64cdf9f3601cdeb42fb}{auth} ()
+\begin{DoxyCompactList}\small\item\em Getter method for the current sessions authorization service. \end{DoxyCompactList}\item 
+static const Wt\+::\+Auth\+::\+Abstract\+Password\+Service \& \hyperlink{classSession_a06fdfd453428ecbe0e1cce81470bca69}{password\+Auth} ()
+\begin{DoxyCompactList}\small\item\em Getter method for the password authorization service. \end{DoxyCompactList}\item 
+static const std\+::vector$<$ const Wt\+::\+Auth\+::\+O\+Auth\+Service $\ast$ $>$ \& \hyperlink{classSession_a22252a55fec95eec790ca74ce9559a54}{o\+Auth} ()
+\begin{DoxyCompactList}\small\item\em Getter method for the sessions o\+Auth service. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Wt\+::\+Dbo\+::backend\+::\+Sqlite3 {\bfseries sqlite3\+\_\+}\hypertarget{classSession_a15a7b5a56a15bff8eed8cf98c87abcd3}{}\label{classSession_a15a7b5a56a15bff8eed8cf98c87abcd3}
+
+\item 
+Wt\+::\+Dbo\+::\+Session {\bfseries session\+\_\+}\hypertarget{classSession_a7de9be5226d297784ae26a79a1267ac2}{}\label{classSession_a7de9be5226d297784ae26a79a1267ac2}
+
+\item 
+User\+Database $\ast$ {\bfseries users\+\_\+}\hypertarget{classSession_a791c538e6bb5214c72b974329c419274}{}\label{classSession_a791c538e6bb5214c72b974329c419274}
+
+\item 
+Wt\+::\+Auth\+::\+Login {\bfseries login\+\_\+}\hypertarget{classSession_a71e5966d537785ddec69daeb7f203dd5}{}\label{classSession_a71e5966d537785ddec69daeb7f203dd5}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Session@{Session}!Session@{Session}}
+\index{Session@{Session}!Session@{Session}}
+\subsubsection[{\texorpdfstring{Session()}{Session()}}]{\setlength{\rightskip}{0pt plus 5cm}Session\+::\+Session (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classSession_ad92ef09b872c9227e38a6efdd4d8a837}{}\label{classSession_ad92ef09b872c9227e38a6efdd4d8a837}
+
+
+Constructor of the \hyperlink{classSession}{Session}. 
+
+The constructor session is called by the \hyperlink{classHueApp}{Hue\+App} to do a multitude of things
+\begin{DoxyItemize}
+\item create the database if it doesn\textquotesingle{}t exist
+\item connect to the database
+\item create the tables in the database
+\item add a few records to the database
+\item log a few things regarding the database 
+\end{DoxyItemize}\index{Session@{Session}!````~Session@{$\sim$\+Session}}
+\index{````~Session@{$\sim$\+Session}!Session@{Session}}
+\subsubsection[{\texorpdfstring{$\sim$\+Session()}{~Session()}}]{\setlength{\rightskip}{0pt plus 5cm}Session\+::$\sim$\+Session (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classSession_a8753bb9dee966b7d39abc9b7237cd665}{}\label{classSession_a8753bb9dee966b7d39abc9b7237cd665}
+
+
+Deconstructor of the \hyperlink{classSession}{Session}. 
+
+Deallocates the memory of users\+\_\+ 
+
+\subsection{Member Function Documentation}
+\index{Session@{Session}!add\+Bridge@{add\+Bridge}}
+\index{add\+Bridge@{add\+Bridge}!Session@{Session}}
+\subsubsection[{\texorpdfstring{add\+Bridge(\+Bridge $\ast$new\+Bridge)}{addBridge(Bridge *newBridge)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Session\+::add\+Bridge (
+\begin{DoxyParamCaption}
+\item[{{\bf Bridge} $\ast$}]{new\+Bridge}
+\end{DoxyParamCaption}
+)}\hypertarget{classSession_af578feecff75f6eabc70d4110d04b04c}{}\label{classSession_af578feecff75f6eabc70d4110d04b04c}
+
+
+Add bridge to the database. 
+
+Adds a new \hyperlink{classBridge}{Bridge} to the database by passing in a \hyperlink{classBridge}{Bridge} object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Bridge} & the bridge that is needed to be added to the database. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+if it was successfully added to the database 
+\end{DoxyReturn}
+\index{Session@{Session}!add\+Bridge\+User\+Id@{add\+Bridge\+User\+Id}}
+\index{add\+Bridge\+User\+Id@{add\+Bridge\+User\+Id}!Session@{Session}}
+\subsubsection[{\texorpdfstring{add\+Bridge\+User\+Id(\+Bridge $\ast$y, std\+::string bridge\+User\+Id)}{addBridgeUserId(Bridge *y, std::string bridgeUserId)}}]{\setlength{\rightskip}{0pt plus 5cm}void Session\+::add\+Bridge\+User\+Id (
+\begin{DoxyParamCaption}
+\item[{{\bf Bridge} $\ast$}]{new\+Bridge, }
+\item[{std\+::string}]{bridge\+User\+Id}
+\end{DoxyParamCaption}
+)}\hypertarget{classSession_aeaa52fe80f71a9c299a7fe10a1568568}{}\label{classSession_aeaa52fe80f71a9c299a7fe10a1568568}
+
+
+Add a Bridge\+User\+Id to the database. 
+
+Add a Bridge\+User\+Id record to the \hyperlink{classBridgeUserIds}{Bridge\+User\+Ids} db by passing in data (bridge\+User\+Id) and the associated items new\+Bridge. When creating the record it associated the \hyperlink{classUser}{User} with the currently logged in user.
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Bridge} & the bridge associated with the User\+Id. \\
+\hline
+{\em bridge\+User\+Id} & the User\+Id to access the bridge. \\
+\hline
+\end{DoxyParams}
+\index{Session@{Session}!auth@{auth}}
+\index{auth@{auth}!Session@{Session}}
+\subsubsection[{\texorpdfstring{auth()}{auth()}}]{\setlength{\rightskip}{0pt plus 5cm}const Auth\+::\+Auth\+Service \& Session\+::auth (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classSession_a7fe071d1b3aee64cdf9f3601cdeb42fb}{}\label{classSession_a7fe071d1b3aee64cdf9f3601cdeb42fb}
+
+
+Getter method for the current sessions authorization service. 
+
+Used for configuring the current session\textquotesingle{}s authorization service. For example enabling email verification.
+
+\begin{DoxyReturn}{Returns}
+Returns the session authorization. 
+\end{DoxyReturn}
+\index{Session@{Session}!configure\+Auth@{configure\+Auth}}
+\index{configure\+Auth@{configure\+Auth}!Session@{Session}}
+\subsubsection[{\texorpdfstring{configure\+Auth()}{configureAuth()}}]{\setlength{\rightskip}{0pt plus 5cm}void Session\+::configure\+Auth (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classSession_a02ee7e0bfcaf6470f35661ec30b8cf8b}{}\label{classSession_a02ee7e0bfcaf6470f35661ec30b8cf8b}
+
+
+Configure the authorization services for the app. 
+
+Using Wt\textquotesingle{}s built in authorization set the model of the services that were used such as, remember me tokens, email verifications, password hashing and etc \index{Session@{Session}!delete\+All\+Bridge\+User\+Id@{delete\+All\+Bridge\+User\+Id}}
+\index{delete\+All\+Bridge\+User\+Id@{delete\+All\+Bridge\+User\+Id}!Session@{Session}}
+\subsubsection[{\texorpdfstring{delete\+All\+Bridge\+User\+Id()}{deleteAllBridgeUserId()}}]{\setlength{\rightskip}{0pt plus 5cm}void Session\+::delete\+All\+Bridge\+User\+Id (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classSession_ab7c1c96f6cc41a6f9bbf8915ddd3a171}{}\label{classSession_ab7c1c96f6cc41a6f9bbf8915ddd3a171}
+
+
+Deletes all the records in the \hyperlink{classBridgeUserIds}{Bridge\+User\+Ids} database. 
+
+Removes all records from the \hyperlink{classBridgeUserIds}{Bridge\+User\+Ids} database.
+
+Iteratively deletes all records in \hyperlink{classBridgeUserIds}{Bridge\+User\+Ids}. \index{Session@{Session}!delete\+All\+Bridge\+User\+Id@{delete\+All\+Bridge\+User\+Id}}
+\index{delete\+All\+Bridge\+User\+Id@{delete\+All\+Bridge\+User\+Id}!Session@{Session}}
+\subsubsection[{\texorpdfstring{delete\+All\+Bridge\+User\+Id(std\+::string ip, std\+::string port)}{deleteAllBridgeUserId(std::string ip, std::string port)}}]{\setlength{\rightskip}{0pt plus 5cm}void Session\+::delete\+All\+Bridge\+User\+Id (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{ip, }
+\item[{std\+::string}]{port}
+\end{DoxyParamCaption}
+)}\hypertarget{classSession_a6331ee5838df2948eb6d92423ba7f976}{}\label{classSession_a6331ee5838df2948eb6d92423ba7f976}
+
+
+Deletes all the records in the \hyperlink{classBridgeUserIds}{Bridge\+User\+Ids} database that include have ip and port. 
+
+It finds the ID of the bridge in the Bridges db and then querys all the records of \hyperlink{classBridgeUserIds}{Bridge\+User\+Ids} with the found bridge id. Then iteratively deletes all records in \hyperlink{classBridgeUserIds}{Bridge\+User\+Ids}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em ip} & of the bridge id to remove all records of bridge id from Bridge\+User\+Id. \\
+\hline
+{\em port} & of the bridge id to remove all records of bridge id from Bridge\+User\+Id. \\
+\hline
+\end{DoxyParams}
+\index{Session@{Session}!delete\+All\+Bridge\+User\+Id@{delete\+All\+Bridge\+User\+Id}}
+\index{delete\+All\+Bridge\+User\+Id@{delete\+All\+Bridge\+User\+Id}!Session@{Session}}
+\subsubsection[{\texorpdfstring{delete\+All\+Bridge\+User\+Id(\+Bridge $\ast$bridge\+Obj)}{deleteAllBridgeUserId(Bridge *bridgeObj)}}]{\setlength{\rightskip}{0pt plus 5cm}void Session\+::delete\+All\+Bridge\+User\+Id (
+\begin{DoxyParamCaption}
+\item[{{\bf Bridge} $\ast$}]{bridge\+Obj}
+\end{DoxyParamCaption}
+)}\hypertarget{classSession_ad209a3bf4d24d5f1aff23a011ef25f6f}{}\label{classSession_ad209a3bf4d24d5f1aff23a011ef25f6f}
+
+
+Deletes all the records in the \hyperlink{classBridgeUserIds}{Bridge\+User\+Ids} database that include the bridge\+Obj. 
+
+It finds the ID of the bridge in the Bridges db and then querys all the records of \hyperlink{classBridgeUserIds}{Bridge\+User\+Ids} with the found bridge id. Then iteratively deletes all records in \hyperlink{classBridgeUserIds}{Bridge\+User\+Ids}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em bridge\+Obj} & is used to get the bridge id to remove all records of bridge id from Bridge\+User\+Id. \\
+\hline
+\end{DoxyParams}
+\index{Session@{Session}!delete\+Bridge@{delete\+Bridge}}
+\index{delete\+Bridge@{delete\+Bridge}!Session@{Session}}
+\subsubsection[{\texorpdfstring{delete\+Bridge(std\+::string ip, std\+::string port)}{deleteBridge(std::string ip, std::string port)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Session\+::delete\+Bridge (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{ip, }
+\item[{std\+::string}]{port}
+\end{DoxyParamCaption}
+)}\hypertarget{classSession_ab227752536d56a50a7b54373098dccd3}{}\label{classSession_ab227752536d56a50a7b54373098dccd3}
+
+
+Removes a bridge from the database. 
+
+Finds and removes the bridge from the \hyperlink{classBridge}{Bridge} database by searching for the ip and port of the desired bridge.
+
+
+\begin{DoxyParams}{Parameters}
+{\em ip} & of the bridge of interest to be deleted. \\
+\hline
+{\em port} & of the bridge of interest to be deleted. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+if deleting the bridge was successful or not. 
+\end{DoxyReturn}
+\index{Session@{Session}!delete\+Bridge\+User\+Id@{delete\+Bridge\+User\+Id}}
+\index{delete\+Bridge\+User\+Id@{delete\+Bridge\+User\+Id}!Session@{Session}}
+\subsubsection[{\texorpdfstring{delete\+Bridge\+User\+Id()}{deleteBridgeUserId()}}]{\setlength{\rightskip}{0pt plus 5cm}void Session\+::delete\+Bridge\+User\+Id (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classSession_a0ce543e30e589f57f424b223e78d7727}{}\label{classSession_a0ce543e30e589f57f424b223e78d7727}
+
+
+Deletes all the records in the \hyperlink{classBridgeUserIds}{Bridge\+User\+Ids} database identified by the the logged in user. 
+
+It finds the ID of the logged in user. Then it removes all records that include the ID of the logged in user. \index{Session@{Session}!delete\+Bridge\+User\+Id@{delete\+Bridge\+User\+Id}}
+\index{delete\+Bridge\+User\+Id@{delete\+Bridge\+User\+Id}!Session@{Session}}
+\subsubsection[{\texorpdfstring{delete\+Bridge\+User\+Id(std\+::string ip, std\+::string port)}{deleteBridgeUserId(std::string ip, std::string port)}}]{\setlength{\rightskip}{0pt plus 5cm}void Session\+::delete\+Bridge\+User\+Id (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{ip, }
+\item[{std\+::string}]{port}
+\end{DoxyParamCaption}
+)}\hypertarget{classSession_ae72de69f3e1a148bc633b348e984bf63}{}\label{classSession_ae72de69f3e1a148bc633b348e984bf63}
+
+
+Deletes a record in the \hyperlink{classBridgeUserIds}{Bridge\+User\+Ids} database identified by ip,port and the the logged in user. 
+
+It finds the ID of the logged in user and the ID of the bridge by the information passed in by the parameters. Then it is found and removed in the \hyperlink{classBridgeUserIds}{Bridge\+User\+Ids} db.
+
+
+\begin{DoxyParams}{Parameters}
+{\em ip} & is used to get the bridge id to be removed from Bridge\+User\+Id. \\
+\hline
+{\em port} & is used to get the bridge id to be removed from Bridge\+User\+Id. \\
+\hline
+\end{DoxyParams}
+\index{Session@{Session}!delete\+Bridge\+User\+Id@{delete\+Bridge\+User\+Id}}
+\index{delete\+Bridge\+User\+Id@{delete\+Bridge\+User\+Id}!Session@{Session}}
+\subsubsection[{\texorpdfstring{delete\+Bridge\+User\+Id(\+Bridge $\ast$bridge\+Obj)}{deleteBridgeUserId(Bridge *bridgeObj)}}]{\setlength{\rightskip}{0pt plus 5cm}void Session\+::delete\+Bridge\+User\+Id (
+\begin{DoxyParamCaption}
+\item[{{\bf Bridge} $\ast$}]{bridge\+Obj}
+\end{DoxyParamCaption}
+)}\hypertarget{classSession_add42d80da3d9dd34278e753ef623a7c8}{}\label{classSession_add42d80da3d9dd34278e753ef623a7c8}
+
+
+Deletes a record in the \hyperlink{classBridgeUserIds}{Bridge\+User\+Ids} database identified by bridge\+Obj and the the logged in user. 
+
+It finds the ID of the logged in user and the ID of the bridge by the information passed in by the parameters. Then it is found and removed in the \hyperlink{classBridgeUserIds}{Bridge\+User\+Ids} db.
+
+
+\begin{DoxyParams}{Parameters}
+{\em bridge\+Obj} & is used to get the bridge id to be removed from Bridge\+User\+Id. \\
+\hline
+\end{DoxyParams}
+\index{Session@{Session}!first\+Name@{first\+Name}}
+\index{first\+Name@{first\+Name}!Session@{Session}}
+\subsubsection[{\texorpdfstring{first\+Name()}{firstName()}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Session\+::first\+Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classSession_a353b32ca0ddd116b436b900cb0c798b6}{}\label{classSession_a353b32ca0ddd116b436b900cb0c798b6}
+
+
+Get the first name of the currently logged in user. 
+
+Gets the first name of the currently logged in user that was created during the registration page.
+
+\begin{DoxyReturn}{Returns}
+the string of the first name of the currently logged in user. 
+\end{DoxyReturn}
+\index{Session@{Session}!get\+All\+Bridges@{get\+All\+Bridges}}
+\index{get\+All\+Bridges@{get\+All\+Bridges}!Session@{Session}}
+\subsubsection[{\texorpdfstring{get\+All\+Bridges()}{getAllBridges()}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ {\bf Bridge} $>$ Session\+::get\+All\+Bridges (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classSession_aecaecc666ef5e3344420b36e40d5b0cc}{}\label{classSession_aecaecc666ef5e3344420b36e40d5b0cc}
+
+
+Gets a vector list of all the bridges in the database. 
+
+Gets a vector list of all the bridges in the database of all the bridges.
+
+\begin{DoxyReturn}{Returns}
+a vector of \hyperlink{classBridge}{Bridge} objects 
+\end{DoxyReturn}
+\index{Session@{Session}!get\+All\+Bridge\+User\+Id@{get\+All\+Bridge\+User\+Id}}
+\index{get\+All\+Bridge\+User\+Id@{get\+All\+Bridge\+User\+Id}!Session@{Session}}
+\subsubsection[{\texorpdfstring{get\+All\+Bridge\+User\+Id()}{getAllBridgeUserId()}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ {\bf Bridge\+User\+Ids} $>$ Session\+::get\+All\+Bridge\+User\+Id (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classSession_a38d17c83c95082958506a5879eff7c93}{}\label{classSession_a38d17c83c95082958506a5879eff7c93}
+
+
+Gets a vector list of all the \hyperlink{classBridgeUserIds}{Bridge\+User\+Ids} in the database. 
+
+Get a list of \hyperlink{classBridgeUserIds}{Bridge\+User\+Ids} objects of all the records in the database even if it doesn\textquotesingle{}t belong to the currently logged in user.
+
+\begin{DoxyReturn}{Returns}
+Vector list of all the \hyperlink{classBridgeUserIds}{Bridge\+User\+Ids} in the database. 
+\end{DoxyReturn}
+\index{Session@{Session}!get\+All\+Bridge\+User\+Id@{get\+All\+Bridge\+User\+Id}}
+\index{get\+All\+Bridge\+User\+Id@{get\+All\+Bridge\+User\+Id}!Session@{Session}}
+\subsubsection[{\texorpdfstring{get\+All\+Bridge\+User\+Id(std\+::string ip, std\+::string port)}{getAllBridgeUserId(std::string ip, std::string port)}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ {\bf Bridge\+User\+Ids} $>$ Session\+::get\+All\+Bridge\+User\+Id (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{ip, }
+\item[{std\+::string}]{port}
+\end{DoxyParamCaption}
+)}\hypertarget{classSession_a0c60934144d2e92258c33f3560642293}{}\label{classSession_a0c60934144d2e92258c33f3560642293}
+
+
+Gets a vector list of all the \hyperlink{classBridgeUserIds}{Bridge\+User\+Ids} in the database with a bridge of ip + port. 
+
+Get a list of \hyperlink{classBridgeUserIds}{Bridge\+User\+Ids} objects of all the records in the database that belong to the bridge with ip and port, even if it doesn\textquotesingle{}t belong to the currently logged in user.
+
+
+\begin{DoxyParams}{Parameters}
+{\em ip} & is used to find bridge id that will be removed. \\
+\hline
+{\em port} & is used to find bridge id that will be removed. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Vector list of all the \hyperlink{classBridgeUserIds}{Bridge\+User\+Ids} in the database that belong to bridge id of ip + port. 
+\end{DoxyReturn}
+\index{Session@{Session}!get\+All\+Bridge\+User\+Id@{get\+All\+Bridge\+User\+Id}}
+\index{get\+All\+Bridge\+User\+Id@{get\+All\+Bridge\+User\+Id}!Session@{Session}}
+\subsubsection[{\texorpdfstring{get\+All\+Bridge\+User\+Id(\+Bridge $\ast$bridge\+Obj)}{getAllBridgeUserId(Bridge *bridgeObj)}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ {\bf Bridge\+User\+Ids} $>$ Session\+::get\+All\+Bridge\+User\+Id (
+\begin{DoxyParamCaption}
+\item[{{\bf Bridge} $\ast$}]{bridge\+Obj}
+\end{DoxyParamCaption}
+)}\hypertarget{classSession_aebdcfdb0abc3e0eff515fcf274eec8b7}{}\label{classSession_aebdcfdb0abc3e0eff515fcf274eec8b7}
+
+
+Gets a vector list of all the \hyperlink{classBridgeUserIds}{Bridge\+User\+Ids} in the database with a bridge of bridge\+Obj. 
+
+Get a list of \hyperlink{classBridgeUserIds}{Bridge\+User\+Ids} objects of all the records in the database that have the \hyperlink{classBridge}{Bridge}, bridge\+Obj even if it doesn\textquotesingle{}t belong to the currently logged in user.
+
+
+\begin{DoxyParams}{Parameters}
+{\em bridge\+Obj} & Remove all \hyperlink{classBridgeUserIds}{Bridge\+User\+Ids} with bridge\+Obj. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Vector list of all the \hyperlink{classBridgeUserIds}{Bridge\+User\+Ids} in the database that belong to bridge\+Obj. 
+\end{DoxyReturn}
+\index{Session@{Session}!get\+Bridge@{get\+Bridge}}
+\index{get\+Bridge@{get\+Bridge}!Session@{Session}}
+\subsubsection[{\texorpdfstring{get\+Bridge(std\+::string ip, std\+::string port)}{getBridge(std::string ip, std::string port)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Bridge} $\ast$ Session\+::get\+Bridge (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{ip, }
+\item[{std\+::string}]{port}
+\end{DoxyParamCaption}
+)}\hypertarget{classSession_a5731961d665ab9e0a01f5c95b1114f88}{}\label{classSession_a5731961d665ab9e0a01f5c95b1114f88}
+
+
+Get a bridge from the database. 
+
+Finds and returns the bridge from the \hyperlink{classBridge}{Bridge} database by searching for the ip and port of the desired bridge.
+
+
+\begin{DoxyParams}{Parameters}
+{\em ip} & of the bridge to be retrived. \\
+\hline
+{\em port} & of the bridge to be retrived. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a bridge object of found \hyperlink{classBridge}{Bridge}. 
+\end{DoxyReturn}
+\index{Session@{Session}!get\+Bridges@{get\+Bridges}}
+\index{get\+Bridges@{get\+Bridges}!Session@{Session}}
+\subsubsection[{\texorpdfstring{get\+Bridges()}{getBridges()}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ {\bf Bridge} $>$ Session\+::get\+Bridges (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classSession_a44ef564f39f3b819313e339c0b174f4f}{}\label{classSession_a44ef564f39f3b819313e339c0b174f4f}
+
+
+Gets a vector list of the bridges in the database of currently logged in user. 
+
+Gets a vector list of all the bridges in the database of all the bridges associated with the currently logged in user.
+
+\begin{DoxyReturn}{Returns}
+a vector of \hyperlink{classBridge}{Bridge} objects. 
+\end{DoxyReturn}
+\index{Session@{Session}!get\+Bridge\+User\+Id@{get\+Bridge\+User\+Id}}
+\index{get\+Bridge\+User\+Id@{get\+Bridge\+User\+Id}!Session@{Session}}
+\subsubsection[{\texorpdfstring{get\+Bridge\+User\+Id()}{getBridgeUserId()}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ {\bf Bridge\+User\+Ids} $>$ Session\+::get\+Bridge\+User\+Id (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classSession_a6f9e5ceea5b79487e7c9fdbd9f7b2491}{}\label{classSession_a6f9e5ceea5b79487e7c9fdbd9f7b2491}
+
+
+Gets a vector list of all the \hyperlink{classBridgeUserIds}{Bridge\+User\+Ids} of the currently logged in user in the database. 
+
+Function gets all the records from the database that belong to the currently logged in user. The function returns a list of \hyperlink{classBridgeUserIds}{Bridge\+User\+Ids} objects that can be used to fetch the user\+Id to be used by the bridges.
+
+\begin{DoxyReturn}{Returns}
+Vector list of \hyperlink{classBridgeUserIds}{Bridge\+User\+Ids} objects in the database. 
+\end{DoxyReturn}
+\index{Session@{Session}!get\+Bridge\+User\+Id@{get\+Bridge\+User\+Id}}
+\index{get\+Bridge\+User\+Id@{get\+Bridge\+User\+Id}!Session@{Session}}
+\subsubsection[{\texorpdfstring{get\+Bridge\+User\+Id(std\+::string ip, std\+::string port)}{getBridgeUserId(std::string ip, std::string port)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Bridge\+User\+Ids} $\ast$ Session\+::get\+Bridge\+User\+Id (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{ip, }
+\item[{std\+::string}]{port}
+\end{DoxyParamCaption}
+)}\hypertarget{classSession_a23fa8d97108b7a713ca7dcf9808cccbe}{}\label{classSession_a23fa8d97108b7a713ca7dcf9808cccbe}
+
+
+Gets the \hyperlink{classBridgeUserIds}{Bridge\+User\+Ids} record of the currently logged in user in the database and belong to bridge with ip + port. 
+
+get\+Bridge\+User\+Id is used to help get a specific record from the database of a currently logged in user by specifying the ip and port of the bridge in the db associated with the record.
+
+
+\begin{DoxyParams}{Parameters}
+{\em ip} & is used to get the bridge id to find the record in Bridge\+User\+Id. \\
+\hline
+{\em port} & is used to get the bridge id to find the record in Bridge\+User\+Id. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Bridge\+User\+Id objects in the database. 
+\end{DoxyReturn}
+\index{Session@{Session}!get\+Bridge\+User\+Id@{get\+Bridge\+User\+Id}}
+\index{get\+Bridge\+User\+Id@{get\+Bridge\+User\+Id}!Session@{Session}}
+\subsubsection[{\texorpdfstring{get\+Bridge\+User\+Id(\+Bridge $\ast$bridge\+Obj)}{getBridgeUserId(Bridge *bridgeObj)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Bridge\+User\+Ids} $\ast$ Session\+::get\+Bridge\+User\+Id (
+\begin{DoxyParamCaption}
+\item[{{\bf Bridge} $\ast$}]{bridge\+Obj}
+\end{DoxyParamCaption}
+)}\hypertarget{classSession_a9ffa12700d2c5c76d182def0889bb78f}{}\label{classSession_a9ffa12700d2c5c76d182def0889bb78f}
+
+
+Gets the \hyperlink{classBridgeUserIds}{Bridge\+User\+Ids} record of the currently logged in user in the database and belong to bridge object bridge\+Obj. 
+
+get\+Bridge\+User\+Id is used to help get a specific record from the database of a currently logged in user by specifying the bridge object passed in to find the bridge in the db associated with the record.
+
+
+\begin{DoxyParams}{Parameters}
+{\em bridge\+Obj} & the bridge to search for in the database. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Bridge\+User\+Id objects in the database. 
+\end{DoxyReturn}
+\index{Session@{Session}!get\+User@{get\+User}}
+\index{get\+User@{get\+User}!Session@{Session}}
+\subsubsection[{\texorpdfstring{get\+User()}{getUser()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf User} $\ast$ Session\+::get\+User (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classSession_aa01be017bbea5350214c2ddff5512073}{}\label{classSession_aa01be017bbea5350214c2ddff5512073}
+
+
+Get a \hyperlink{classUser}{User} object of the currently logged in user. 
+
+Get the record from the database of the currently logged in user.
+
+\begin{DoxyReturn}{Returns}
+a \hyperlink{classUser}{User} object of the currently logged in user 
+\end{DoxyReturn}
+\index{Session@{Session}!last\+Name@{last\+Name}}
+\index{last\+Name@{last\+Name}!Session@{Session}}
+\subsubsection[{\texorpdfstring{last\+Name()}{lastName()}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Session\+::last\+Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classSession_ad4845846398dee6ae4cdffdd0870ccb5}{}\label{classSession_ad4845846398dee6ae4cdffdd0870ccb5}
+
+
+Get the last name of the currently logged in user. 
+
+Gets the last name of the currently logged in user that was created during the registration page.
+
+\begin{DoxyReturn}{Returns}
+the string of the last name of the currently logged in user. 
+\end{DoxyReturn}
+\index{Session@{Session}!o\+Auth@{o\+Auth}}
+\index{o\+Auth@{o\+Auth}!Session@{Session}}
+\subsubsection[{\texorpdfstring{o\+Auth()}{oAuth()}}]{\setlength{\rightskip}{0pt plus 5cm}const std\+::vector$<$ const Auth\+::\+O\+Auth\+Service $\ast$ $>$ \& Session\+::o\+Auth (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classSession_a22252a55fec95eec790ca74ce9559a54}{}\label{classSession_a22252a55fec95eec790ca74ce9559a54}
+
+
+Getter method for the sessions o\+Auth service. 
+
+Used to help setup the O\+Auth services that will be used by the app
+
+\begin{DoxyReturn}{Returns}
+Returns the o\+Auth service that is set up. 
+\end{DoxyReturn}
+\index{Session@{Session}!password\+Auth@{password\+Auth}}
+\index{password\+Auth@{password\+Auth}!Session@{Session}}
+\subsubsection[{\texorpdfstring{password\+Auth()}{passwordAuth()}}]{\setlength{\rightskip}{0pt plus 5cm}const Auth\+::\+Abstract\+Password\+Service \& Session\+::password\+Auth (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classSession_a06fdfd453428ecbe0e1cce81470bca69}{}\label{classSession_a06fdfd453428ecbe0e1cce81470bca69}
+
+
+Getter method for the password authorization service. 
+
+Used for configuring the password authorization service. For example setting the validation method for the password.
+
+\begin{DoxyReturn}{Returns}
+Returns the password authorization. 
+\end{DoxyReturn}
+\index{Session@{Session}!update\+Bridge@{update\+Bridge}}
+\index{update\+Bridge@{update\+Bridge}!Session@{Session}}
+\subsubsection[{\texorpdfstring{update\+Bridge(\+Bridge $\ast$old\+Bridge, Bridge $\ast$new\+Bridge)}{updateBridge(Bridge *oldBridge, Bridge *newBridge)}}]{\setlength{\rightskip}{0pt plus 5cm}void Session\+::update\+Bridge (
+\begin{DoxyParamCaption}
+\item[{{\bf Bridge} $\ast$}]{old\+Bridge, }
+\item[{{\bf Bridge} $\ast$}]{new\+Bridge}
+\end{DoxyParamCaption}
+)}\hypertarget{classSession_a617d2b434c7aade62e7bd0c0ee78ea9c}{}\label{classSession_a617d2b434c7aade62e7bd0c0ee78ea9c}
+
+
+Updates one of the pre-\/existing bridges in our database. 
+
+Finds and updates a bridge that is in our database. It is found in our database with the old\+Bridge object to get the ip and port. The new\+Bridge object is used replace the data of the old\+Bridge data in the db.
+
+
+\begin{DoxyParams}{Parameters}
+{\em old\+Bridge} & is the bridge in the database to be replaced. \\
+\hline
+{\em new\+Bridge} & is the new data to replace the old\+Bridge. \\
+\hline
+\end{DoxyParams}
+\index{Session@{Session}!update\+Bridge\+User\+Id@{update\+Bridge\+User\+Id}}
+\index{update\+Bridge\+User\+Id@{update\+Bridge\+User\+Id}!Session@{Session}}
+\subsubsection[{\texorpdfstring{update\+Bridge\+User\+Id(std\+::string ip, std\+::string port, std\+::string new\+Bridge\+User\+Id)}{updateBridgeUserId(std::string ip, std::string port, std::string newBridgeUserId)}}]{\setlength{\rightskip}{0pt plus 5cm}void Session\+::update\+Bridge\+User\+Id (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{ip, }
+\item[{std\+::string}]{port, }
+\item[{std\+::string}]{new\+Bridge\+User\+Id}
+\end{DoxyParamCaption}
+)}\hypertarget{classSession_a66b9558368c410a57959d34b95d92d85}{}\label{classSession_a66b9558368c410a57959d34b95d92d85}
+
+
+Update a Bridge\+User\+ID\textquotesingle{}s userid of a currently logged in user with ip and port. 
+
+Make changes to a record in the database
+
+
+\begin{DoxyParams}{Parameters}
+{\em ip} & is used to get the bridge id to be updated from Bridge\+User\+Id. \\
+\hline
+{\em port} & is used to get the bridge id to be updated from Bridge\+User\+Id. \\
+\hline
+{\em new\+Bridge\+User\+Id} & is the new data to be updated to bridge\+User\+ID. \\
+\hline
+\end{DoxyParams}
+\index{Session@{Session}!update\+User@{update\+User}}
+\index{update\+User@{update\+User}!Session@{Session}}
+\subsubsection[{\texorpdfstring{update\+User(\+User $\ast$new\+User)}{updateUser(User *newUser)}}]{\setlength{\rightskip}{0pt plus 5cm}void Session\+::update\+User (
+\begin{DoxyParamCaption}
+\item[{{\bf User} $\ast$}]{new\+User}
+\end{DoxyParamCaption}
+)}\hypertarget{classSession_a646f3f09d40303c6539c7bbacb93893e}{}\label{classSession_a646f3f09d40303c6539c7bbacb93893e}
+
+
+Update the currently logged in user with the data in new\+User. 
+
+Update the currently logged in user with the new \hyperlink{classUser}{User} object that is passed in through the parameters.
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+User} & a \hyperlink{classUser}{User} object that holds the new data. \\
+\hline
+\end{DoxyParams}
+\index{Session@{Session}!user@{user}}
+\index{user@{user}!Session@{Session}}
+\subsubsection[{\texorpdfstring{user()}{user()}}]{\setlength{\rightskip}{0pt plus 5cm}dbo\+::ptr$<$ {\bf User} $>$ Session\+::user (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classSession_a8869e1a43a0131699f9dc234c96b45c9}{}\label{classSession_a8869e1a43a0131699f9dc234c96b45c9}
+
+
+Get the database object of \hyperlink{classUser}{User} of the currently logged in user. 
+
+A helper function that is used to get the currently logged in user for other session functions to easily find and user.
+
+\begin{DoxyReturn}{Returns}
+the database object of \hyperlink{classUser}{User} of the currently logged in user. 
+\end{DoxyReturn}
+\index{Session@{Session}!user@{user}}
+\index{user@{user}!Session@{Session}}
+\subsubsection[{\texorpdfstring{user(const Wt\+::\+Auth\+::\+User \&auth\+User)}{user(const Wt::Auth::User &authUser)}}]{\setlength{\rightskip}{0pt plus 5cm}dbo\+::ptr$<$ {\bf User} $>$ Session\+::user (
+\begin{DoxyParamCaption}
+\item[{const Wt\+::\+Auth\+::\+User \&}]{auth\+User}
+\end{DoxyParamCaption}
+)}\hypertarget{classSession_af4b107688e55ec0614d8181688c7dee7}{}\label{classSession_af4b107688e55ec0614d8181688c7dee7}
+
+
+Get the database object of \hyperlink{classUser}{User} of the currently logged in user. 
+
+A helper function that is used to get the currently logged in user for other session functions to easily find and user. An overloaded function to allow the auth\+User configuration to be passed in.
+
+
+\begin{DoxyParams}{Parameters}
+{\em auth\+User} & configuration of the user. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the database object of \hyperlink{classUser}{User} of the currently logged in user. 
+\end{DoxyReturn}
+\index{Session@{Session}!user\+Name@{user\+Name}}
+\index{user\+Name@{user\+Name}!Session@{Session}}
+\subsubsection[{\texorpdfstring{user\+Name() const }{userName() const }}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Session\+::user\+Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classSession_a4e3ae70e1af1b975bb0cb11c48f8d0a0}{}\label{classSession_a4e3ae70e1af1b975bb0cb11c48f8d0a0}
+
+
+Get the username of the currently logged in user. 
+
+Gets the username/email of the currently logged in user that was created during the registration page. depending on what the model was set for the Auth service.
+
+\begin{DoxyReturn}{Returns}
+the string of the username of the currently logged in user. 
+\end{DoxyReturn}
+\index{Session@{Session}!users@{users}}
+\index{users@{users}!Session@{Session}}
+\subsubsection[{\texorpdfstring{users()}{users()}}]{\setlength{\rightskip}{0pt plus 5cm}Auth\+::\+Abstract\+User\+Database \& Session\+::users (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classSession_af91c8b22a14acf05e46265698deb8af4}{}\label{classSession_af91c8b22a14acf05e46265698deb8af4}
+
+
+Getter method for user authorization information. 
+
+Used for setting the model of the authorization service.
+
+\begin{DoxyReturn}{Returns}
+Returns the user authorization database. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{Session_8h}{Session.\+h}\item 
+\hyperlink{Session_8C}{Session.\+C}\end{DoxyCompactItemize}

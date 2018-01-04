@@ -1,0 +1,83 @@
+\hypertarget{classUserDetailsModel}{}\section{User\+Details\+Model Class Reference}
+\label{classUserDetailsModel}\index{User\+Details\+Model@{User\+Details\+Model}}
+
+
+Inheritance diagram for User\+Details\+Model\+:
+% FIG 0
+
+
+Collaboration diagram for User\+Details\+Model\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classUserDetailsModel_aac16af78a18e4a99a6666d85914af5d5}{User\+Details\+Model} (\hyperlink{classSession}{Session} \&session, Wt\+::\+W\+Object $\ast$parent=0)
+\begin{DoxyCompactList}\small\item\em Constructor for \hyperlink{classUserDetailsModel}{User\+Details\+Model}. \end{DoxyCompactList}\item 
+void \hyperlink{classUserDetailsModel_a0216d9fc37c8528a5fd49756529d4f57}{save} (const Wt\+::\+Auth\+::\+User \&user)
+\begin{DoxyCompactList}\small\item\em Save the data that was entered into the form into the db. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const Field {\bfseries First\+Name\+Field} = \char`\"{}first-\/name\char`\"{}\hypertarget{classUserDetailsModel_a5106e62fceceff6333718c1c88cee6cf}{}\label{classUserDetailsModel_a5106e62fceceff6333718c1c88cee6cf}
+
+\item 
+static const Field {\bfseries Last\+Name\+Field} = \char`\"{}last-\/name\char`\"{}\hypertarget{classUserDetailsModel_a1d1e2d4300151876ed221b080860b004}{}\label{classUserDetailsModel_a1d1e2d4300151876ed221b080860b004}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classSession}{Session} \& {\bfseries session\+\_\+}\hypertarget{classUserDetailsModel_a97ed29b3f1835399da3765b50f397d5f}{}\label{classUserDetailsModel_a97ed29b3f1835399da3765b50f397d5f}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{User\+Details\+Model@{User\+Details\+Model}!User\+Details\+Model@{User\+Details\+Model}}
+\index{User\+Details\+Model@{User\+Details\+Model}!User\+Details\+Model@{User\+Details\+Model}}
+\subsubsection[{\texorpdfstring{User\+Details\+Model(\+Session \&session, Wt\+::\+W\+Object $\ast$parent=0)}{UserDetailsModel(Session &session, Wt::WObject *parent=0)}}]{\setlength{\rightskip}{0pt plus 5cm}User\+Details\+Model\+::\+User\+Details\+Model (
+\begin{DoxyParamCaption}
+\item[{{\bf Session} \&}]{session, }
+\item[{Wt\+::\+W\+Object $\ast$}]{parent = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}\hypertarget{classUserDetailsModel_aac16af78a18e4a99a6666d85914af5d5}{}\label{classUserDetailsModel_aac16af78a18e4a99a6666d85914af5d5}
+
+
+Constructor for \hyperlink{classUserDetailsModel}{User\+Details\+Model}. 
+
+creates a wformmodel to be added onto our registration section to take in first and last name
+
+
+\begin{DoxyParams}{Parameters}
+{\em session} & the current session data of the app. \\
+\hline
+{\em parent} & Wobject this wform\+Model it will belong to. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{User\+Details\+Model@{User\+Details\+Model}!save@{save}}
+\index{save@{save}!User\+Details\+Model@{User\+Details\+Model}}
+\subsubsection[{\texorpdfstring{save(const Wt\+::\+Auth\+::\+User \&user)}{save(const Wt::Auth::User &user)}}]{\setlength{\rightskip}{0pt plus 5cm}void User\+Details\+Model\+::save (
+\begin{DoxyParamCaption}
+\item[{const Wt\+::\+Auth\+::\+User \&}]{auth\+User}
+\end{DoxyParamCaption}
+)}\hypertarget{classUserDetailsModel_a0216d9fc37c8528a5fd49756529d4f57}{}\label{classUserDetailsModel_a0216d9fc37c8528a5fd49756529d4f57}
+
+
+Save the data that was entered into the form into the db. 
+
+After this function is called grab the data from the W\+Form\+::\+Field data and store it into their respective locations in the database.
+
+
+\begin{DoxyParams}{Parameters}
+{\em auth\+User} & the auth model of the user. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+User\+Details\+Model.\+h\item 
+\hyperlink{UserDetailsModel_8C}{User\+Details\+Model.\+C}\end{DoxyCompactItemize}

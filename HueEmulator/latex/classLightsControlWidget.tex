@@ -1,0 +1,514 @@
+\hypertarget{classLightsControlWidget}{}\section{Lights\+Control\+Widget Class Reference}
+\label{classLightsControlWidget}\index{Lights\+Control\+Widget@{Lights\+Control\+Widget}}
+
+
+Inheritance diagram for Lights\+Control\+Widget\+:
+% FIG 0
+
+
+Collaboration diagram for Lights\+Control\+Widget\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classLightsControlWidget_a15e1439f70466b481134b8eba8f3cd5d}{Lights\+Control\+Widget} (\hyperlink{classSession}{Session} $\ast$session, Wt\+::\+W\+Container\+Widget $\ast$parent=0)
+\begin{DoxyCompactList}\small\item\em creates a \hyperlink{classLightsControlWidget}{Lights\+Control\+Widget} \end{DoxyCompactList}\item 
+void \hyperlink{classLightsControlWidget_a595489c5a7076eeaf32fee9d48bbd1fe}{update} ()
+\begin{DoxyCompactList}\small\item\em loads \hyperlink{classLightsControlWidget}{Lights\+Control\+Widget} page \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Wt\+::\+Http\+::\+Client $\ast$ \hyperlink{classLightsControlWidget_a4a43f535b11a174e2f9a5b9ffe773557}{connect} ()
+\begin{DoxyCompactList}\small\item\em creates an H\+T\+TP client \end{DoxyCompactList}\item 
+void \hyperlink{classLightsControlWidget_ad5e2249e08c869e8bd9b190937b93f3c}{on} ()
+\begin{DoxyCompactList}\small\item\em turns a light on \end{DoxyCompactList}\item 
+void \hyperlink{classLightsControlWidget_a5d39b8ccaa59c8a8f0c8669b45cf0eb2}{off} ()
+\begin{DoxyCompactList}\small\item\em turns a light off \end{DoxyCompactList}\item 
+void \hyperlink{classLightsControlWidget_a9d7e8c4b0f0549a9a7c3ef96c4d5eef0}{hue} ()
+\begin{DoxyCompactList}\small\item\em changes a light\textquotesingle{}s hue \end{DoxyCompactList}\item 
+void \hyperlink{classLightsControlWidget_a05224e6a3f891fb29bbf85548aad4684}{bright} ()
+\begin{DoxyCompactList}\small\item\em changes a light\textquotesingle{}s brightness \end{DoxyCompactList}\item 
+void \hyperlink{classLightsControlWidget_a154f0a2b37fbbd67c920b392086ec60c}{sat} ()
+\begin{DoxyCompactList}\small\item\em changes a light\textquotesingle{}s saturation \end{DoxyCompactList}\item 
+void \hyperlink{classLightsControlWidget_aa0b663545779e7dd38fa61e456b158ec}{name} ()
+\begin{DoxyCompactList}\small\item\em changes a light\textquotesingle{}s name \end{DoxyCompactList}\item 
+void \hyperlink{classLightsControlWidget_a10fad17f0722f34402a906c77c1711bb}{transition} ()
+\begin{DoxyCompactList}\small\item\em changes a light\textquotesingle{}s transition time \end{DoxyCompactList}\item 
+void \hyperlink{classLightsControlWidget_aedb19ca01377b31ba326bd0e0f82138d}{light\+One} ()
+\begin{DoxyCompactList}\small\item\em selects light 1 to change \end{DoxyCompactList}\item 
+void \hyperlink{classLightsControlWidget_a8606dd33428f5c5cd7a1e686053b296d}{light\+Two} ()
+\begin{DoxyCompactList}\small\item\em selects light 2 to change \end{DoxyCompactList}\item 
+void \hyperlink{classLightsControlWidget_a670eae4637f1cc78febb3a751e4272dc}{light\+Three} ()
+\begin{DoxyCompactList}\small\item\em selects light 3 to change \end{DoxyCompactList}\item 
+void \hyperlink{classLightsControlWidget_a4b17ac832e826eb5665a8f69fe73c5f4}{return\+Bridge} ()
+\begin{DoxyCompactList}\small\item\em returns user to the bridge page \end{DoxyCompactList}\item 
+void \hyperlink{classLightsControlWidget_aa34bd45ed4b9e07481634641bfa49736}{delete\+Bridge} ()
+\begin{DoxyCompactList}\small\item\em deletes a bridge \end{DoxyCompactList}\item 
+void \hyperlink{classLightsControlWidget_a0c39f8d5f113562f95cd80b1074ecc57}{custom\+Create} ()
+\begin{DoxyCompactList}\small\item\em creates a custom light mode \end{DoxyCompactList}\item 
+void \hyperlink{classLightsControlWidget_abb67e6addbaed2126b6afb21e9a262d2}{custom\+Mode} ()
+\begin{DoxyCompactList}\small\item\em implementss acustom light mode \end{DoxyCompactList}\item 
+void \hyperlink{classLightsControlWidget_a0fd696e3500ca64cfeddd08738e5b6cf}{handle\+Http\+Response} (boost\+::system\+::error\+\_\+code err, const Wt\+::\+Http\+::\+Message \&response)
+\begin{DoxyCompactList}\small\item\em handles response and displays light information \end{DoxyCompactList}\item 
+void \hyperlink{classLightsControlWidget_ace0f0ce6387f25f695ac83a46a765a74}{handle\+Http\+Response\+Name} (boost\+::system\+::error\+\_\+code err, const Wt\+::\+Http\+::\+Message \&response)
+\item 
+void \hyperlink{classLightsControlWidget_a9cc86543ee2df1d0bb09c35b0e2fac90}{handle\+Http\+Response\+V\+O\+ID} (boost\+::system\+::error\+\_\+code err, const Wt\+::\+Http\+::\+Message \&response)
+\begin{DoxyCompactList}\small\item\em handles response and does nothing \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classSession}{Session} $\ast$ \hyperlink{classLightsControlWidget_ad27e600149ef3590947a491470dcb4c8}{session\+\_\+}
+\item 
+std\+::string \hyperlink{classLightsControlWidget_ace513933420460bc8fbb508d865491d4}{current\+Light} = \char`\"{}0\char`\"{}
+\item 
+std\+::string \hyperlink{classLightsControlWidget_aa2855e24d3d1afbcf6fcd2992abc47af}{ip} = \char`\"{}\char`\"{}
+\item 
+std\+::string \hyperlink{classLightsControlWidget_aa26d4553e677dec57b64575a6d6d8558}{user\+ID} = \char`\"{}\char`\"{}
+\item 
+std\+::string \hyperlink{classLightsControlWidget_a5760f7ec7c3c36e8faf00ae6b2633ab5}{port} = \char`\"{}\char`\"{}
+\item 
+std\+::string \hyperlink{classLightsControlWidget_a2db5ec044ec1156bf73dc2ae0a997289}{custom\+Hue}
+\item 
+std\+::string \hyperlink{classLightsControlWidget_ac19d3dd4895b03ccfe686cffd51c27fd}{custom\+Sat}
+\item 
+std\+::string \hyperlink{classLightsControlWidget_a5d4fcb296c966e544f26269debbc0a85}{custom\+Bri}
+\item 
+Wt\+::\+W\+Line\+Edit $\ast$ \hyperlink{classLightsControlWidget_aff7b495c562df75a6006ad6bef43f96f}{name\+Edit\+\_\+}
+\item 
+Wt\+::\+W\+Slider $\ast$ \hyperlink{classLightsControlWidget_af957447fbfc39f4f0c87081be5cf2bf5}{sat\+Scale\+Slider\+\_\+}
+\item 
+Wt\+::\+W\+Slider $\ast$ \hyperlink{classLightsControlWidget_aafc30b2cc242d6ac2575128a491298d3}{bri\+Scale\+Slider\+\_\+}
+\item 
+Wt\+::\+W\+Slider $\ast$ \hyperlink{classLightsControlWidget_a71c03598de2481409316e7d1ca51fda0}{hue\+Scale\+Slider\+\_\+}
+\item 
+Wt\+::\+W\+Slider $\ast$ \hyperlink{classLightsControlWidget_af4bd66ddc5244ab9cf62dea9e5ffb1cf}{transition\+Scale\+Slider\+\_\+}
+\item 
+Wt\+::\+W\+Text $\ast$ \hyperlink{classLightsControlWidget_a5d33dac9a47a7862e6cc060e1e0fb335}{one\+Light\+\_\+}
+\item 
+Wt\+::\+W\+Text $\ast$ \hyperlink{classLightsControlWidget_a1148be7db38088bb15fc356e06e13b65}{two\+Light\+\_\+}
+\item 
+Wt\+::\+W\+Text $\ast$ \hyperlink{classLightsControlWidget_a82b1ded41fd126f7f4e041ab5b0b7ccb}{three\+Light\+\_\+}
+\item 
+Wt\+::\+W\+Text $\ast$ \hyperlink{classLightsControlWidget_a27b0c91e6a4776c8b03dfc5324e3e365}{change\+\_\+}
+\item 
+Wt\+::\+W\+Text $\ast$ \hyperlink{classLightsControlWidget_a071eae068aef8f47a36e728ae3ad6378}{light\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Lights\+Control\+Widget@{Lights\+Control\+Widget}!Lights\+Control\+Widget@{Lights\+Control\+Widget}}
+\index{Lights\+Control\+Widget@{Lights\+Control\+Widget}!Lights\+Control\+Widget@{Lights\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{Lights\+Control\+Widget(\+Session $\ast$session, Wt\+::\+W\+Container\+Widget $\ast$parent=0)}{LightsControlWidget(Session *session, Wt::WContainerWidget *parent=0)}}]{\setlength{\rightskip}{0pt plus 5cm}Lights\+Control\+Widget\+::\+Lights\+Control\+Widget (
+\begin{DoxyParamCaption}
+\item[{{\bf Session} $\ast$}]{session, }
+\item[{Wt\+::\+W\+Container\+Widget $\ast$}]{parent = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}\hypertarget{classLightsControlWidget_a15e1439f70466b481134b8eba8f3cd5d}{}\label{classLightsControlWidget_a15e1439f70466b481134b8eba8f3cd5d}
+
+
+creates a \hyperlink{classLightsControlWidget}{Lights\+Control\+Widget} 
+
+creates a \hyperlink{classLightsControlWidget}{Lights\+Control\+Widget} that is tied to a database session. The Widget also has a parent Container Widget
+
+
+\begin{DoxyParams}{Parameters}
+{\em session} & the database session \\
+\hline
+{\em parent} & the parent Widget Container \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classLightsControlWidget}{Lights\+Control\+Widget} 
+\end{DoxyReturn}
+
+
+\subsection{Member Function Documentation}
+\index{Lights\+Control\+Widget@{Lights\+Control\+Widget}!bright@{bright}}
+\index{bright@{bright}!Lights\+Control\+Widget@{Lights\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{bright()}{bright()}}]{\setlength{\rightskip}{0pt plus 5cm}void Lights\+Control\+Widget\+::bright (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classLightsControlWidget_a05224e6a3f891fb29bbf85548aad4684}{}\label{classLightsControlWidget_a05224e6a3f891fb29bbf85548aad4684}
+
+
+changes a light\textquotesingle{}s brightness 
+
+changes a light\textquotesingle{}s brightness based on the brightness slider value. A light must be selected first.
+
+\begin{DoxyReturn}{Returns}
+Void 
+\end{DoxyReturn}
+\index{Lights\+Control\+Widget@{Lights\+Control\+Widget}!connect@{connect}}
+\index{connect@{connect}!Lights\+Control\+Widget@{Lights\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{connect()}{connect()}}]{\setlength{\rightskip}{0pt plus 5cm}Http\+::\+Client $\ast$ Lights\+Control\+Widget\+::connect (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classLightsControlWidget_a4a43f535b11a174e2f9a5b9ffe773557}{}\label{classLightsControlWidget_a4a43f535b11a174e2f9a5b9ffe773557}
+
+
+creates an H\+T\+TP client 
+
+creates an H\+T\+TP client that will be used to send either a put request change a light or a get request to retrive a light\textquotesingle{}s state
+
+\begin{DoxyReturn}{Returns}
+Http\+::\+Client 
+\end{DoxyReturn}
+\index{Lights\+Control\+Widget@{Lights\+Control\+Widget}!custom\+Create@{custom\+Create}}
+\index{custom\+Create@{custom\+Create}!Lights\+Control\+Widget@{Lights\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{custom\+Create()}{customCreate()}}]{\setlength{\rightskip}{0pt plus 5cm}void Lights\+Control\+Widget\+::custom\+Create (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classLightsControlWidget_a0c39f8d5f113562f95cd80b1074ecc57}{}\label{classLightsControlWidget_a0c39f8d5f113562f95cd80b1074ecc57}
+
+
+creates a custom light mode 
+
+takes the chosen hue, saturation and brightness values from the sliders and creates a custom mode button. If custom moe already exits, new custom mode overrides the old one.
+
+\begin{DoxyReturn}{Returns}
+Void 
+\end{DoxyReturn}
+\index{Lights\+Control\+Widget@{Lights\+Control\+Widget}!custom\+Mode@{custom\+Mode}}
+\index{custom\+Mode@{custom\+Mode}!Lights\+Control\+Widget@{Lights\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{custom\+Mode()}{customMode()}}]{\setlength{\rightskip}{0pt plus 5cm}void Lights\+Control\+Widget\+::custom\+Mode (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classLightsControlWidget_abb67e6addbaed2126b6afb21e9a262d2}{}\label{classLightsControlWidget_abb67e6addbaed2126b6afb21e9a262d2}
+
+
+implementss acustom light mode 
+
+changes a light to the hue, saturation and brightness in the custom mode
+
+\begin{DoxyReturn}{Returns}
+Void 
+\end{DoxyReturn}
+\index{Lights\+Control\+Widget@{Lights\+Control\+Widget}!delete\+Bridge@{delete\+Bridge}}
+\index{delete\+Bridge@{delete\+Bridge}!Lights\+Control\+Widget@{Lights\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{delete\+Bridge()}{deleteBridge()}}]{\setlength{\rightskip}{0pt plus 5cm}void Lights\+Control\+Widget\+::delete\+Bridge (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classLightsControlWidget_aa34bd45ed4b9e07481634641bfa49736}{}\label{classLightsControlWidget_aa34bd45ed4b9e07481634641bfa49736}
+
+
+deletes a bridge 
+
+removes a bridge from session and returns user back to the bridge page
+
+\begin{DoxyReturn}{Returns}
+Void 
+\end{DoxyReturn}
+\index{Lights\+Control\+Widget@{Lights\+Control\+Widget}!handle\+Http\+Response@{handle\+Http\+Response}}
+\index{handle\+Http\+Response@{handle\+Http\+Response}!Lights\+Control\+Widget@{Lights\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{handle\+Http\+Response(boost\+::system\+::error\+\_\+code err, const Wt\+::\+Http\+::\+Message \&response)}{handleHttpResponse(boost::system::error_code err, const Wt::Http::Message &response)}}]{\setlength{\rightskip}{0pt plus 5cm}void Lights\+Control\+Widget\+::handle\+Http\+Response (
+\begin{DoxyParamCaption}
+\item[{boost\+::system\+::error\+\_\+code}]{err, }
+\item[{const Wt\+::\+Http\+::\+Message \&}]{response}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classLightsControlWidget_a0fd696e3500ca64cfeddd08738e5b6cf}{}\label{classLightsControlWidget_a0fd696e3500ca64cfeddd08738e5b6cf}
+
+
+handles response and displays light information 
+
+gets the current state of a light and adjusts the slider values to reflect the light\textquotesingle{}s state. Called when a user chooses a light to change
+
+
+\begin{DoxyParams}{Parameters}
+{\em err} & the response\textquotesingle{}s error code \\
+\hline
+{\em response} & the response \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Void 
+\end{DoxyReturn}
+\index{Lights\+Control\+Widget@{Lights\+Control\+Widget}!handle\+Http\+Response\+Name@{handle\+Http\+Response\+Name}}
+\index{handle\+Http\+Response\+Name@{handle\+Http\+Response\+Name}!Lights\+Control\+Widget@{Lights\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{handle\+Http\+Response\+Name(boost\+::system\+::error\+\_\+code err, const Wt\+::\+Http\+::\+Message \&response)}{handleHttpResponseName(boost::system::error_code err, const Wt::Http::Message &response)}}]{\setlength{\rightskip}{0pt plus 5cm}void Lights\+Control\+Widget\+::handle\+Http\+Response\+Name (
+\begin{DoxyParamCaption}
+\item[{boost\+::system\+::error\+\_\+code}]{err, }
+\item[{const Wt\+::\+Http\+::\+Message \&}]{response}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classLightsControlWidget_ace0f0ce6387f25f695ac83a46a765a74}{}\label{classLightsControlWidget_ace0f0ce6387f25f695ac83a46a765a74}
+@brief handles response for light name changes
+
+uses \hyperlink{classLightsControlWidget_a595489c5a7076eeaf32fee9d48bbd1fe}{update()} to refresh the page with changes to light names. Called whea user change the name of a light
+
+
+\begin{DoxyParams}{Parameters}
+{\em err} & the response\textquotesingle{}s error code \\
+\hline
+{\em response} & the response \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Void 
+\end{DoxyReturn}
+\index{Lights\+Control\+Widget@{Lights\+Control\+Widget}!handle\+Http\+Response\+V\+O\+ID@{handle\+Http\+Response\+V\+O\+ID}}
+\index{handle\+Http\+Response\+V\+O\+ID@{handle\+Http\+Response\+V\+O\+ID}!Lights\+Control\+Widget@{Lights\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{handle\+Http\+Response\+V\+O\+I\+D(boost\+::system\+::error\+\_\+code err, const Wt\+::\+Http\+::\+Message \&response)}{handleHttpResponseVOID(boost::system::error_code err, const Wt::Http::Message &response)}}]{\setlength{\rightskip}{0pt plus 5cm}void Lights\+Control\+Widget\+::handle\+Http\+Response\+V\+O\+ID (
+\begin{DoxyParamCaption}
+\item[{boost\+::system\+::error\+\_\+code}]{err, }
+\item[{const Wt\+::\+Http\+::\+Message \&}]{response}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classLightsControlWidget_a9cc86543ee2df1d0bb09c35b0e2fac90}{}\label{classLightsControlWidget_a9cc86543ee2df1d0bb09c35b0e2fac90}
+
+
+handles response and does nothing 
+
+does nothing. Used for functions where the page does not need to be refreshed nor does light information need to be fetched again.
+
+
+\begin{DoxyParams}{Parameters}
+{\em err} & the response\textquotesingle{}s error code \\
+\hline
+{\em response} & the response \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Void 
+\end{DoxyReturn}
+\index{Lights\+Control\+Widget@{Lights\+Control\+Widget}!hue@{hue}}
+\index{hue@{hue}!Lights\+Control\+Widget@{Lights\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{hue()}{hue()}}]{\setlength{\rightskip}{0pt plus 5cm}void Lights\+Control\+Widget\+::hue (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classLightsControlWidget_a9d7e8c4b0f0549a9a7c3ef96c4d5eef0}{}\label{classLightsControlWidget_a9d7e8c4b0f0549a9a7c3ef96c4d5eef0}
+
+
+changes a light\textquotesingle{}s hue 
+
+changes a light\textquotesingle{}s hue based on the hue value. A light must be selected first.
+
+\begin{DoxyReturn}{Returns}
+Void 
+\end{DoxyReturn}
+\index{Lights\+Control\+Widget@{Lights\+Control\+Widget}!light\+One@{light\+One}}
+\index{light\+One@{light\+One}!Lights\+Control\+Widget@{Lights\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{light\+One()}{lightOne()}}]{\setlength{\rightskip}{0pt plus 5cm}void Lights\+Control\+Widget\+::light\+One (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classLightsControlWidget_aedb19ca01377b31ba326bd0e0f82138d}{}\label{classLightsControlWidget_aedb19ca01377b31ba326bd0e0f82138d}
+
+
+selects light 1 to change 
+
+selects light 1 such that any changes in state will be applied to light 1
+
+\begin{DoxyReturn}{Returns}
+Void 
+\end{DoxyReturn}
+\index{Lights\+Control\+Widget@{Lights\+Control\+Widget}!light\+Three@{light\+Three}}
+\index{light\+Three@{light\+Three}!Lights\+Control\+Widget@{Lights\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{light\+Three()}{lightThree()}}]{\setlength{\rightskip}{0pt plus 5cm}void Lights\+Control\+Widget\+::light\+Three (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classLightsControlWidget_a670eae4637f1cc78febb3a751e4272dc}{}\label{classLightsControlWidget_a670eae4637f1cc78febb3a751e4272dc}
+
+
+selects light 3 to change 
+
+selects light 3 such that any changes in state will be applied to light 3
+
+\begin{DoxyReturn}{Returns}
+Void 
+\end{DoxyReturn}
+\index{Lights\+Control\+Widget@{Lights\+Control\+Widget}!light\+Two@{light\+Two}}
+\index{light\+Two@{light\+Two}!Lights\+Control\+Widget@{Lights\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{light\+Two()}{lightTwo()}}]{\setlength{\rightskip}{0pt plus 5cm}void Lights\+Control\+Widget\+::light\+Two (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classLightsControlWidget_a8606dd33428f5c5cd7a1e686053b296d}{}\label{classLightsControlWidget_a8606dd33428f5c5cd7a1e686053b296d}
+
+
+selects light 2 to change 
+
+selects light 2 such that any changes in state will be applied to light 2
+
+\begin{DoxyReturn}{Returns}
+Void 
+\end{DoxyReturn}
+\index{Lights\+Control\+Widget@{Lights\+Control\+Widget}!name@{name}}
+\index{name@{name}!Lights\+Control\+Widget@{Lights\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{name()}{name()}}]{\setlength{\rightskip}{0pt plus 5cm}void Lights\+Control\+Widget\+::name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classLightsControlWidget_aa0b663545779e7dd38fa61e456b158ec}{}\label{classLightsControlWidget_aa0b663545779e7dd38fa61e456b158ec}
+
+
+changes a light\textquotesingle{}s name 
+
+changes a light\textquotesingle{}s name. A light must be selected first.
+
+\begin{DoxyReturn}{Returns}
+Void 
+\end{DoxyReturn}
+\index{Lights\+Control\+Widget@{Lights\+Control\+Widget}!off@{off}}
+\index{off@{off}!Lights\+Control\+Widget@{Lights\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{off()}{off()}}]{\setlength{\rightskip}{0pt plus 5cm}void Lights\+Control\+Widget\+::off (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classLightsControlWidget_a5d39b8ccaa59c8a8f0c8669b45cf0eb2}{}\label{classLightsControlWidget_a5d39b8ccaa59c8a8f0c8669b45cf0eb2}
+
+
+turns a light off 
+
+turns a light off. A light must be selected first.
+
+\begin{DoxyReturn}{Returns}
+Void 
+\end{DoxyReturn}
+\index{Lights\+Control\+Widget@{Lights\+Control\+Widget}!on@{on}}
+\index{on@{on}!Lights\+Control\+Widget@{Lights\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{on()}{on()}}]{\setlength{\rightskip}{0pt plus 5cm}void Lights\+Control\+Widget\+::on (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classLightsControlWidget_ad5e2249e08c869e8bd9b190937b93f3c}{}\label{classLightsControlWidget_ad5e2249e08c869e8bd9b190937b93f3c}
+
+
+turns a light on 
+
+turns a light on. A light must be selected first.
+
+\begin{DoxyReturn}{Returns}
+Void 
+\end{DoxyReturn}
+\index{Lights\+Control\+Widget@{Lights\+Control\+Widget}!return\+Bridge@{return\+Bridge}}
+\index{return\+Bridge@{return\+Bridge}!Lights\+Control\+Widget@{Lights\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{return\+Bridge()}{returnBridge()}}]{\setlength{\rightskip}{0pt plus 5cm}void Lights\+Control\+Widget\+::return\+Bridge (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classLightsControlWidget_a4b17ac832e826eb5665a8f69fe73c5f4}{}\label{classLightsControlWidget_a4b17ac832e826eb5665a8f69fe73c5f4}
+
+
+returns user to the bridge page 
+
+returns user the bridge page by setting the internal path
+
+\begin{DoxyReturn}{Returns}
+Void 
+\end{DoxyReturn}
+\index{Lights\+Control\+Widget@{Lights\+Control\+Widget}!sat@{sat}}
+\index{sat@{sat}!Lights\+Control\+Widget@{Lights\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{sat()}{sat()}}]{\setlength{\rightskip}{0pt plus 5cm}void Lights\+Control\+Widget\+::sat (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classLightsControlWidget_a154f0a2b37fbbd67c920b392086ec60c}{}\label{classLightsControlWidget_a154f0a2b37fbbd67c920b392086ec60c}
+
+
+changes a light\textquotesingle{}s saturation 
+
+changes a light\textquotesingle{}s saturation based on the saturation slider value. A light must be selected first.
+
+\begin{DoxyReturn}{Returns}
+Void 
+\end{DoxyReturn}
+\index{Lights\+Control\+Widget@{Lights\+Control\+Widget}!transition@{transition}}
+\index{transition@{transition}!Lights\+Control\+Widget@{Lights\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{transition()}{transition()}}]{\setlength{\rightskip}{0pt plus 5cm}void Lights\+Control\+Widget\+::transition (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classLightsControlWidget_a10fad17f0722f34402a906c77c1711bb}{}\label{classLightsControlWidget_a10fad17f0722f34402a906c77c1711bb}
+
+
+changes a light\textquotesingle{}s transition time 
+
+changes a light\textquotesingle{}s transition time based on the transition slider value. A light must be selected first.
+
+\begin{DoxyReturn}{Returns}
+Void 
+\end{DoxyReturn}
+\index{Lights\+Control\+Widget@{Lights\+Control\+Widget}!update@{update}}
+\index{update@{update}!Lights\+Control\+Widget@{Lights\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{update()}{update()}}]{\setlength{\rightskip}{0pt plus 5cm}void Lights\+Control\+Widget\+::update (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classLightsControlWidget_a595489c5a7076eeaf32fee9d48bbd1fe}{}\label{classLightsControlWidget_a595489c5a7076eeaf32fee9d48bbd1fe}
+
+
+loads \hyperlink{classLightsControlWidget}{Lights\+Control\+Widget} page 
+
+loads the \hyperlink{classLightsControlWidget}{Lights\+Control\+Widget} page which displays changes to a light\textquotesingle{}s name, and options to change a light\textquotesingle{}s state
+
+\begin{DoxyReturn}{Returns}
+Void 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\index{Lights\+Control\+Widget@{Lights\+Control\+Widget}!bri\+Scale\+Slider\+\_\+@{bri\+Scale\+Slider\+\_\+}}
+\index{bri\+Scale\+Slider\+\_\+@{bri\+Scale\+Slider\+\_\+}!Lights\+Control\+Widget@{Lights\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{bri\+Scale\+Slider\+\_\+}{briScaleSlider_}}]{\setlength{\rightskip}{0pt plus 5cm}Wt\+::\+W\+Slider$\ast$ Lights\+Control\+Widget\+::bri\+Scale\+Slider\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classLightsControlWidget_aafc30b2cc242d6ac2575128a491298d3}{}\label{classLightsControlWidget_aafc30b2cc242d6ac2575128a491298d3}
+light\textquotesingle{}s brightness selection \index{Lights\+Control\+Widget@{Lights\+Control\+Widget}!change\+\_\+@{change\+\_\+}}
+\index{change\+\_\+@{change\+\_\+}!Lights\+Control\+Widget@{Lights\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{change\+\_\+}{change_}}]{\setlength{\rightskip}{0pt plus 5cm}Wt\+::\+W\+Text$\ast$ Lights\+Control\+Widget\+::change\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classLightsControlWidget_a27b0c91e6a4776c8b03dfc5324e3e365}{}\label{classLightsControlWidget_a27b0c91e6a4776c8b03dfc5324e3e365}
+status of a light change \index{Lights\+Control\+Widget@{Lights\+Control\+Widget}!current\+Light@{current\+Light}}
+\index{current\+Light@{current\+Light}!Lights\+Control\+Widget@{Lights\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{current\+Light}{currentLight}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Lights\+Control\+Widget\+::current\+Light = \char`\"{}0\char`\"{}\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classLightsControlWidget_ace513933420460bc8fbb508d865491d4}{}\label{classLightsControlWidget_ace513933420460bc8fbb508d865491d4}
+the light that is currently being changed \index{Lights\+Control\+Widget@{Lights\+Control\+Widget}!custom\+Bri@{custom\+Bri}}
+\index{custom\+Bri@{custom\+Bri}!Lights\+Control\+Widget@{Lights\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{custom\+Bri}{customBri}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Lights\+Control\+Widget\+::custom\+Bri\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classLightsControlWidget_a5d4fcb296c966e544f26269debbc0a85}{}\label{classLightsControlWidget_a5d4fcb296c966e544f26269debbc0a85}
+custom brightness value \index{Lights\+Control\+Widget@{Lights\+Control\+Widget}!custom\+Hue@{custom\+Hue}}
+\index{custom\+Hue@{custom\+Hue}!Lights\+Control\+Widget@{Lights\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{custom\+Hue}{customHue}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Lights\+Control\+Widget\+::custom\+Hue\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classLightsControlWidget_a2db5ec044ec1156bf73dc2ae0a997289}{}\label{classLightsControlWidget_a2db5ec044ec1156bf73dc2ae0a997289}
+custom hue value \index{Lights\+Control\+Widget@{Lights\+Control\+Widget}!custom\+Sat@{custom\+Sat}}
+\index{custom\+Sat@{custom\+Sat}!Lights\+Control\+Widget@{Lights\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{custom\+Sat}{customSat}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Lights\+Control\+Widget\+::custom\+Sat\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classLightsControlWidget_ac19d3dd4895b03ccfe686cffd51c27fd}{}\label{classLightsControlWidget_ac19d3dd4895b03ccfe686cffd51c27fd}
+custom saturation value \index{Lights\+Control\+Widget@{Lights\+Control\+Widget}!hue\+Scale\+Slider\+\_\+@{hue\+Scale\+Slider\+\_\+}}
+\index{hue\+Scale\+Slider\+\_\+@{hue\+Scale\+Slider\+\_\+}!Lights\+Control\+Widget@{Lights\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{hue\+Scale\+Slider\+\_\+}{hueScaleSlider_}}]{\setlength{\rightskip}{0pt plus 5cm}Wt\+::\+W\+Slider$\ast$ Lights\+Control\+Widget\+::hue\+Scale\+Slider\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classLightsControlWidget_a71c03598de2481409316e7d1ca51fda0}{}\label{classLightsControlWidget_a71c03598de2481409316e7d1ca51fda0}
+light\textquotesingle{}s hue selection \index{Lights\+Control\+Widget@{Lights\+Control\+Widget}!ip@{ip}}
+\index{ip@{ip}!Lights\+Control\+Widget@{Lights\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{ip}{ip}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Lights\+Control\+Widget\+::ip = \char`\"{}\char`\"{}\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classLightsControlWidget_aa2855e24d3d1afbcf6fcd2992abc47af}{}\label{classLightsControlWidget_aa2855e24d3d1afbcf6fcd2992abc47af}
+bridge\textquotesingle{}s IP address \index{Lights\+Control\+Widget@{Lights\+Control\+Widget}!light\+\_\+@{light\+\_\+}}
+\index{light\+\_\+@{light\+\_\+}!Lights\+Control\+Widget@{Lights\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{light\+\_\+}{light_}}]{\setlength{\rightskip}{0pt plus 5cm}Wt\+::\+W\+Text$\ast$ Lights\+Control\+Widget\+::light\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classLightsControlWidget_a071eae068aef8f47a36e728ae3ad6378}{}\label{classLightsControlWidget_a071eae068aef8f47a36e728ae3ad6378}
+displays the light being changed \index{Lights\+Control\+Widget@{Lights\+Control\+Widget}!name\+Edit\+\_\+@{name\+Edit\+\_\+}}
+\index{name\+Edit\+\_\+@{name\+Edit\+\_\+}!Lights\+Control\+Widget@{Lights\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{name\+Edit\+\_\+}{nameEdit_}}]{\setlength{\rightskip}{0pt plus 5cm}Wt\+::\+W\+Line\+Edit$\ast$ Lights\+Control\+Widget\+::name\+Edit\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classLightsControlWidget_aff7b495c562df75a6006ad6bef43f96f}{}\label{classLightsControlWidget_aff7b495c562df75a6006ad6bef43f96f}
+light\textquotesingle{}s name to be changed \index{Lights\+Control\+Widget@{Lights\+Control\+Widget}!one\+Light\+\_\+@{one\+Light\+\_\+}}
+\index{one\+Light\+\_\+@{one\+Light\+\_\+}!Lights\+Control\+Widget@{Lights\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{one\+Light\+\_\+}{oneLight_}}]{\setlength{\rightskip}{0pt plus 5cm}Wt\+::\+W\+Text$\ast$ Lights\+Control\+Widget\+::one\+Light\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classLightsControlWidget_a5d33dac9a47a7862e6cc060e1e0fb335}{}\label{classLightsControlWidget_a5d33dac9a47a7862e6cc060e1e0fb335}
+light 1\textquotesingle{}s name \index{Lights\+Control\+Widget@{Lights\+Control\+Widget}!port@{port}}
+\index{port@{port}!Lights\+Control\+Widget@{Lights\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{port}{port}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Lights\+Control\+Widget\+::port = \char`\"{}\char`\"{}\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classLightsControlWidget_a5760f7ec7c3c36e8faf00ae6b2633ab5}{}\label{classLightsControlWidget_a5760f7ec7c3c36e8faf00ae6b2633ab5}
+bridge\textquotesingle{}s port number \index{Lights\+Control\+Widget@{Lights\+Control\+Widget}!sat\+Scale\+Slider\+\_\+@{sat\+Scale\+Slider\+\_\+}}
+\index{sat\+Scale\+Slider\+\_\+@{sat\+Scale\+Slider\+\_\+}!Lights\+Control\+Widget@{Lights\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{sat\+Scale\+Slider\+\_\+}{satScaleSlider_}}]{\setlength{\rightskip}{0pt plus 5cm}Wt\+::\+W\+Slider$\ast$ Lights\+Control\+Widget\+::sat\+Scale\+Slider\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classLightsControlWidget_af957447fbfc39f4f0c87081be5cf2bf5}{}\label{classLightsControlWidget_af957447fbfc39f4f0c87081be5cf2bf5}
+light\textquotesingle{}s saturation selection \index{Lights\+Control\+Widget@{Lights\+Control\+Widget}!session\+\_\+@{session\+\_\+}}
+\index{session\+\_\+@{session\+\_\+}!Lights\+Control\+Widget@{Lights\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{session\+\_\+}{session_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Session}$\ast$ Lights\+Control\+Widget\+::session\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classLightsControlWidget_ad27e600149ef3590947a491470dcb4c8}{}\label{classLightsControlWidget_ad27e600149ef3590947a491470dcb4c8}
+keeps track of light status \index{Lights\+Control\+Widget@{Lights\+Control\+Widget}!three\+Light\+\_\+@{three\+Light\+\_\+}}
+\index{three\+Light\+\_\+@{three\+Light\+\_\+}!Lights\+Control\+Widget@{Lights\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{three\+Light\+\_\+}{threeLight_}}]{\setlength{\rightskip}{0pt plus 5cm}Wt\+::\+W\+Text$\ast$ Lights\+Control\+Widget\+::three\+Light\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classLightsControlWidget_a82b1ded41fd126f7f4e041ab5b0b7ccb}{}\label{classLightsControlWidget_a82b1ded41fd126f7f4e041ab5b0b7ccb}
+light 3\textquotesingle{}s name \index{Lights\+Control\+Widget@{Lights\+Control\+Widget}!transition\+Scale\+Slider\+\_\+@{transition\+Scale\+Slider\+\_\+}}
+\index{transition\+Scale\+Slider\+\_\+@{transition\+Scale\+Slider\+\_\+}!Lights\+Control\+Widget@{Lights\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{transition\+Scale\+Slider\+\_\+}{transitionScaleSlider_}}]{\setlength{\rightskip}{0pt plus 5cm}Wt\+::\+W\+Slider$\ast$ Lights\+Control\+Widget\+::transition\+Scale\+Slider\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classLightsControlWidget_af4bd66ddc5244ab9cf62dea9e5ffb1cf}{}\label{classLightsControlWidget_af4bd66ddc5244ab9cf62dea9e5ffb1cf}
+light\textquotesingle{}s transition time selection \index{Lights\+Control\+Widget@{Lights\+Control\+Widget}!two\+Light\+\_\+@{two\+Light\+\_\+}}
+\index{two\+Light\+\_\+@{two\+Light\+\_\+}!Lights\+Control\+Widget@{Lights\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{two\+Light\+\_\+}{twoLight_}}]{\setlength{\rightskip}{0pt plus 5cm}Wt\+::\+W\+Text$\ast$ Lights\+Control\+Widget\+::two\+Light\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classLightsControlWidget_a1148be7db38088bb15fc356e06e13b65}{}\label{classLightsControlWidget_a1148be7db38088bb15fc356e06e13b65}
+light 2\textquotesingle{}s name \index{Lights\+Control\+Widget@{Lights\+Control\+Widget}!user\+ID@{user\+ID}}
+\index{user\+ID@{user\+ID}!Lights\+Control\+Widget@{Lights\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{user\+ID}{userID}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Lights\+Control\+Widget\+::user\+ID = \char`\"{}\char`\"{}\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classLightsControlWidget_aa26d4553e677dec57b64575a6d6d8558}{}\label{classLightsControlWidget_aa26d4553e677dec57b64575a6d6d8558}
+user\textquotesingle{}s bridge ID 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{LightsControl_8h}{Lights\+Control.\+h}\item 
+\hyperlink{LightsControl_8C}{Lights\+Control.\+C}\end{DoxyCompactItemize}

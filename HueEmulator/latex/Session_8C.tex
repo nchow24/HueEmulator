@@ -1,0 +1,34 @@
+\hypertarget{Session_8C}{}\section{Session.\+C File Reference}
+\label{Session_8C}\index{Session.\+C@{Session.\+C}}
+
+
+\hyperlink{classSession}{Session} handling for the application.  
+
+
+{\ttfamily \#include \char`\"{}Wt/\+Auth/\+Auth\+Service\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Wt/\+Auth/\+Hash\+Function\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Wt/\+Auth/\+Password\+Service\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Wt/\+Auth/\+Password\+Strength\+Validator\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Wt/\+Auth/\+Password\+Verifier\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Wt/\+Auth/\+Google\+Service\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Wt/\+Auth/\+Dbo/\+Auth\+Info\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Wt/\+Auth/\+Dbo/\+User\+Database\char`\"{}}\\*
+{\ttfamily \#include $<$Wt/\+W\+Application$>$}\\*
+{\ttfamily \#include $<$Wt/\+W\+Logger$>$}\\*
+{\ttfamily \#include \char`\"{}Session.\+h\char`\"{}}\\*
+{\ttfamily \#include $<$unistd.\+h$>$}\\*
+Include dependency graph for Session.\+C\+:
+% FIG 0
+
+
+\subsection{Detailed Description}
+\hyperlink{classSession}{Session} handling for the application. 
+
+Handles the Users who are able to access the database and create a persistent environment for our application using sqlite3. It hashes user passwords and stores tokens. The is also a multitude of functions to help access and store information into the applications database. Through out the app session is used to authorize each user to a page.
+
+\begin{DoxyAuthor}{Author}
+Paul Li 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+Nov 28, 2017 
+\end{DoxyDate}

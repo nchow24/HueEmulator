@@ -1,0 +1,46 @@
+digraph "HueApp"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="HueApp",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="WContainerWidget",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node3 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" the_GroupSchedulers" ];
+  Node3 [label="GroupsSchedulerControlWidget",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classGroupsSchedulerControlWidget.html"];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node4 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" session_" ];
+  Node4 [label="Session",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classSession.html"];
+  Node5 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" the_Schedulers" ];
+  Node5 [label="SchedulerControlWidget",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classSchedulerControlWidget.html"];
+  Node2 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node4 -> Node5 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" session_" ];
+  Node6 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" the_Bridge" ];
+  Node6 [label="BridgeControlWidget",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classBridgeControlWidget.html"];
+  Node2 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node4 -> Node6 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" session_" ];
+  Node7 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" the_SingleGroups" ];
+  Node7 [label="SingleGroupsControlWidget",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classSingleGroupsControlWidget.html"];
+  Node8 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node8 [label="Wt::WContainerWidget",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node4 -> Node7 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" session_" ];
+  Node9 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" the_Groups" ];
+  Node9 [label="GroupsControlWidget",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classGroupsControlWidget.html"];
+  Node2 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node4 -> Node9 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" session_" ];
+  Node10 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" the_Lights" ];
+  Node10 [label="LightsControlWidget",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classLightsControlWidget.html"];
+  Node2 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node4 -> Node10 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" session_" ];
+  Node4 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" session_" ];
+  Node11 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" the_SingleSchedulers" ];
+  Node11 [label="SingleSchedulerControlWidget",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classSingleSchedulerControlWidget.html"];
+  Node2 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node4 -> Node11 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" session_" ];
+  Node12 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" the_BridgeEdit" ];
+  Node12 [label="BridgeEditControlWidget",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classBridgeEditControlWidget.html"];
+  Node2 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node13 -> Node12 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" thisBridge" ];
+  Node13 [label="Bridge",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classBridge.html"];
+  Node4 -> Node12 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" session_" ];
+}

@@ -1,0 +1,71 @@
+\hypertarget{classAuthWidget}{}\section{Auth\+Widget Class Reference}
+\label{classAuthWidget}\index{Auth\+Widget@{Auth\+Widget}}
+
+
+Inheritance diagram for Auth\+Widget\+:
+% FIG 0
+
+
+Collaboration diagram for Auth\+Widget\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classAuthWidget_a16b0f0ad98e79aa40992cfaa9a00cfde}{Auth\+Widget} (\hyperlink{classSession}{Session} \&session)
+\begin{DoxyCompactList}\small\item\em Constructor for \hyperlink{classAuthWidget}{Auth\+Widget}. \end{DoxyCompactList}\item 
+virtual Wt\+::\+W\+Widget $\ast$ \hyperlink{classAuthWidget_abfa295703272e72a5d57dd736cc9f329}{create\+Registration\+View} (const Wt\+::\+Auth\+::\+Identity \&id)
+\begin{DoxyCompactList}\small\item\em Creates all of the registration view. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classSession}{Session} \& {\bfseries session\+\_\+}\hypertarget{classAuthWidget_a9c1a0d3bf5d59ec8f0f6c7672e37224c}{}\label{classAuthWidget_a9c1a0d3bf5d59ec8f0f6c7672e37224c}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Auth\+Widget@{Auth\+Widget}!Auth\+Widget@{Auth\+Widget}}
+\index{Auth\+Widget@{Auth\+Widget}!Auth\+Widget@{Auth\+Widget}}
+\subsubsection[{\texorpdfstring{Auth\+Widget(\+Session \&session)}{AuthWidget(Session &session)}}]{\setlength{\rightskip}{0pt plus 5cm}Auth\+Widget\+::\+Auth\+Widget (
+\begin{DoxyParamCaption}
+\item[{{\bf Session} \&}]{session}
+\end{DoxyParamCaption}
+)}\hypertarget{classAuthWidget_a16b0f0ad98e79aa40992cfaa9a00cfde}{}\label{classAuthWidget_a16b0f0ad98e79aa40992cfaa9a00cfde}
+
+
+Constructor for \hyperlink{classAuthWidget}{Auth\+Widget}. 
+
+Calls the constructor while assigning the \hyperlink{classAuthWidget}{Auth\+Widget} and \hyperlink{classSession}{Session}
+
+
+\begin{DoxyParams}{Parameters}
+{\em session} & is the current session data of the app. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{Auth\+Widget@{Auth\+Widget}!create\+Registration\+View@{create\+Registration\+View}}
+\index{create\+Registration\+View@{create\+Registration\+View}!Auth\+Widget@{Auth\+Widget}}
+\subsubsection[{\texorpdfstring{create\+Registration\+View(const Wt\+::\+Auth\+::\+Identity \&id)}{createRegistrationView(const Wt::Auth::Identity &id)}}]{\setlength{\rightskip}{0pt plus 5cm}Wt\+::\+W\+Widget $\ast$ Auth\+Widget\+::create\+Registration\+View (
+\begin{DoxyParamCaption}
+\item[{const Wt\+::\+Auth\+::\+Identity \&}]{id}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classAuthWidget_abfa295703272e72a5d57dd736cc9f329}{}\label{classAuthWidget_abfa295703272e72a5d57dd736cc9f329}
+
+
+Creates all of the registration view. 
+
+Overrides the existing Auth\+::create\+Registration\+View to call our custom registration\+View class.
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & takes a user identity. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Auth\+Widget.\+h\item 
+\hyperlink{AuthWidget_8C}{Auth\+Widget.\+C}\end{DoxyCompactItemize}

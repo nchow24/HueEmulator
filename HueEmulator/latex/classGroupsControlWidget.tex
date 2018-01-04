@@ -1,0 +1,298 @@
+\hypertarget{classGroupsControlWidget}{}\section{Groups\+Control\+Widget Class Reference}
+\label{classGroupsControlWidget}\index{Groups\+Control\+Widget@{Groups\+Control\+Widget}}
+
+
+Inheritance diagram for Groups\+Control\+Widget\+:
+% FIG 0
+
+
+Collaboration diagram for Groups\+Control\+Widget\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classGroupsControlWidget_a4d6a0e40f6968c53e163c167612932d4}{Groups\+Control\+Widget} (\hyperlink{classSession}{Session} $\ast$session, Wt\+::\+W\+Container\+Widget $\ast$parent=0)
+\begin{DoxyCompactList}\small\item\em creates a \hyperlink{classGroupsControlWidget}{Groups\+Control\+Widget} \end{DoxyCompactList}\item 
+void \hyperlink{classGroupsControlWidget_a6b7f7244d67dcdc7e1e946e0e1959f8d}{update} ()
+\begin{DoxyCompactList}\small\item\em loads \hyperlink{classSingleGroupsControlWidget}{Single\+Groups\+Control\+Widget} page \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Wt\+::\+Http\+::\+Client $\ast$ \hyperlink{classGroupsControlWidget_ac6dc70e7eccf6d30701c15d625424c0c}{connect} ()
+\begin{DoxyCompactList}\small\item\em creates an H\+T\+TP Client \end{DoxyCompactList}\item 
+void \hyperlink{classGroupsControlWidget_a801b235a88f796198f1a65fcbe13c725}{light\+One} ()
+\begin{DoxyCompactList}\small\item\em selects light 1 to be added to the group \end{DoxyCompactList}\item 
+void \hyperlink{classGroupsControlWidget_a28fa2a1848d1358587a37651861be081}{light\+Two} ()
+\begin{DoxyCompactList}\small\item\em selects light 2 to be added to the group \end{DoxyCompactList}\item 
+void \hyperlink{classGroupsControlWidget_aaa514da760a67d4bf3e1ab7e51ea08f0}{light\+Three} ()
+\begin{DoxyCompactList}\small\item\em selects light 3 to be added to the group \end{DoxyCompactList}\item 
+void \hyperlink{classGroupsControlWidget_a891bad4ba589f7bd7be8cb09a0910f20}{create\+Group} ()
+\begin{DoxyCompactList}\small\item\em creates a new group \end{DoxyCompactList}\item 
+void \hyperlink{classGroupsControlWidget_a4fd7d26972133feb20b6941dc191535f}{return\+Bridge} ()
+\begin{DoxyCompactList}\small\item\em returns user to bridge page \end{DoxyCompactList}\item 
+void \hyperlink{classGroupsControlWidget_ad5282b45d7e299bdac0813a8a72f6d3a}{handle\+Http\+Response} (boost\+::system\+::error\+\_\+code err, const Wt\+::\+Http\+::\+Message \&response)
+\begin{DoxyCompactList}\small\item\em handles response and displays group information \end{DoxyCompactList}\item 
+void \hyperlink{classGroupsControlWidget_ade80d514e591c307c4cc6c0fbb758896}{handle\+Http\+Response\+V\+O\+ID} (boost\+::system\+::error\+\_\+code err, const Wt\+::\+Http\+::\+Message \&response)
+\begin{DoxyCompactList}\small\item\em handles response and refreshes the page \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classSession}{Session} $\ast$ \hyperlink{classGroupsControlWidget_a22dc704f954395ff53d67c51dbec933f}{session\+\_\+}
+\item 
+std\+::string \hyperlink{classGroupsControlWidget_abf7a784bfb01b064e2bb2064c8e3e3a3}{ip} = \char`\"{}\char`\"{}
+\item 
+std\+::string \hyperlink{classGroupsControlWidget_a5254fd01a7e3c5d56515d1161f392b09}{user\+ID} = \char`\"{}\char`\"{}
+\item 
+std\+::string \hyperlink{classGroupsControlWidget_aad63d0d29a731819e47f1cd2974511ed}{port} = \char`\"{}\char`\"{}
+\item 
+bool \hyperlink{classGroupsControlWidget_a83ab8b39f8c267cc46ad79b38e648618}{one} = false
+\item 
+bool \hyperlink{classGroupsControlWidget_a4d0f1619ed1d0976fc48ea38262a5e5c}{two} = false
+\item 
+bool \hyperlink{classGroupsControlWidget_a441299ffc41342f9c91d3d6f319732ed}{three} = false
+\item 
+Wt\+::\+W\+Line\+Edit $\ast$ \hyperlink{classGroupsControlWidget_aecb5c19707326e3ec3c5b140da32e62d}{name\+Edit\+\_\+}
+\item 
+Wt\+::\+W\+Text $\ast$ \hyperlink{classGroupsControlWidget_a66968632cf6001c9aeb5e227d9d06177}{light1\+\_\+}
+\item 
+Wt\+::\+W\+Text $\ast$ \hyperlink{classGroupsControlWidget_aadce8705e32e8559e28feb2cfdae23e8}{light2\+\_\+}
+\item 
+Wt\+::\+W\+Text $\ast$ \hyperlink{classGroupsControlWidget_a9846da1c58d8430074935daeea6b385b}{light3\+\_\+}
+\item 
+Wt\+::\+W\+Text $\ast$ \hyperlink{classGroupsControlWidget_aa20f4ee341f245754611fa4494b38ecd}{status\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Groups\+Control\+Widget@{Groups\+Control\+Widget}!Groups\+Control\+Widget@{Groups\+Control\+Widget}}
+\index{Groups\+Control\+Widget@{Groups\+Control\+Widget}!Groups\+Control\+Widget@{Groups\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{Groups\+Control\+Widget(\+Session $\ast$session, Wt\+::\+W\+Container\+Widget $\ast$parent=0)}{GroupsControlWidget(Session *session, Wt::WContainerWidget *parent=0)}}]{\setlength{\rightskip}{0pt plus 5cm}Groups\+Control\+Widget\+::\+Groups\+Control\+Widget (
+\begin{DoxyParamCaption}
+\item[{{\bf Session} $\ast$}]{session, }
+\item[{Wt\+::\+W\+Container\+Widget $\ast$}]{parent = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}\hypertarget{classGroupsControlWidget_a4d6a0e40f6968c53e163c167612932d4}{}\label{classGroupsControlWidget_a4d6a0e40f6968c53e163c167612932d4}
+
+
+creates a \hyperlink{classGroupsControlWidget}{Groups\+Control\+Widget} 
+
+creates a \hyperlink{classGroupsControlWidget}{Groups\+Control\+Widget} that is tied to a database session. The Widget also has a parent Container Widget
+
+
+\begin{DoxyParams}{Parameters}
+{\em session} & the database session \\
+\hline
+{\em parent} & the parent Widget Container \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classGroupsControlWidget}{Groups\+Control\+Widget} 
+\end{DoxyReturn}
+
+
+\subsection{Member Function Documentation}
+\index{Groups\+Control\+Widget@{Groups\+Control\+Widget}!connect@{connect}}
+\index{connect@{connect}!Groups\+Control\+Widget@{Groups\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{connect()}{connect()}}]{\setlength{\rightskip}{0pt plus 5cm}Http\+::\+Client $\ast$ Groups\+Control\+Widget\+::connect (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classGroupsControlWidget_ac6dc70e7eccf6d30701c15d625424c0c}{}\label{classGroupsControlWidget_ac6dc70e7eccf6d30701c15d625424c0c}
+
+
+creates an H\+T\+TP Client 
+
+creates an H\+T\+TP client that will be used to send either a post request to create a new group or a get request to retrieve the currently existing groups
+
+\begin{DoxyReturn}{Returns}
+Http\+::\+Client 
+\end{DoxyReturn}
+\index{Groups\+Control\+Widget@{Groups\+Control\+Widget}!create\+Group@{create\+Group}}
+\index{create\+Group@{create\+Group}!Groups\+Control\+Widget@{Groups\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{create\+Group()}{createGroup()}}]{\setlength{\rightskip}{0pt plus 5cm}void Groups\+Control\+Widget\+::create\+Group (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classGroupsControlWidget_a891bad4ba589f7bd7be8cb09a0910f20}{}\label{classGroupsControlWidget_a891bad4ba589f7bd7be8cb09a0910f20}
+
+
+creates a new group 
+
+gets user information about the name and lights of the new group and sends a post request to create the group. Then \hyperlink{classGroupsControlWidget_a6b7f7244d67dcdc7e1e946e0e1959f8d}{update()} is called to refresh the list of groups
+
+\begin{DoxyReturn}{Returns}
+Void 
+\end{DoxyReturn}
+\index{Groups\+Control\+Widget@{Groups\+Control\+Widget}!handle\+Http\+Response@{handle\+Http\+Response}}
+\index{handle\+Http\+Response@{handle\+Http\+Response}!Groups\+Control\+Widget@{Groups\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{handle\+Http\+Response(boost\+::system\+::error\+\_\+code err, const Wt\+::\+Http\+::\+Message \&response)}{handleHttpResponse(boost::system::error_code err, const Wt::Http::Message &response)}}]{\setlength{\rightskip}{0pt plus 5cm}void Groups\+Control\+Widget\+::handle\+Http\+Response (
+\begin{DoxyParamCaption}
+\item[{boost\+::system\+::error\+\_\+code}]{err, }
+\item[{const Wt\+::\+Http\+::\+Message \&}]{response}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classGroupsControlWidget_ad5282b45d7e299bdac0813a8a72f6d3a}{}\label{classGroupsControlWidget_ad5282b45d7e299bdac0813a8a72f6d3a}
+
+
+handles response and displays group information 
+
+gets the list of groups and displays each one as button that leads to the \hyperlink{classSingleGroupsControlWidget}{Single\+Groups\+Control\+Widget} where user can edit a specific group
+
+
+\begin{DoxyParams}{Parameters}
+{\em err} & the response\textquotesingle{}s error code \\
+\hline
+{\em response} & the response \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Void 
+\end{DoxyReturn}
+\index{Groups\+Control\+Widget@{Groups\+Control\+Widget}!handle\+Http\+Response\+V\+O\+ID@{handle\+Http\+Response\+V\+O\+ID}}
+\index{handle\+Http\+Response\+V\+O\+ID@{handle\+Http\+Response\+V\+O\+ID}!Groups\+Control\+Widget@{Groups\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{handle\+Http\+Response\+V\+O\+I\+D(boost\+::system\+::error\+\_\+code err, const Wt\+::\+Http\+::\+Message \&response)}{handleHttpResponseVOID(boost::system::error_code err, const Wt::Http::Message &response)}}]{\setlength{\rightskip}{0pt plus 5cm}void Groups\+Control\+Widget\+::handle\+Http\+Response\+V\+O\+ID (
+\begin{DoxyParamCaption}
+\item[{boost\+::system\+::error\+\_\+code}]{err, }
+\item[{const Wt\+::\+Http\+::\+Message \&}]{response}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classGroupsControlWidget_ade80d514e591c307c4cc6c0fbb758896}{}\label{classGroupsControlWidget_ade80d514e591c307c4cc6c0fbb758896}
+
+
+handles response and refreshes the page 
+
+uses \hyperlink{classGroupsControlWidget_a6b7f7244d67dcdc7e1e946e0e1959f8d}{update()} to refresh the page with changes to the group list. Used when a new group is created
+
+
+\begin{DoxyParams}{Parameters}
+{\em err} & the response\textquotesingle{}s error code \\
+\hline
+{\em response} & the response \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Void 
+\end{DoxyReturn}
+\index{Groups\+Control\+Widget@{Groups\+Control\+Widget}!light\+One@{light\+One}}
+\index{light\+One@{light\+One}!Groups\+Control\+Widget@{Groups\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{light\+One()}{lightOne()}}]{\setlength{\rightskip}{0pt plus 5cm}void Groups\+Control\+Widget\+::light\+One (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classGroupsControlWidget_a801b235a88f796198f1a65fcbe13c725}{}\label{classGroupsControlWidget_a801b235a88f796198f1a65fcbe13c725}
+
+
+selects light 1 to be added to the group 
+
+includes light 1 to be a part of the new group. If clicked again, light 1 will not be part of the new group.
+
+\begin{DoxyReturn}{Returns}
+Void 
+\end{DoxyReturn}
+\index{Groups\+Control\+Widget@{Groups\+Control\+Widget}!light\+Three@{light\+Three}}
+\index{light\+Three@{light\+Three}!Groups\+Control\+Widget@{Groups\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{light\+Three()}{lightThree()}}]{\setlength{\rightskip}{0pt plus 5cm}void Groups\+Control\+Widget\+::light\+Three (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classGroupsControlWidget_aaa514da760a67d4bf3e1ab7e51ea08f0}{}\label{classGroupsControlWidget_aaa514da760a67d4bf3e1ab7e51ea08f0}
+
+
+selects light 3 to be added to the group 
+
+includes light 3 to be a part of the new group. If clicked again, light 3 will not be part of the new group.
+
+\begin{DoxyReturn}{Returns}
+Void 
+\end{DoxyReturn}
+\index{Groups\+Control\+Widget@{Groups\+Control\+Widget}!light\+Two@{light\+Two}}
+\index{light\+Two@{light\+Two}!Groups\+Control\+Widget@{Groups\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{light\+Two()}{lightTwo()}}]{\setlength{\rightskip}{0pt plus 5cm}void Groups\+Control\+Widget\+::light\+Two (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classGroupsControlWidget_a28fa2a1848d1358587a37651861be081}{}\label{classGroupsControlWidget_a28fa2a1848d1358587a37651861be081}
+
+
+selects light 2 to be added to the group 
+
+includes light 2 to be a part of the new group. If clicked again, light 2 will not be part of the new group.
+
+\begin{DoxyReturn}{Returns}
+Void 
+\end{DoxyReturn}
+\index{Groups\+Control\+Widget@{Groups\+Control\+Widget}!return\+Bridge@{return\+Bridge}}
+\index{return\+Bridge@{return\+Bridge}!Groups\+Control\+Widget@{Groups\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{return\+Bridge()}{returnBridge()}}]{\setlength{\rightskip}{0pt plus 5cm}void Groups\+Control\+Widget\+::return\+Bridge (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classGroupsControlWidget_a4fd7d26972133feb20b6941dc191535f}{}\label{classGroupsControlWidget_a4fd7d26972133feb20b6941dc191535f}
+
+
+returns user to bridge page 
+
+returns user the bridge page by setting the internal path
+
+\begin{DoxyReturn}{Returns}
+Void 
+\end{DoxyReturn}
+\index{Groups\+Control\+Widget@{Groups\+Control\+Widget}!update@{update}}
+\index{update@{update}!Groups\+Control\+Widget@{Groups\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{update()}{update()}}]{\setlength{\rightskip}{0pt plus 5cm}void Groups\+Control\+Widget\+::update (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classGroupsControlWidget_a6b7f7244d67dcdc7e1e946e0e1959f8d}{}\label{classGroupsControlWidget_a6b7f7244d67dcdc7e1e946e0e1959f8d}
+
+
+loads \hyperlink{classSingleGroupsControlWidget}{Single\+Groups\+Control\+Widget} page 
+
+loads the \hyperlink{classGroupsControlWidget}{Groups\+Control\+Widget} page which displays the list of current groups and the option to create a new group
+
+\begin{DoxyReturn}{Returns}
+Void 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\index{Groups\+Control\+Widget@{Groups\+Control\+Widget}!ip@{ip}}
+\index{ip@{ip}!Groups\+Control\+Widget@{Groups\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{ip}{ip}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Groups\+Control\+Widget\+::ip = \char`\"{}\char`\"{}\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classGroupsControlWidget_abf7a784bfb01b064e2bb2064c8e3e3a3}{}\label{classGroupsControlWidget_abf7a784bfb01b064e2bb2064c8e3e3a3}
+bridge\textquotesingle{}s IP address \index{Groups\+Control\+Widget@{Groups\+Control\+Widget}!light1\+\_\+@{light1\+\_\+}}
+\index{light1\+\_\+@{light1\+\_\+}!Groups\+Control\+Widget@{Groups\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{light1\+\_\+}{light1_}}]{\setlength{\rightskip}{0pt plus 5cm}Wt\+::\+W\+Text$\ast$ Groups\+Control\+Widget\+::light1\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classGroupsControlWidget_a66968632cf6001c9aeb5e227d9d06177}{}\label{classGroupsControlWidget_a66968632cf6001c9aeb5e227d9d06177}
+displays whether light 1 is part of the new group \index{Groups\+Control\+Widget@{Groups\+Control\+Widget}!light2\+\_\+@{light2\+\_\+}}
+\index{light2\+\_\+@{light2\+\_\+}!Groups\+Control\+Widget@{Groups\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{light2\+\_\+}{light2_}}]{\setlength{\rightskip}{0pt plus 5cm}Wt\+::\+W\+Text$\ast$ Groups\+Control\+Widget\+::light2\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classGroupsControlWidget_aadce8705e32e8559e28feb2cfdae23e8}{}\label{classGroupsControlWidget_aadce8705e32e8559e28feb2cfdae23e8}
+displays whether light 2 is part of the new group \index{Groups\+Control\+Widget@{Groups\+Control\+Widget}!light3\+\_\+@{light3\+\_\+}}
+\index{light3\+\_\+@{light3\+\_\+}!Groups\+Control\+Widget@{Groups\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{light3\+\_\+}{light3_}}]{\setlength{\rightskip}{0pt plus 5cm}Wt\+::\+W\+Text$\ast$ Groups\+Control\+Widget\+::light3\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classGroupsControlWidget_a9846da1c58d8430074935daeea6b385b}{}\label{classGroupsControlWidget_a9846da1c58d8430074935daeea6b385b}
+displays whether light 3 is part of the new group \index{Groups\+Control\+Widget@{Groups\+Control\+Widget}!name\+Edit\+\_\+@{name\+Edit\+\_\+}}
+\index{name\+Edit\+\_\+@{name\+Edit\+\_\+}!Groups\+Control\+Widget@{Groups\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{name\+Edit\+\_\+}{nameEdit_}}]{\setlength{\rightskip}{0pt plus 5cm}Wt\+::\+W\+Line\+Edit$\ast$ Groups\+Control\+Widget\+::name\+Edit\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classGroupsControlWidget_aecb5c19707326e3ec3c5b140da32e62d}{}\label{classGroupsControlWidget_aecb5c19707326e3ec3c5b140da32e62d}
+new group\textquotesingle{}s name \index{Groups\+Control\+Widget@{Groups\+Control\+Widget}!one@{one}}
+\index{one@{one}!Groups\+Control\+Widget@{Groups\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{one}{one}}]{\setlength{\rightskip}{0pt plus 5cm}bool Groups\+Control\+Widget\+::one = false\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classGroupsControlWidget_a83ab8b39f8c267cc46ad79b38e648618}{}\label{classGroupsControlWidget_a83ab8b39f8c267cc46ad79b38e648618}
+status of light 1\textquotesingle{}s membership in the new group \index{Groups\+Control\+Widget@{Groups\+Control\+Widget}!port@{port}}
+\index{port@{port}!Groups\+Control\+Widget@{Groups\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{port}{port}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Groups\+Control\+Widget\+::port = \char`\"{}\char`\"{}\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classGroupsControlWidget_aad63d0d29a731819e47f1cd2974511ed}{}\label{classGroupsControlWidget_aad63d0d29a731819e47f1cd2974511ed}
+bridge\textquotesingle{}s port number \index{Groups\+Control\+Widget@{Groups\+Control\+Widget}!session\+\_\+@{session\+\_\+}}
+\index{session\+\_\+@{session\+\_\+}!Groups\+Control\+Widget@{Groups\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{session\+\_\+}{session_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Session}$\ast$ Groups\+Control\+Widget\+::session\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classGroupsControlWidget_a22dc704f954395ff53d67c51dbec933f}{}\label{classGroupsControlWidget_a22dc704f954395ff53d67c51dbec933f}
+keeps track of group status \index{Groups\+Control\+Widget@{Groups\+Control\+Widget}!status\+\_\+@{status\+\_\+}}
+\index{status\+\_\+@{status\+\_\+}!Groups\+Control\+Widget@{Groups\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{status\+\_\+}{status_}}]{\setlength{\rightskip}{0pt plus 5cm}Wt\+::\+W\+Text$\ast$ Groups\+Control\+Widget\+::status\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classGroupsControlWidget_aa20f4ee341f245754611fa4494b38ecd}{}\label{classGroupsControlWidget_aa20f4ee341f245754611fa4494b38ecd}
+status of creating a group \index{Groups\+Control\+Widget@{Groups\+Control\+Widget}!three@{three}}
+\index{three@{three}!Groups\+Control\+Widget@{Groups\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{three}{three}}]{\setlength{\rightskip}{0pt plus 5cm}bool Groups\+Control\+Widget\+::three = false\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classGroupsControlWidget_a441299ffc41342f9c91d3d6f319732ed}{}\label{classGroupsControlWidget_a441299ffc41342f9c91d3d6f319732ed}
+status of light 3\textquotesingle{}s membership in the new group \index{Groups\+Control\+Widget@{Groups\+Control\+Widget}!two@{two}}
+\index{two@{two}!Groups\+Control\+Widget@{Groups\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{two}{two}}]{\setlength{\rightskip}{0pt plus 5cm}bool Groups\+Control\+Widget\+::two = false\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classGroupsControlWidget_a4d0f1619ed1d0976fc48ea38262a5e5c}{}\label{classGroupsControlWidget_a4d0f1619ed1d0976fc48ea38262a5e5c}
+status of light 2\textquotesingle{}s membership in the new group \index{Groups\+Control\+Widget@{Groups\+Control\+Widget}!user\+ID@{user\+ID}}
+\index{user\+ID@{user\+ID}!Groups\+Control\+Widget@{Groups\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{user\+ID}{userID}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Groups\+Control\+Widget\+::user\+ID = \char`\"{}\char`\"{}\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classGroupsControlWidget_a5254fd01a7e3c5d56515d1161f392b09}{}\label{classGroupsControlWidget_a5254fd01a7e3c5d56515d1161f392b09}
+user\textquotesingle{}s bridge ID 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{GroupsControl_8h}{Groups\+Control.\+h}\item 
+\hyperlink{GroupsControl_8C}{Groups\+Control.\+C}\end{DoxyCompactItemize}

@@ -1,0 +1,118 @@
+\hypertarget{classRegistrationView}{}\section{Registration\+View Class Reference}
+\label{classRegistrationView}\index{Registration\+View@{Registration\+View}}
+
+
+Inheritance diagram for Registration\+View\+:
+% FIG 0
+
+
+Collaboration diagram for Registration\+View\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classRegistrationView_a3848c621b2e4176060293f6f80c16fa7}{Registration\+View} (\hyperlink{classSession}{Session} \&session, Wt\+::\+Auth\+::\+Auth\+Widget $\ast$auth\+Widget=0)
+\begin{DoxyCompactList}\small\item\em Constructor for \hyperlink{classRegistrationView}{Registration\+View}. \end{DoxyCompactList}\item 
+virtual Wt\+::\+W\+Widget $\ast$ \hyperlink{classRegistrationView_ae2a0695f816ba4d0f9845b5da6539b34}{create\+Form\+Widget} (Wt\+::\+W\+Form\+Model\+::\+Field field)
+\begin{DoxyCompactList}\small\item\em Creates the W\+Widgets that will be displayed on the website. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \hyperlink{classRegistrationView_abff4da7c898c36d81a8af6718840d27e}{validate} ()
+\begin{DoxyCompactList}\small\item\em Checks the information in the form if it is valid. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classRegistrationView_a2e048b6c3103bedacd90a33f6664512b}{register\+User\+Details} (Wt\+::\+Auth\+::\+User \&user)
+\begin{DoxyCompactList}\small\item\em Checks the information in the form if it is valid. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classSession}{Session} \& {\bfseries session\+\_\+}\hypertarget{classRegistrationView_aef6dd993c0249d9fe34d6a32f12a4694}{}\label{classRegistrationView_aef6dd993c0249d9fe34d6a32f12a4694}
+
+\item 
+\hyperlink{classUserDetailsModel}{User\+Details\+Model} $\ast$ {\bfseries details\+Model\+\_\+}\hypertarget{classRegistrationView_a95789059816b6c1cabe07b683ad51f61}{}\label{classRegistrationView_a95789059816b6c1cabe07b683ad51f61}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Registration\+View@{Registration\+View}!Registration\+View@{Registration\+View}}
+\index{Registration\+View@{Registration\+View}!Registration\+View@{Registration\+View}}
+\subsubsection[{\texorpdfstring{Registration\+View(\+Session \&session, Wt\+::\+Auth\+::\+Auth\+Widget $\ast$auth\+Widget=0)}{RegistrationView(Session &session, Wt::Auth::AuthWidget *authWidget=0)}}]{\setlength{\rightskip}{0pt plus 5cm}Registration\+View\+::\+Registration\+View (
+\begin{DoxyParamCaption}
+\item[{{\bf Session} \&}]{session, }
+\item[{Wt\+::\+Auth\+::\+Auth\+Widget $\ast$}]{auth\+Widget = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}\hypertarget{classRegistrationView_a3848c621b2e4176060293f6f80c16fa7}{}\label{classRegistrationView_a3848c621b2e4176060293f6f80c16fa7}
+
+
+Constructor for \hyperlink{classRegistrationView}{Registration\+View}. 
+
+Set the template/view of the registration section on our website and the model of the first name and last name section from \hyperlink{classUserDetailsModel}{User\+Details\+Model}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em session} & is the current session data of the app. \\
+\hline
+{\em auth\+Widget} & is the information of the auth\+Widget \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{Registration\+View@{Registration\+View}!create\+Form\+Widget@{create\+Form\+Widget}}
+\index{create\+Form\+Widget@{create\+Form\+Widget}!Registration\+View@{Registration\+View}}
+\subsubsection[{\texorpdfstring{create\+Form\+Widget(\+Wt\+::\+W\+Form\+Model\+::\+Field field)}{createFormWidget(Wt::WFormModel::Field field)}}]{\setlength{\rightskip}{0pt plus 5cm}Wt\+::\+W\+Widget $\ast$ Registration\+View\+::create\+Form\+Widget (
+\begin{DoxyParamCaption}
+\item[{Wt\+::\+W\+Form\+Model\+::\+Field}]{field}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classRegistrationView_ae2a0695f816ba4d0f9845b5da6539b34}{}\label{classRegistrationView_ae2a0695f816ba4d0f9845b5da6539b34}
+
+
+Creates the W\+Widgets that will be displayed on the website. 
+
+Creates the form widgets by adding W\+Widgets and utilizing the templates.\+xml file to help draw and display the form information to the user. A function adds onto to the preexiting Auth\+::registration\+Widget to allow 2 additional W\+Line\+Edits.
+
+
+\begin{DoxyParams}{Parameters}
+{\em field} & is the W\+Form\+Model\+::\+Field that will create the form widget itself. \\
+\hline
+\end{DoxyParams}
+\index{Registration\+View@{Registration\+View}!register\+User\+Details@{register\+User\+Details}}
+\index{register\+User\+Details@{register\+User\+Details}!Registration\+View@{Registration\+View}}
+\subsubsection[{\texorpdfstring{register\+User\+Details(\+Wt\+::\+Auth\+::\+User \&user)}{registerUserDetails(Wt::Auth::User &user)}}]{\setlength{\rightskip}{0pt plus 5cm}void Registration\+View\+::register\+User\+Details (
+\begin{DoxyParamCaption}
+\item[{Wt\+::\+Auth\+::\+User \&}]{user}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\hypertarget{classRegistrationView_a2e048b6c3103bedacd90a33f6664512b}{}\label{classRegistrationView_a2e048b6c3103bedacd90a33f6664512b}
+
+
+Checks the information in the form if it is valid. 
+
+Validates the information passed in the form and checks if everything is correct and passes validations before sending in the form to the server.
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & the auth model of the user logged in. \\
+\hline
+\end{DoxyParams}
+\index{Registration\+View@{Registration\+View}!validate@{validate}}
+\index{validate@{validate}!Registration\+View@{Registration\+View}}
+\subsubsection[{\texorpdfstring{validate()}{validate()}}]{\setlength{\rightskip}{0pt plus 5cm}bool Registration\+View\+::validate (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\hypertarget{classRegistrationView_abff4da7c898c36d81a8af6718840d27e}{}\label{classRegistrationView_abff4da7c898c36d81a8af6718840d27e}
+
+
+Checks the information in the form if it is valid. 
+
+Validates the information passed in the form and checks if everything is correct and passes validations before sending in the form to the server.
+
+\begin{DoxyReturn}{Returns}
+returns the results of the registration validation. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Registration\+View.\+h\item 
+\hyperlink{RegistrationView_8C}{Registration\+View.\+C}\end{DoxyCompactItemize}

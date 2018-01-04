@@ -1,0 +1,85 @@
+\hypertarget{classLight}{}\section{Light Class Reference}
+\label{classLight}\index{Light@{Light}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Light} (std\+::string n\+Name, std\+::string n\+Type, int n\+Bri, int n\+Hue, int n\+Sat, bool n\+On, int n\+Trans)\hypertarget{classLight_aaeb13d35d2c08e223ca32e8382e83452}{}\label{classLight_aaeb13d35d2c08e223ca32e8382e83452}
+
+\item 
+std\+::string {\bfseries get\+Name} (void)\hypertarget{classLight_a768a0219abfdc1684e90513995280b08}{}\label{classLight_a768a0219abfdc1684e90513995280b08}
+
+\item 
+std\+::string {\bfseries get\+Type} (void)\hypertarget{classLight_a8dfd61470ed66935ef3ea2de76d7049a}{}\label{classLight_a8dfd61470ed66935ef3ea2de76d7049a}
+
+\item 
+int {\bfseries get\+Brightness} (void)\hypertarget{classLight_ad512a50c53993d50ef98731d7b1d6653}{}\label{classLight_ad512a50c53993d50ef98731d7b1d6653}
+
+\item 
+int {\bfseries get\+Hue} (void)\hypertarget{classLight_abc39a64bfcc5b43088cefcd662956cb8}{}\label{classLight_abc39a64bfcc5b43088cefcd662956cb8}
+
+\item 
+int {\bfseries get\+Saturation} (void)\hypertarget{classLight_ab654f1c6ffbc3f79fc88d487449dd744}{}\label{classLight_ab654f1c6ffbc3f79fc88d487449dd744}
+
+\item 
+bool {\bfseries get\+On} (void)\hypertarget{classLight_a4145a367202562504ccf4314f489d0eb}{}\label{classLight_a4145a367202562504ccf4314f489d0eb}
+
+\item 
+int {\bfseries get\+Transition} (void)\hypertarget{classLight_ab38069befb7f7ba10b8ee0cffaf89d57}{}\label{classLight_ab38069befb7f7ba10b8ee0cffaf89d57}
+
+\item 
+void {\bfseries set\+Name} (std\+::string new\+Name)\hypertarget{classLight_acbb28a74fceea5fc98568b315e328eac}{}\label{classLight_acbb28a74fceea5fc98568b315e328eac}
+
+\item 
+void {\bfseries set\+Type} (std\+::string new\+Type)\hypertarget{classLight_a9bc02e6694d481e938e2b9710fd3ff9f}{}\label{classLight_a9bc02e6694d481e938e2b9710fd3ff9f}
+
+\item 
+void {\bfseries set\+Brightness} (int new\+Bri)\hypertarget{classLight_a26ebe8e6574a11c2e2a50c00378a3cea}{}\label{classLight_a26ebe8e6574a11c2e2a50c00378a3cea}
+
+\item 
+void {\bfseries set\+Hue} (int new\+Hue)\hypertarget{classLight_a1120d4aff3fcb5a1df425f7d08224691}{}\label{classLight_a1120d4aff3fcb5a1df425f7d08224691}
+
+\item 
+void {\bfseries set\+Saturation} (int new\+Sat)\hypertarget{classLight_a81c65b7b6a3cb135a69591c0640cd5e9}{}\label{classLight_a81c65b7b6a3cb135a69591c0640cd5e9}
+
+\item 
+void {\bfseries set\+On} (bool new\+On)\hypertarget{classLight_abebbcc06640fed324f219f97bbe9ebc8}{}\label{classLight_abebbcc06640fed324f219f97bbe9ebc8}
+
+\item 
+void {\bfseries set\+Transition} (int new\+Trans)\hypertarget{classLight_a2daccaa69755e4397a85a830c7caaba1}{}\label{classLight_a2daccaa69755e4397a85a830c7caaba1}
+
+\item 
+{\footnotesize template$<$class Action $>$ }\\void {\bfseries persist} (Action \&a)\hypertarget{classLight_a2c527298bf267abdca3b30d3ebbf785e}{}\label{classLight_a2c527298bf267abdca3b30d3ebbf785e}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string {\bfseries name}\hypertarget{classLight_aed2e518d1e739c50c31ae77a865f51ed}{}\label{classLight_aed2e518d1e739c50c31ae77a865f51ed}
+
+\item 
+std\+::string {\bfseries type}\hypertarget{classLight_a2825ae88a1158e927a6d16bea9175e56}{}\label{classLight_a2825ae88a1158e927a6d16bea9175e56}
+
+\item 
+bool {\bfseries on}\hypertarget{classLight_a37ee0b241dbdaff4a13cc269de33a8bf}{}\label{classLight_a37ee0b241dbdaff4a13cc269de33a8bf}
+
+\item 
+int {\bfseries bri}\hypertarget{classLight_a34001347a7ae6d2b3e0b12cfedc9aadf}{}\label{classLight_a34001347a7ae6d2b3e0b12cfedc9aadf}
+
+\item 
+int {\bfseries hue}\hypertarget{classLight_ae488614d58a7f0dec6ed59b59c6c37e9}{}\label{classLight_ae488614d58a7f0dec6ed59b59c6c37e9}
+
+\item 
+int {\bfseries sat}\hypertarget{classLight_afbfb00988ab1c1e0a07fa20941c6f2bf}{}\label{classLight_afbfb00988ab1c1e0a07fa20941c6f2bf}
+
+\item 
+int {\bfseries transition\+Time}\hypertarget{classLight_abd73358fde9001da39f147d878f9dab8}{}\label{classLight_abd73358fde9001da39f147d878f9dab8}
+
+\item 
+Wt\+::\+Dbo\+::ptr$<$ \hyperlink{classBridge}{Bridge} $>$ {\bfseries bridge}\hypertarget{classLight_ab1491281b58c62b7031fc668e9e5b506}{}\label{classLight_ab1491281b58c62b7031fc668e9e5b506}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Light.\+h\end{DoxyCompactItemize}

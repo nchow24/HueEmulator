@@ -1,0 +1,124 @@
+\hypertarget{classBridgeEditControlWidget}{}\section{Bridge\+Edit\+Control\+Widget Class Reference}
+\label{classBridgeEditControlWidget}\index{Bridge\+Edit\+Control\+Widget@{Bridge\+Edit\+Control\+Widget}}
+
+
+Inheritance diagram for Bridge\+Edit\+Control\+Widget\+:
+% FIG 0
+
+
+Collaboration diagram for Bridge\+Edit\+Control\+Widget\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Bridge\+Edit\+Control\+Widget} (\hyperlink{classSession}{Session} $\ast$session, Wt\+::\+W\+Container\+Widget $\ast$parent=0)\hypertarget{classBridgeEditControlWidget_af73b22c695986221080d97c284abcc3d}{}\label{classBridgeEditControlWidget_af73b22c695986221080d97c284abcc3d}
+
+\item 
+void {\bfseries update} ()\hypertarget{classBridgeEditControlWidget_adfc2d1340509848cfafa43ce78a39ed7}{}\label{classBridgeEditControlWidget_adfc2d1340509848cfafa43ce78a39ed7}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classBridgeEditControlWidget_a849d07b9de5032490034e53365a9e785}{update\+Edit} ()
+\begin{DoxyCompactList}\small\item\em Checks the input is valid. \end{DoxyCompactList}\item 
+void \hyperlink{classBridgeEditControlWidget_ab52c1124ffe350983915d42b8eb382bf}{handle\+Http\+Response} (boost\+::system\+::error\+\_\+code err, const Wt\+::\+Http\+::\+Message \&response)
+\begin{DoxyCompactList}\small\item\em Handles P\+O\+ST response and adds bridge to the database. \end{DoxyCompactList}\item 
+Wt\+::\+Http\+::\+Client $\ast$ \hyperlink{classBridgeEditControlWidget_a1b3d3198b0bbd5531e67df562b16bdc7}{connect} ()
+\begin{DoxyCompactList}\small\item\em Connects to a client. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classSession}{Session} $\ast$ {\bfseries session\+\_\+}\hypertarget{classBridgeEditControlWidget_a725e5d5961a7a4a8ccd83097c9f7c370}{}\label{classBridgeEditControlWidget_a725e5d5961a7a4a8ccd83097c9f7c370}
+
+\item 
+\hyperlink{classBridge}{Bridge} $\ast$ {\bfseries this\+Bridge}\hypertarget{classBridgeEditControlWidget_adeff969f17b6835fcf432f9fae5e361d}{}\label{classBridgeEditControlWidget_adeff969f17b6835fcf432f9fae5e361d}
+
+\item 
+Wt\+::\+W\+Line\+Edit $\ast$ {\bfseries name\+Edit\+\_\+}\hypertarget{classBridgeEditControlWidget_af7394ee15069a092c01525aa94b9efc0}{}\label{classBridgeEditControlWidget_af7394ee15069a092c01525aa94b9efc0}
+
+\item 
+Wt\+::\+W\+Line\+Edit $\ast$ {\bfseries ip\+Edit\+\_\+}\hypertarget{classBridgeEditControlWidget_a9cdab1eadd1d8733b54242c7f04ac563}{}\label{classBridgeEditControlWidget_a9cdab1eadd1d8733b54242c7f04ac563}
+
+\item 
+Wt\+::\+W\+Line\+Edit $\ast$ {\bfseries port\+Edit\+\_\+}\hypertarget{classBridgeEditControlWidget_af1ba4a3999e7eeee59e1b4248d5234de}{}\label{classBridgeEditControlWidget_af1ba4a3999e7eeee59e1b4248d5234de}
+
+\item 
+Wt\+::\+W\+Line\+Edit $\ast$ {\bfseries location\+Edit\+\_\+}\hypertarget{classBridgeEditControlWidget_ae7bdd50c45db31daf3a3878d9a06902c}{}\label{classBridgeEditControlWidget_ae7bdd50c45db31daf3a3878d9a06902c}
+
+\item 
+Wt\+::\+W\+Text $\ast$ {\bfseries error\+Text\+\_\+}\hypertarget{classBridgeEditControlWidget_af8cc58f52de2ad0de74c62c21b449fcc}{}\label{classBridgeEditControlWidget_af8cc58f52de2ad0de74c62c21b449fcc}
+
+\item 
+std\+::string {\bfseries user\+Id}\hypertarget{classBridgeEditControlWidget_a393a0ec6ee973b1c63ba78a96f526154}{}\label{classBridgeEditControlWidget_a393a0ec6ee973b1c63ba78a96f526154}
+
+\item 
+std\+::string {\bfseries ip} = \char`\"{}\char`\"{}\hypertarget{classBridgeEditControlWidget_aaf5aa5c731689e1e56c9ffddd482ac2d}{}\label{classBridgeEditControlWidget_aaf5aa5c731689e1e56c9ffddd482ac2d}
+
+\item 
+std\+::string {\bfseries port} = \char`\"{}\char`\"{}\hypertarget{classBridgeEditControlWidget_a55aa5aa7cc4dfceee8c7c97c7520f6cc}{}\label{classBridgeEditControlWidget_a55aa5aa7cc4dfceee8c7c97c7520f6cc}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\index{Bridge\+Edit\+Control\+Widget@{Bridge\+Edit\+Control\+Widget}!connect@{connect}}
+\index{connect@{connect}!Bridge\+Edit\+Control\+Widget@{Bridge\+Edit\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{connect()}{connect()}}]{\setlength{\rightskip}{0pt plus 5cm}Http\+::\+Client $\ast$ Bridge\+Edit\+Control\+Widget\+::connect (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classBridgeEditControlWidget_a1b3d3198b0bbd5531e67df562b16bdc7}{}\label{classBridgeEditControlWidget_a1b3d3198b0bbd5531e67df562b16bdc7}
+
+
+Connects to a client. 
+
+Creates a client object and connects to it
+
+\begin{DoxyReturn}{Returns}
+The client object 
+\end{DoxyReturn}
+\index{Bridge\+Edit\+Control\+Widget@{Bridge\+Edit\+Control\+Widget}!handle\+Http\+Response@{handle\+Http\+Response}}
+\index{handle\+Http\+Response@{handle\+Http\+Response}!Bridge\+Edit\+Control\+Widget@{Bridge\+Edit\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{handle\+Http\+Response(boost\+::system\+::error\+\_\+code err, const Wt\+::\+Http\+::\+Message \&response)}{handleHttpResponse(boost::system::error_code err, const Wt::Http::Message &response)}}]{\setlength{\rightskip}{0pt plus 5cm}void Bridge\+Edit\+Control\+Widget\+::handle\+Http\+Response (
+\begin{DoxyParamCaption}
+\item[{boost\+::system\+::error\+\_\+code}]{err, }
+\item[{const Wt\+::\+Http\+::\+Message \&}]{response}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classBridgeEditControlWidget_ab52c1124ffe350983915d42b8eb382bf}{}\label{classBridgeEditControlWidget_ab52c1124ffe350983915d42b8eb382bf}
+
+
+Handles P\+O\+ST response and adds bridge to the database. 
+
+Receives the response after a P\+O\+ST call to the server to register a user with the new bridge First checks if an error was returned from the server because the bridge was not linked yet If the P\+O\+ST call was successful, the username is retrieved from the response\textquotesingle{}s J\+S\+ON string The bridge\textquotesingle{}s name, IP address, port number, and location are retrieved from the input form The original bridge will be deleted and then recreated with the new information before being placed into the database
+
+
+\begin{DoxyParams}{Parameters}
+{\em err} & Error code indicating if an error occurrred \\
+\hline
+{\em response} & Message containing the response from the server \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Void. 
+\end{DoxyReturn}
+\index{Bridge\+Edit\+Control\+Widget@{Bridge\+Edit\+Control\+Widget}!update\+Edit@{update\+Edit}}
+\index{update\+Edit@{update\+Edit}!Bridge\+Edit\+Control\+Widget@{Bridge\+Edit\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{update\+Edit()}{updateEdit()}}]{\setlength{\rightskip}{0pt plus 5cm}void Bridge\+Edit\+Control\+Widget\+::update\+Edit (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classBridgeEditControlWidget_a849d07b9de5032490034e53365a9e785}{}\label{classBridgeEditControlWidget_a849d07b9de5032490034e53365a9e785}
+
+
+Checks the input is valid. 
+
+First checks to make sure the port number has received a number as input. Then checks if the given port number is already in use. If either of these are false, displays an error message for the corresponding error. If there are no errors, it makes a P\+O\+ST call to the server which sets the new bridge as registered to the user \begin{DoxyReturn}{Returns}
+Void. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Bridge\+Edit\+Control.\+h\item 
+\hyperlink{BridgeEditControl_8C}{Bridge\+Edit\+Control.\+C}\end{DoxyCompactItemize}

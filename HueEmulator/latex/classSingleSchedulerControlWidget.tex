@@ -1,0 +1,710 @@
+\hypertarget{classSingleSchedulerControlWidget}{}\section{Single\+Scheduler\+Control\+Widget Class Reference}
+\label{classSingleSchedulerControlWidget}\index{Single\+Scheduler\+Control\+Widget@{Single\+Scheduler\+Control\+Widget}}
+
+
+Inheritance diagram for Single\+Scheduler\+Control\+Widget\+:
+% FIG 0
+
+
+Collaboration diagram for Single\+Scheduler\+Control\+Widget\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classSingleSchedulerControlWidget_ac463dfb932d501b881b62d39ce40beef}{Single\+Scheduler\+Control\+Widget} (\hyperlink{classSession}{Session} $\ast$session, Wt\+::\+W\+Container\+Widget $\ast$parent=0)
+\begin{DoxyCompactList}\small\item\em creates a \hyperlink{classSingleSchedulerControlWidget}{Single\+Scheduler\+Control\+Widget} \end{DoxyCompactList}\item 
+void \hyperlink{classSingleSchedulerControlWidget_ad1a40c63b98309c57ec06a7d53d1fb32}{update} ()
+\begin{DoxyCompactList}\small\item\em loads \hyperlink{classSingleSchedulerControlWidget}{Single\+Scheduler\+Control\+Widget} page \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classSingleSchedulerControlWidget_a9bf7fc2a7f5777a9cd29ba290f61b328}{on} ()
+\begin{DoxyCompactList}\small\item\em Turns light on. \end{DoxyCompactList}\item 
+void \hyperlink{classSingleSchedulerControlWidget_af9a4503965dc2e65ce89ecf713b02142}{off} ()
+\begin{DoxyCompactList}\small\item\em Turns light off. \end{DoxyCompactList}\item 
+void \hyperlink{classSingleSchedulerControlWidget_a56c043e77f1fa91e9ccab3bcc144ef0e}{hue} ()
+\begin{DoxyCompactList}\small\item\em Changes light Hue. \end{DoxyCompactList}\item 
+void \hyperlink{classSingleSchedulerControlWidget_a0a8907804650230979459acd5939a532}{bright} ()
+\begin{DoxyCompactList}\small\item\em Changes light Bright. \end{DoxyCompactList}\item 
+void \hyperlink{classSingleSchedulerControlWidget_a1e7fe9995f628b039703c16e0309a449}{sat} ()
+\begin{DoxyCompactList}\small\item\em Changes light Saturation. \end{DoxyCompactList}\item 
+void \hyperlink{classSingleSchedulerControlWidget_a19a9fc395a8496d67130fb15f15a22c0}{transition} ()
+\begin{DoxyCompactList}\small\item\em Changes light Transition. \end{DoxyCompactList}\item 
+void \hyperlink{classSingleSchedulerControlWidget_a323e0c1f1a0b7a3c1756e59f121f2686}{handle\+Http\+Response} (boost\+::system\+::error\+\_\+code err, const Wt\+::\+Http\+::\+Message \&response)
+\begin{DoxyCompactList}\small\item\em Handles Https Reponse V1. \end{DoxyCompactList}\item 
+void \hyperlink{classSingleSchedulerControlWidget_ab4aff107cf49bdae8ba7c5650297e78e}{handle\+Http\+Response\+Name} (boost\+::system\+::error\+\_\+code err, const Wt\+::\+Http\+::\+Message \&response)
+\begin{DoxyCompactList}\small\item\em Handles Https Reponse V2. \end{DoxyCompactList}\item 
+void \hyperlink{classSingleSchedulerControlWidget_a8058b8110567576b3abd02142f09a793}{handle\+Http\+Response\+V\+O\+ID} (boost\+::system\+::error\+\_\+code err, const Wt\+::\+Http\+::\+Message \&response)
+\begin{DoxyCompactList}\small\item\em Handles Https Reponse V3. \end{DoxyCompactList}\item 
+Wt\+::\+Http\+::\+Client $\ast$ \hyperlink{classSingleSchedulerControlWidget_a88870dd05404fcda5613c04e87eddba6}{connect} ()
+\begin{DoxyCompactList}\small\item\em Handles Https Connect. \end{DoxyCompactList}\item 
+void \hyperlink{classSingleSchedulerControlWidget_aae736f1da5036a5edaaacbb084c92f29}{light\+One} ()
+\begin{DoxyCompactList}\small\item\em Changes Light One. \end{DoxyCompactList}\item 
+void \hyperlink{classSingleSchedulerControlWidget_a23b450759aa7ed01b811e286d06f4ba7}{light\+Two} ()
+\begin{DoxyCompactList}\small\item\em Changes Light Two. \end{DoxyCompactList}\item 
+void \hyperlink{classSingleSchedulerControlWidget_a48138931a6f168024aa5fa8523378714}{light\+Three} ()
+\begin{DoxyCompactList}\small\item\em Changes Light Three. \end{DoxyCompactList}\item 
+void \hyperlink{classSingleSchedulerControlWidget_af53d54694b006e60898b7b6aa3f85ae8}{return\+Bridge} ()
+\begin{DoxyCompactList}\small\item\em Returns back to \hyperlink{classBridge}{Bridge} Page. \end{DoxyCompactList}\item 
+void \hyperlink{classSingleSchedulerControlWidget_ac1eb54766118ff619ac32ba3fcbe20ea}{change\+Date} ()
+\begin{DoxyCompactList}\small\item\em Changes the current Date. \end{DoxyCompactList}\item 
+void \hyperlink{classSingleSchedulerControlWidget_ae35320ca0cbc22ba4ce62376903b3b5f}{create\+Schedule} ()
+\begin{DoxyCompactList}\small\item\em Creates a new schedules. \end{DoxyCompactList}\item 
+void \hyperlink{classSingleSchedulerControlWidget_aa0130edea1c3391a5ebf488d69a53332}{change\+Hour} ()
+\begin{DoxyCompactList}\small\item\em Changes the hour. \end{DoxyCompactList}\item 
+void \hyperlink{classSingleSchedulerControlWidget_aab335dfccc70f9ef7ddacc7d30d6e748}{change\+Min} ()
+\begin{DoxyCompactList}\small\item\em Changes the Minute value. \end{DoxyCompactList}\item 
+void \hyperlink{classSingleSchedulerControlWidget_a017c8666d736327c2df76e951f8131e2}{change\+Sec} ()
+\begin{DoxyCompactList}\small\item\em Changes the Seconds value. \end{DoxyCompactList}\item 
+void \hyperlink{classSingleSchedulerControlWidget_a70af7b207cc5a43d7063f7bd06012ff5}{delete\+Schedule} ()
+\begin{DoxyCompactList}\small\item\em Deletes the current Schedule. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classSingleSchedulerControlWidget_a604bd7d1670fea6bdb16b7f6b8c97af7}{create\+Body\+Message} ()
+\begin{DoxyCompactList}\small\item\em Creates a get Signal. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classSingleSchedulerControlWidget_a8839c588eb9605fc6f251eca26556e75}{create\+Post\+Message} ()
+\begin{DoxyCompactList}\small\item\em Creates a Post Signal. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classSingleSchedulerControlWidget_a15788c25db43eff41ba2a6da63c5964e}{create\+Date\+Time} ()
+\begin{DoxyCompactList}\small\item\em Creates a Date and Time. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classSession}{Session} $\ast$ \hyperlink{classSingleSchedulerControlWidget_a4cd226273646c8c761bb4762d5d561f3}{session\+\_\+}
+\item 
+Wt\+::\+W\+Line\+Edit $\ast$ \hyperlink{classSingleSchedulerControlWidget_adea2cd6431251b3e725a2e71ea53e98e}{name\+Edit\+\_\+}
+\item 
+Wt\+::\+W\+Line\+Edit $\ast$ \hyperlink{classSingleSchedulerControlWidget_ac184a13b1ff7561a7e2e5f790dc42bd3}{hue\+Edit\+\_\+}
+\item 
+Wt\+::\+W\+Slider $\ast$ \hyperlink{classSingleSchedulerControlWidget_a777b6c22a218902cb4410c6019aeb485}{sat\+Scale\+Slider\+\_\+}
+\item 
+Wt\+::\+W\+Slider $\ast$ \hyperlink{classSingleSchedulerControlWidget_a06c98bc002e49f45efd7180004884d8a}{bri\+Scale\+Slider\+\_\+}
+\item 
+Wt\+::\+W\+Slider $\ast$ \hyperlink{classSingleSchedulerControlWidget_af8f29e2d94ac91c19f7b44ac947f7f7d}{hue\+Scale\+Slider\+\_\+}
+\item 
+Wt\+::\+W\+Slider $\ast$ \hyperlink{classSingleSchedulerControlWidget_a5d56e0945847bd44dc494842b7ac8c58}{transition\+Scale\+Slider\+\_\+}
+\item 
+Wt\+::\+W\+Calendar $\ast$ \hyperlink{classSingleSchedulerControlWidget_ab6d7d409c6b686e460904b7c250824fd}{calendar\+\_\+}
+\item 
+Wt\+::\+W\+Combo\+Box $\ast$ \hyperlink{classSingleSchedulerControlWidget_a058831973716290b1ca72bb40d3cc4eb}{hour\+Input\+\_\+}
+\item 
+Wt\+::\+W\+Combo\+Box $\ast$ \hyperlink{classSingleSchedulerControlWidget_aba279034b626322922706c0ce95468c6}{min\+Input\+\_\+}
+\item 
+Wt\+::\+W\+Combo\+Box $\ast$ \hyperlink{classSingleSchedulerControlWidget_ac469a523613e142f84735b39d2ebc178}{sec\+Input\+\_\+}
+\item 
+Wt\+::\+W\+Combo\+Box $\ast$ \hyperlink{classSingleSchedulerControlWidget_a29f94e86583ee3ec6b509a7336772e3e}{am\+Selector\+\_\+}
+\item 
+Wt\+::\+W\+Text $\ast$ \hyperlink{classSingleSchedulerControlWidget_acfe14aa1c8dc0058376716cefc746dd9}{one\+Light\+\_\+}
+\item 
+Wt\+::\+W\+Text $\ast$ \hyperlink{classSingleSchedulerControlWidget_a37a5c0996f517813a1b0ffdcaf67108b}{two\+Light\+\_\+}
+\item 
+Wt\+::\+W\+Text $\ast$ \hyperlink{classSingleSchedulerControlWidget_a132611ac95921a1f32888a15b09a16a5}{three\+Light\+\_\+}
+\item 
+Wt\+::\+W\+Text $\ast$ \hyperlink{classSingleSchedulerControlWidget_a55fa60e9c72898895dcb2bd3740f544b}{change\+\_\+}
+\item 
+Wt\+::\+W\+Text $\ast$ \hyperlink{classSingleSchedulerControlWidget_a91f77910545268fdd89df0f9903dbb1a}{light\+\_\+}
+\item 
+Wt\+::\+W\+Text $\ast$ \hyperlink{classSingleSchedulerControlWidget_a42e8c83f6d9c385f217d1bbd1e6e5038}{date\+Select\+\_\+}
+\item 
+Wt\+::\+W\+Text $\ast$ \hyperlink{classSingleSchedulerControlWidget_a52857293e1ffa711d8e32c5905fca173}{schedule\+Info\+Edit\+\_\+}
+\item 
+Wt\+::\+W\+Text $\ast$ \hyperlink{classSingleSchedulerControlWidget_a7ec275b7a9811ca553e873fc12402c56}{schedule\+Time\+Edit\+\_\+}
+\item 
+Wt\+::\+W\+Push\+Button $\ast$ \hyperlink{classSingleSchedulerControlWidget_ad90ddf9ce495e587d6457cda5422858c}{delete\+Button}
+\item 
+Wt\+::\+W\+Push\+Button $\ast$ \hyperlink{classSingleSchedulerControlWidget_ae8dd8c0b3020fcff9d237f5c16ab5396}{schedule\+Button}
+\item 
+std\+::string \hyperlink{classSingleSchedulerControlWidget_af4170d8a55962a3d2048f344516befff}{current\+Light} = \char`\"{}0\char`\"{}
+\item 
+std\+::string \hyperlink{classSingleSchedulerControlWidget_a218706e43a5777961386c8bdee383192}{ip} = \char`\"{}\char`\"{}
+\item 
+std\+::string \hyperlink{classSingleSchedulerControlWidget_ae067a0f04e22f78c73a5a372661ecc68}{user\+ID} = \char`\"{}\char`\"{}
+\item 
+std\+::string \hyperlink{classSingleSchedulerControlWidget_aa5647267c15e301af0a354f12c71d2af}{port} = \char`\"{}\char`\"{}
+\item 
+std\+::string \hyperlink{classSingleSchedulerControlWidget_a715d00f6515686a6df0a7e5a4b0ececd}{schedule\+ID} = \char`\"{}\char`\"{}
+\item 
+std\+::string \hyperlink{classSingleSchedulerControlWidget_ae803e75c73103097b72fc1e192a2c737}{name\+ID} = \char`\"{}\char`\"{}
+\item 
+std\+::string \hyperlink{classSingleSchedulerControlWidget_a5d3c98481e521dbcbde9d78ef0422c70}{name}
+\item 
+char \hyperlink{classSingleSchedulerControlWidget_a655b725e6a6bc0146dbb4b6210c3e6d6}{Datalight}
+\item 
+int \hyperlink{classSingleSchedulerControlWidget_a2ba1dcbf2d85d36401dfa444f8419e76}{Dataon}
+\item 
+int \hyperlink{classSingleSchedulerControlWidget_af7d9c967a6a0fc8621e5fbdc5884e91b}{Datahue}
+\item 
+int \hyperlink{classSingleSchedulerControlWidget_a97f81e542ac0cf7d0e4e7382755e51ab}{Databri}
+\item 
+int \hyperlink{classSingleSchedulerControlWidget_ad21d4f657354f00e2c14b55cae4c876d}{Datasat}
+\item 
+int \hyperlink{classSingleSchedulerControlWidget_afc9b8081291095f9e6fdb1a9a048a2ba}{Datatransition}
+\item 
+int \hyperlink{classSingleSchedulerControlWidget_aef67a4f23fd8f100efb80e23c56c231b}{Datayear}
+\item 
+int \hyperlink{classSingleSchedulerControlWidget_acf568679a63621149ab2212944241684}{Datamonth}
+\item 
+int \hyperlink{classSingleSchedulerControlWidget_a8d3a1c66c75980878c35700a6544ae94}{Dataday}
+\item 
+std\+::string \hyperlink{classSingleSchedulerControlWidget_a7141fd690ac8ad3db9f4539763ad3db9}{Datahour}
+\item 
+std\+::string \hyperlink{classSingleSchedulerControlWidget_abb4a09ba0ce3ad37119bd0a13eb1979a}{Datamin}
+\item 
+std\+::string \hyperlink{classSingleSchedulerControlWidget_a5b662da906b80bb884245b96fc23dd68}{Datasec}
+\item 
+std\+::string \hyperlink{classSingleSchedulerControlWidget_a13ced62f55d57453da0a2f673e52d5d5}{Datamer\+Des}
+\item 
+bool \hyperlink{classSingleSchedulerControlWidget_a194a0b611fadec029f0e7c55154ed903}{delete\+Confirm}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Single\+Scheduler\+Control\+Widget@{Single\+Scheduler\+Control\+Widget}!Single\+Scheduler\+Control\+Widget@{Single\+Scheduler\+Control\+Widget}}
+\index{Single\+Scheduler\+Control\+Widget@{Single\+Scheduler\+Control\+Widget}!Single\+Scheduler\+Control\+Widget@{Single\+Scheduler\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{Single\+Scheduler\+Control\+Widget(\+Session $\ast$session, Wt\+::\+W\+Container\+Widget $\ast$parent=0)}{SingleSchedulerControlWidget(Session *session, Wt::WContainerWidget *parent=0)}}]{\setlength{\rightskip}{0pt plus 5cm}Single\+Scheduler\+Control\+Widget\+::\+Single\+Scheduler\+Control\+Widget (
+\begin{DoxyParamCaption}
+\item[{{\bf Session} $\ast$}]{session, }
+\item[{Wt\+::\+W\+Container\+Widget $\ast$}]{parent = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}\hypertarget{classSingleSchedulerControlWidget_ac463dfb932d501b881b62d39ce40beef}{}\label{classSingleSchedulerControlWidget_ac463dfb932d501b881b62d39ce40beef}
+
+
+creates a \hyperlink{classSingleSchedulerControlWidget}{Single\+Scheduler\+Control\+Widget} 
+
+creates a \hyperlink{classSingleSchedulerControlWidget}{Single\+Scheduler\+Control\+Widget} that is tied to a database session. The Widget also has a parent Container Widget
+
+
+\begin{DoxyParams}{Parameters}
+{\em session} & the database session \\
+\hline
+{\em parent} & the parent Widget Container \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classSingleSchedulerControlWidget}{Single\+Scheduler\+Control\+Widget} 
+\end{DoxyReturn}
+
+
+\subsection{Member Function Documentation}
+\index{Single\+Scheduler\+Control\+Widget@{Single\+Scheduler\+Control\+Widget}!bright@{bright}}
+\index{bright@{bright}!Single\+Scheduler\+Control\+Widget@{Single\+Scheduler\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{bright()}{bright()}}]{\setlength{\rightskip}{0pt plus 5cm}void Single\+Scheduler\+Control\+Widget\+::bright (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classSingleSchedulerControlWidget_a0a8907804650230979459acd5939a532}{}\label{classSingleSchedulerControlWidget_a0a8907804650230979459acd5939a532}
+
+
+Changes light Bright. 
+
+Changes light Bright
+
+\begin{DoxyReturn}{Returns}
+Void 
+\end{DoxyReturn}
+\index{Single\+Scheduler\+Control\+Widget@{Single\+Scheduler\+Control\+Widget}!change\+Date@{change\+Date}}
+\index{change\+Date@{change\+Date}!Single\+Scheduler\+Control\+Widget@{Single\+Scheduler\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{change\+Date()}{changeDate()}}]{\setlength{\rightskip}{0pt plus 5cm}void Single\+Scheduler\+Control\+Widget\+::change\+Date (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classSingleSchedulerControlWidget_ac1eb54766118ff619ac32ba3fcbe20ea}{}\label{classSingleSchedulerControlWidget_ac1eb54766118ff619ac32ba3fcbe20ea}
+
+
+Changes the current Date. 
+
+This function changes the Date Variable
+
+\begin{DoxyReturn}{Returns}
+Void 
+\end{DoxyReturn}
+\index{Single\+Scheduler\+Control\+Widget@{Single\+Scheduler\+Control\+Widget}!change\+Hour@{change\+Hour}}
+\index{change\+Hour@{change\+Hour}!Single\+Scheduler\+Control\+Widget@{Single\+Scheduler\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{change\+Hour()}{changeHour()}}]{\setlength{\rightskip}{0pt plus 5cm}void Single\+Scheduler\+Control\+Widget\+::change\+Hour (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classSingleSchedulerControlWidget_aa0130edea1c3391a5ebf488d69a53332}{}\label{classSingleSchedulerControlWidget_aa0130edea1c3391a5ebf488d69a53332}
+
+
+Changes the hour. 
+
+Changes the current Hour.
+
+\begin{DoxyReturn}{Returns}
+Void 
+\end{DoxyReturn}
+\index{Single\+Scheduler\+Control\+Widget@{Single\+Scheduler\+Control\+Widget}!change\+Min@{change\+Min}}
+\index{change\+Min@{change\+Min}!Single\+Scheduler\+Control\+Widget@{Single\+Scheduler\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{change\+Min()}{changeMin()}}]{\setlength{\rightskip}{0pt plus 5cm}void Single\+Scheduler\+Control\+Widget\+::change\+Min (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classSingleSchedulerControlWidget_aab335dfccc70f9ef7ddacc7d30d6e748}{}\label{classSingleSchedulerControlWidget_aab335dfccc70f9ef7ddacc7d30d6e748}
+
+
+Changes the Minute value. 
+
+Changes the current Minutes.
+
+\begin{DoxyReturn}{Returns}
+Void 
+\end{DoxyReturn}
+\index{Single\+Scheduler\+Control\+Widget@{Single\+Scheduler\+Control\+Widget}!change\+Sec@{change\+Sec}}
+\index{change\+Sec@{change\+Sec}!Single\+Scheduler\+Control\+Widget@{Single\+Scheduler\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{change\+Sec()}{changeSec()}}]{\setlength{\rightskip}{0pt plus 5cm}void Single\+Scheduler\+Control\+Widget\+::change\+Sec (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classSingleSchedulerControlWidget_a017c8666d736327c2df76e951f8131e2}{}\label{classSingleSchedulerControlWidget_a017c8666d736327c2df76e951f8131e2}
+
+
+Changes the Seconds value. 
+
+Changes the current Seconds.
+
+\begin{DoxyReturn}{Returns}
+Void 
+\end{DoxyReturn}
+\index{Single\+Scheduler\+Control\+Widget@{Single\+Scheduler\+Control\+Widget}!connect@{connect}}
+\index{connect@{connect}!Single\+Scheduler\+Control\+Widget@{Single\+Scheduler\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{connect()}{connect()}}]{\setlength{\rightskip}{0pt plus 5cm}Http\+::\+Client $\ast$ Single\+Scheduler\+Control\+Widget\+::connect (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classSingleSchedulerControlWidget_a88870dd05404fcda5613c04e87eddba6}{}\label{classSingleSchedulerControlWidget_a88870dd05404fcda5613c04e87eddba6}
+
+
+Handles Https Connect. 
+
+Connects to Https
+
+\begin{DoxyReturn}{Returns}
+Void 
+\end{DoxyReturn}
+\index{Single\+Scheduler\+Control\+Widget@{Single\+Scheduler\+Control\+Widget}!create\+Body\+Message@{create\+Body\+Message}}
+\index{create\+Body\+Message@{create\+Body\+Message}!Single\+Scheduler\+Control\+Widget@{Single\+Scheduler\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{create\+Body\+Message()}{createBodyMessage()}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Single\+Scheduler\+Control\+Widget\+::create\+Body\+Message (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classSingleSchedulerControlWidget_a604bd7d1670fea6bdb16b7f6b8c97af7}{}\label{classSingleSchedulerControlWidget_a604bd7d1670fea6bdb16b7f6b8c97af7}
+
+
+Creates a get Signal. 
+
+Creates the body of the get signal
+
+\begin{DoxyReturn}{Returns}
+Void 
+\end{DoxyReturn}
+\index{Single\+Scheduler\+Control\+Widget@{Single\+Scheduler\+Control\+Widget}!create\+Date\+Time@{create\+Date\+Time}}
+\index{create\+Date\+Time@{create\+Date\+Time}!Single\+Scheduler\+Control\+Widget@{Single\+Scheduler\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{create\+Date\+Time()}{createDateTime()}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Single\+Scheduler\+Control\+Widget\+::create\+Date\+Time (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classSingleSchedulerControlWidget_a15788c25db43eff41ba2a6da63c5964e}{}\label{classSingleSchedulerControlWidget_a15788c25db43eff41ba2a6da63c5964e}
+
+
+Creates a Date and Time. 
+
+Creates the body of the post signal
+
+\begin{DoxyReturn}{Returns}
+Void 
+\end{DoxyReturn}
+\index{Single\+Scheduler\+Control\+Widget@{Single\+Scheduler\+Control\+Widget}!create\+Post\+Message@{create\+Post\+Message}}
+\index{create\+Post\+Message@{create\+Post\+Message}!Single\+Scheduler\+Control\+Widget@{Single\+Scheduler\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{create\+Post\+Message()}{createPostMessage()}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Single\+Scheduler\+Control\+Widget\+::create\+Post\+Message (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classSingleSchedulerControlWidget_a8839c588eb9605fc6f251eca26556e75}{}\label{classSingleSchedulerControlWidget_a8839c588eb9605fc6f251eca26556e75}
+
+
+Creates a Post Signal. 
+
+Creates the body of the post signal
+
+\begin{DoxyReturn}{Returns}
+Void 
+\end{DoxyReturn}
+\index{Single\+Scheduler\+Control\+Widget@{Single\+Scheduler\+Control\+Widget}!create\+Schedule@{create\+Schedule}}
+\index{create\+Schedule@{create\+Schedule}!Single\+Scheduler\+Control\+Widget@{Single\+Scheduler\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{create\+Schedule()}{createSchedule()}}]{\setlength{\rightskip}{0pt plus 5cm}void Single\+Scheduler\+Control\+Widget\+::create\+Schedule (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classSingleSchedulerControlWidget_ae35320ca0cbc22ba4ce62376903b3b5f}{}\label{classSingleSchedulerControlWidget_ae35320ca0cbc22ba4ce62376903b3b5f}
+
+
+Creates a new schedules. 
+
+Will create a schedule that is stored into the emulator
+
+\begin{DoxyReturn}{Returns}
+Void 
+\end{DoxyReturn}
+\index{Single\+Scheduler\+Control\+Widget@{Single\+Scheduler\+Control\+Widget}!delete\+Schedule@{delete\+Schedule}}
+\index{delete\+Schedule@{delete\+Schedule}!Single\+Scheduler\+Control\+Widget@{Single\+Scheduler\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{delete\+Schedule()}{deleteSchedule()}}]{\setlength{\rightskip}{0pt plus 5cm}void Single\+Scheduler\+Control\+Widget\+::delete\+Schedule (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classSingleSchedulerControlWidget_a70af7b207cc5a43d7063f7bd06012ff5}{}\label{classSingleSchedulerControlWidget_a70af7b207cc5a43d7063f7bd06012ff5}
+
+
+Deletes the current Schedule. 
+
+Removes the schedule from the emulator
+
+\begin{DoxyReturn}{Returns}
+Void 
+\end{DoxyReturn}
+\index{Single\+Scheduler\+Control\+Widget@{Single\+Scheduler\+Control\+Widget}!handle\+Http\+Response@{handle\+Http\+Response}}
+\index{handle\+Http\+Response@{handle\+Http\+Response}!Single\+Scheduler\+Control\+Widget@{Single\+Scheduler\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{handle\+Http\+Response(boost\+::system\+::error\+\_\+code err, const Wt\+::\+Http\+::\+Message \&response)}{handleHttpResponse(boost::system::error_code err, const Wt::Http::Message &response)}}]{\setlength{\rightskip}{0pt plus 5cm}void Single\+Scheduler\+Control\+Widget\+::handle\+Http\+Response (
+\begin{DoxyParamCaption}
+\item[{boost\+::system\+::error\+\_\+code}]{err, }
+\item[{const Wt\+::\+Http\+::\+Message \&}]{response}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classSingleSchedulerControlWidget_a323e0c1f1a0b7a3c1756e59f121f2686}{}\label{classSingleSchedulerControlWidget_a323e0c1f1a0b7a3c1756e59f121f2686}
+
+
+Handles Https Reponse V1. 
+
+Handles the Https Response for basic
+
+\begin{DoxyReturn}{Returns}
+Void 
+\end{DoxyReturn}
+\index{Single\+Scheduler\+Control\+Widget@{Single\+Scheduler\+Control\+Widget}!handle\+Http\+Response\+Name@{handle\+Http\+Response\+Name}}
+\index{handle\+Http\+Response\+Name@{handle\+Http\+Response\+Name}!Single\+Scheduler\+Control\+Widget@{Single\+Scheduler\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{handle\+Http\+Response\+Name(boost\+::system\+::error\+\_\+code err, const Wt\+::\+Http\+::\+Message \&response)}{handleHttpResponseName(boost::system::error_code err, const Wt::Http::Message &response)}}]{\setlength{\rightskip}{0pt plus 5cm}void Single\+Scheduler\+Control\+Widget\+::handle\+Http\+Response\+Name (
+\begin{DoxyParamCaption}
+\item[{boost\+::system\+::error\+\_\+code}]{err, }
+\item[{const Wt\+::\+Http\+::\+Message \&}]{response}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classSingleSchedulerControlWidget_ab4aff107cf49bdae8ba7c5650297e78e}{}\label{classSingleSchedulerControlWidget_ab4aff107cf49bdae8ba7c5650297e78e}
+
+
+Handles Https Reponse V2. 
+
+Handles the Https Response for Name
+
+\begin{DoxyReturn}{Returns}
+Void 
+\end{DoxyReturn}
+\index{Single\+Scheduler\+Control\+Widget@{Single\+Scheduler\+Control\+Widget}!handle\+Http\+Response\+V\+O\+ID@{handle\+Http\+Response\+V\+O\+ID}}
+\index{handle\+Http\+Response\+V\+O\+ID@{handle\+Http\+Response\+V\+O\+ID}!Single\+Scheduler\+Control\+Widget@{Single\+Scheduler\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{handle\+Http\+Response\+V\+O\+I\+D(boost\+::system\+::error\+\_\+code err, const Wt\+::\+Http\+::\+Message \&response)}{handleHttpResponseVOID(boost::system::error_code err, const Wt::Http::Message &response)}}]{\setlength{\rightskip}{0pt plus 5cm}void Single\+Scheduler\+Control\+Widget\+::handle\+Http\+Response\+V\+O\+ID (
+\begin{DoxyParamCaption}
+\item[{boost\+::system\+::error\+\_\+code}]{err, }
+\item[{const Wt\+::\+Http\+::\+Message \&}]{response}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classSingleSchedulerControlWidget_a8058b8110567576b3abd02142f09a793}{}\label{classSingleSchedulerControlWidget_a8058b8110567576b3abd02142f09a793}
+
+
+Handles Https Reponse V3. 
+
+Handles the Https Response for Void
+
+\begin{DoxyReturn}{Returns}
+Void 
+\end{DoxyReturn}
+\index{Single\+Scheduler\+Control\+Widget@{Single\+Scheduler\+Control\+Widget}!hue@{hue}}
+\index{hue@{hue}!Single\+Scheduler\+Control\+Widget@{Single\+Scheduler\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{hue()}{hue()}}]{\setlength{\rightskip}{0pt plus 5cm}void Single\+Scheduler\+Control\+Widget\+::hue (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classSingleSchedulerControlWidget_a56c043e77f1fa91e9ccab3bcc144ef0e}{}\label{classSingleSchedulerControlWidget_a56c043e77f1fa91e9ccab3bcc144ef0e}
+
+
+Changes light Hue. 
+
+Changes light Hue
+
+\begin{DoxyReturn}{Returns}
+Void 
+\end{DoxyReturn}
+\index{Single\+Scheduler\+Control\+Widget@{Single\+Scheduler\+Control\+Widget}!light\+One@{light\+One}}
+\index{light\+One@{light\+One}!Single\+Scheduler\+Control\+Widget@{Single\+Scheduler\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{light\+One()}{lightOne()}}]{\setlength{\rightskip}{0pt plus 5cm}void Single\+Scheduler\+Control\+Widget\+::light\+One (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classSingleSchedulerControlWidget_aae736f1da5036a5edaaacbb084c92f29}{}\label{classSingleSchedulerControlWidget_aae736f1da5036a5edaaacbb084c92f29}
+
+
+Changes Light One. 
+
+Change Light One
+
+\begin{DoxyReturn}{Returns}
+Void 
+\end{DoxyReturn}
+\index{Single\+Scheduler\+Control\+Widget@{Single\+Scheduler\+Control\+Widget}!light\+Three@{light\+Three}}
+\index{light\+Three@{light\+Three}!Single\+Scheduler\+Control\+Widget@{Single\+Scheduler\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{light\+Three()}{lightThree()}}]{\setlength{\rightskip}{0pt plus 5cm}void Single\+Scheduler\+Control\+Widget\+::light\+Three (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classSingleSchedulerControlWidget_a48138931a6f168024aa5fa8523378714}{}\label{classSingleSchedulerControlWidget_a48138931a6f168024aa5fa8523378714}
+
+
+Changes Light Three. 
+
+Change Light Three
+
+\begin{DoxyReturn}{Returns}
+Void 
+\end{DoxyReturn}
+\index{Single\+Scheduler\+Control\+Widget@{Single\+Scheduler\+Control\+Widget}!light\+Two@{light\+Two}}
+\index{light\+Two@{light\+Two}!Single\+Scheduler\+Control\+Widget@{Single\+Scheduler\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{light\+Two()}{lightTwo()}}]{\setlength{\rightskip}{0pt plus 5cm}void Single\+Scheduler\+Control\+Widget\+::light\+Two (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classSingleSchedulerControlWidget_a23b450759aa7ed01b811e286d06f4ba7}{}\label{classSingleSchedulerControlWidget_a23b450759aa7ed01b811e286d06f4ba7}
+
+
+Changes Light Two. 
+
+Change Light Two
+
+\begin{DoxyReturn}{Returns}
+Void 
+\end{DoxyReturn}
+\index{Single\+Scheduler\+Control\+Widget@{Single\+Scheduler\+Control\+Widget}!off@{off}}
+\index{off@{off}!Single\+Scheduler\+Control\+Widget@{Single\+Scheduler\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{off()}{off()}}]{\setlength{\rightskip}{0pt plus 5cm}void Single\+Scheduler\+Control\+Widget\+::off (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classSingleSchedulerControlWidget_af9a4503965dc2e65ce89ecf713b02142}{}\label{classSingleSchedulerControlWidget_af9a4503965dc2e65ce89ecf713b02142}
+
+
+Turns light off. 
+
+Turns light off.
+
+\begin{DoxyReturn}{Returns}
+Void 
+\end{DoxyReturn}
+\index{Single\+Scheduler\+Control\+Widget@{Single\+Scheduler\+Control\+Widget}!on@{on}}
+\index{on@{on}!Single\+Scheduler\+Control\+Widget@{Single\+Scheduler\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{on()}{on()}}]{\setlength{\rightskip}{0pt plus 5cm}void Single\+Scheduler\+Control\+Widget\+::on (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classSingleSchedulerControlWidget_a9bf7fc2a7f5777a9cd29ba290f61b328}{}\label{classSingleSchedulerControlWidget_a9bf7fc2a7f5777a9cd29ba290f61b328}
+
+
+Turns light on. 
+
+Turns light on.
+
+\begin{DoxyReturn}{Returns}
+Void 
+\end{DoxyReturn}
+\index{Single\+Scheduler\+Control\+Widget@{Single\+Scheduler\+Control\+Widget}!return\+Bridge@{return\+Bridge}}
+\index{return\+Bridge@{return\+Bridge}!Single\+Scheduler\+Control\+Widget@{Single\+Scheduler\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{return\+Bridge()}{returnBridge()}}]{\setlength{\rightskip}{0pt plus 5cm}void Single\+Scheduler\+Control\+Widget\+::return\+Bridge (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classSingleSchedulerControlWidget_af53d54694b006e60898b7b6aa3f85ae8}{}\label{classSingleSchedulerControlWidget_af53d54694b006e60898b7b6aa3f85ae8}
+
+
+Returns back to \hyperlink{classBridge}{Bridge} Page. 
+
+This function returns user to \hyperlink{classBridge}{Bridge} Page
+
+\begin{DoxyReturn}{Returns}
+Void 
+\end{DoxyReturn}
+\index{Single\+Scheduler\+Control\+Widget@{Single\+Scheduler\+Control\+Widget}!sat@{sat}}
+\index{sat@{sat}!Single\+Scheduler\+Control\+Widget@{Single\+Scheduler\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{sat()}{sat()}}]{\setlength{\rightskip}{0pt plus 5cm}void Single\+Scheduler\+Control\+Widget\+::sat (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classSingleSchedulerControlWidget_a1e7fe9995f628b039703c16e0309a449}{}\label{classSingleSchedulerControlWidget_a1e7fe9995f628b039703c16e0309a449}
+
+
+Changes light Saturation. 
+
+Changes light Saturation
+
+\begin{DoxyReturn}{Returns}
+Void 
+\end{DoxyReturn}
+\index{Single\+Scheduler\+Control\+Widget@{Single\+Scheduler\+Control\+Widget}!transition@{transition}}
+\index{transition@{transition}!Single\+Scheduler\+Control\+Widget@{Single\+Scheduler\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{transition()}{transition()}}]{\setlength{\rightskip}{0pt plus 5cm}void Single\+Scheduler\+Control\+Widget\+::transition (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classSingleSchedulerControlWidget_a19a9fc395a8496d67130fb15f15a22c0}{}\label{classSingleSchedulerControlWidget_a19a9fc395a8496d67130fb15f15a22c0}
+
+
+Changes light Transition. 
+
+Changes light Transition
+
+\begin{DoxyReturn}{Returns}
+Void 
+\end{DoxyReturn}
+\index{Single\+Scheduler\+Control\+Widget@{Single\+Scheduler\+Control\+Widget}!update@{update}}
+\index{update@{update}!Single\+Scheduler\+Control\+Widget@{Single\+Scheduler\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{update()}{update()}}]{\setlength{\rightskip}{0pt plus 5cm}void Single\+Scheduler\+Control\+Widget\+::update (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classSingleSchedulerControlWidget_ad1a40c63b98309c57ec06a7d53d1fb32}{}\label{classSingleSchedulerControlWidget_ad1a40c63b98309c57ec06a7d53d1fb32}
+
+
+loads \hyperlink{classSingleSchedulerControlWidget}{Single\+Scheduler\+Control\+Widget} page 
+
+loads the \hyperlink{classSingleSchedulerControlWidget}{Single\+Scheduler\+Control\+Widget} page which displays changes to a light\textquotesingle{}s name, and options to change a light\textquotesingle{}s state
+
+\begin{DoxyReturn}{Returns}
+Void 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\index{Single\+Scheduler\+Control\+Widget@{Single\+Scheduler\+Control\+Widget}!am\+Selector\+\_\+@{am\+Selector\+\_\+}}
+\index{am\+Selector\+\_\+@{am\+Selector\+\_\+}!Single\+Scheduler\+Control\+Widget@{Single\+Scheduler\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{am\+Selector\+\_\+}{amSelector_}}]{\setlength{\rightskip}{0pt plus 5cm}Wt\+::\+W\+Combo\+Box$\ast$ Single\+Scheduler\+Control\+Widget\+::am\+Selector\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classSingleSchedulerControlWidget_a29f94e86583ee3ec6b509a7336772e3e}{}\label{classSingleSchedulerControlWidget_a29f94e86583ee3ec6b509a7336772e3e}
+Select Am/\+Pm \index{Single\+Scheduler\+Control\+Widget@{Single\+Scheduler\+Control\+Widget}!bri\+Scale\+Slider\+\_\+@{bri\+Scale\+Slider\+\_\+}}
+\index{bri\+Scale\+Slider\+\_\+@{bri\+Scale\+Slider\+\_\+}!Single\+Scheduler\+Control\+Widget@{Single\+Scheduler\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{bri\+Scale\+Slider\+\_\+}{briScaleSlider_}}]{\setlength{\rightskip}{0pt plus 5cm}Wt\+::\+W\+Slider$\ast$ Single\+Scheduler\+Control\+Widget\+::bri\+Scale\+Slider\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classSingleSchedulerControlWidget_a06c98bc002e49f45efd7180004884d8a}{}\label{classSingleSchedulerControlWidget_a06c98bc002e49f45efd7180004884d8a}
+Light\textquotesingle{}s brightness selection \index{Single\+Scheduler\+Control\+Widget@{Single\+Scheduler\+Control\+Widget}!calendar\+\_\+@{calendar\+\_\+}}
+\index{calendar\+\_\+@{calendar\+\_\+}!Single\+Scheduler\+Control\+Widget@{Single\+Scheduler\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{calendar\+\_\+}{calendar_}}]{\setlength{\rightskip}{0pt plus 5cm}Wt\+::\+W\+Calendar$\ast$ Single\+Scheduler\+Control\+Widget\+::calendar\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classSingleSchedulerControlWidget_ab6d7d409c6b686e460904b7c250824fd}{}\label{classSingleSchedulerControlWidget_ab6d7d409c6b686e460904b7c250824fd}
+Calendar for selecting date \index{Single\+Scheduler\+Control\+Widget@{Single\+Scheduler\+Control\+Widget}!change\+\_\+@{change\+\_\+}}
+\index{change\+\_\+@{change\+\_\+}!Single\+Scheduler\+Control\+Widget@{Single\+Scheduler\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{change\+\_\+}{change_}}]{\setlength{\rightskip}{0pt plus 5cm}Wt\+::\+W\+Text$\ast$ Single\+Scheduler\+Control\+Widget\+::change\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classSingleSchedulerControlWidget_a55fa60e9c72898895dcb2bd3740f544b}{}\label{classSingleSchedulerControlWidget_a55fa60e9c72898895dcb2bd3740f544b}
+Displays Status of Light \index{Single\+Scheduler\+Control\+Widget@{Single\+Scheduler\+Control\+Widget}!current\+Light@{current\+Light}}
+\index{current\+Light@{current\+Light}!Single\+Scheduler\+Control\+Widget@{Single\+Scheduler\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{current\+Light}{currentLight}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Single\+Scheduler\+Control\+Widget\+::current\+Light = \char`\"{}0\char`\"{}\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classSingleSchedulerControlWidget_af4170d8a55962a3d2048f344516befff}{}\label{classSingleSchedulerControlWidget_af4170d8a55962a3d2048f344516befff}
+Variable for Light \index{Single\+Scheduler\+Control\+Widget@{Single\+Scheduler\+Control\+Widget}!Databri@{Databri}}
+\index{Databri@{Databri}!Single\+Scheduler\+Control\+Widget@{Single\+Scheduler\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{Databri}{Databri}}]{\setlength{\rightskip}{0pt plus 5cm}int Single\+Scheduler\+Control\+Widget\+::\+Databri\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classSingleSchedulerControlWidget_a97f81e542ac0cf7d0e4e7382755e51ab}{}\label{classSingleSchedulerControlWidget_a97f81e542ac0cf7d0e4e7382755e51ab}
+Variable for schedule information \index{Single\+Scheduler\+Control\+Widget@{Single\+Scheduler\+Control\+Widget}!Dataday@{Dataday}}
+\index{Dataday@{Dataday}!Single\+Scheduler\+Control\+Widget@{Single\+Scheduler\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{Dataday}{Dataday}}]{\setlength{\rightskip}{0pt plus 5cm}int Single\+Scheduler\+Control\+Widget\+::\+Dataday\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classSingleSchedulerControlWidget_a8d3a1c66c75980878c35700a6544ae94}{}\label{classSingleSchedulerControlWidget_a8d3a1c66c75980878c35700a6544ae94}
+Variable for schedule information \index{Single\+Scheduler\+Control\+Widget@{Single\+Scheduler\+Control\+Widget}!Datahour@{Datahour}}
+\index{Datahour@{Datahour}!Single\+Scheduler\+Control\+Widget@{Single\+Scheduler\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{Datahour}{Datahour}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Single\+Scheduler\+Control\+Widget\+::\+Datahour\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classSingleSchedulerControlWidget_a7141fd690ac8ad3db9f4539763ad3db9}{}\label{classSingleSchedulerControlWidget_a7141fd690ac8ad3db9f4539763ad3db9}
+Variable for schedule information \index{Single\+Scheduler\+Control\+Widget@{Single\+Scheduler\+Control\+Widget}!Datahue@{Datahue}}
+\index{Datahue@{Datahue}!Single\+Scheduler\+Control\+Widget@{Single\+Scheduler\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{Datahue}{Datahue}}]{\setlength{\rightskip}{0pt plus 5cm}int Single\+Scheduler\+Control\+Widget\+::\+Datahue\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classSingleSchedulerControlWidget_af7d9c967a6a0fc8621e5fbdc5884e91b}{}\label{classSingleSchedulerControlWidget_af7d9c967a6a0fc8621e5fbdc5884e91b}
+Variable for schedule information \index{Single\+Scheduler\+Control\+Widget@{Single\+Scheduler\+Control\+Widget}!Datalight@{Datalight}}
+\index{Datalight@{Datalight}!Single\+Scheduler\+Control\+Widget@{Single\+Scheduler\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{Datalight}{Datalight}}]{\setlength{\rightskip}{0pt plus 5cm}char Single\+Scheduler\+Control\+Widget\+::\+Datalight\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classSingleSchedulerControlWidget_a655b725e6a6bc0146dbb4b6210c3e6d6}{}\label{classSingleSchedulerControlWidget_a655b725e6a6bc0146dbb4b6210c3e6d6}
+Variable for schedule information \index{Single\+Scheduler\+Control\+Widget@{Single\+Scheduler\+Control\+Widget}!Datamer\+Des@{Datamer\+Des}}
+\index{Datamer\+Des@{Datamer\+Des}!Single\+Scheduler\+Control\+Widget@{Single\+Scheduler\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{Datamer\+Des}{DatamerDes}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Single\+Scheduler\+Control\+Widget\+::\+Datamer\+Des\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classSingleSchedulerControlWidget_a13ced62f55d57453da0a2f673e52d5d5}{}\label{classSingleSchedulerControlWidget_a13ced62f55d57453da0a2f673e52d5d5}
+Variable for schedule information \index{Single\+Scheduler\+Control\+Widget@{Single\+Scheduler\+Control\+Widget}!Datamin@{Datamin}}
+\index{Datamin@{Datamin}!Single\+Scheduler\+Control\+Widget@{Single\+Scheduler\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{Datamin}{Datamin}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Single\+Scheduler\+Control\+Widget\+::\+Datamin\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classSingleSchedulerControlWidget_abb4a09ba0ce3ad37119bd0a13eb1979a}{}\label{classSingleSchedulerControlWidget_abb4a09ba0ce3ad37119bd0a13eb1979a}
+Variable for schedule information \index{Single\+Scheduler\+Control\+Widget@{Single\+Scheduler\+Control\+Widget}!Datamonth@{Datamonth}}
+\index{Datamonth@{Datamonth}!Single\+Scheduler\+Control\+Widget@{Single\+Scheduler\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{Datamonth}{Datamonth}}]{\setlength{\rightskip}{0pt plus 5cm}int Single\+Scheduler\+Control\+Widget\+::\+Datamonth\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classSingleSchedulerControlWidget_acf568679a63621149ab2212944241684}{}\label{classSingleSchedulerControlWidget_acf568679a63621149ab2212944241684}
+Variable for schedule information \index{Single\+Scheduler\+Control\+Widget@{Single\+Scheduler\+Control\+Widget}!Dataon@{Dataon}}
+\index{Dataon@{Dataon}!Single\+Scheduler\+Control\+Widget@{Single\+Scheduler\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{Dataon}{Dataon}}]{\setlength{\rightskip}{0pt plus 5cm}int Single\+Scheduler\+Control\+Widget\+::\+Dataon\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classSingleSchedulerControlWidget_a2ba1dcbf2d85d36401dfa444f8419e76}{}\label{classSingleSchedulerControlWidget_a2ba1dcbf2d85d36401dfa444f8419e76}
+Variable for schedule information \index{Single\+Scheduler\+Control\+Widget@{Single\+Scheduler\+Control\+Widget}!Datasat@{Datasat}}
+\index{Datasat@{Datasat}!Single\+Scheduler\+Control\+Widget@{Single\+Scheduler\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{Datasat}{Datasat}}]{\setlength{\rightskip}{0pt plus 5cm}int Single\+Scheduler\+Control\+Widget\+::\+Datasat\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classSingleSchedulerControlWidget_ad21d4f657354f00e2c14b55cae4c876d}{}\label{classSingleSchedulerControlWidget_ad21d4f657354f00e2c14b55cae4c876d}
+Variable for schedule information \index{Single\+Scheduler\+Control\+Widget@{Single\+Scheduler\+Control\+Widget}!Datasec@{Datasec}}
+\index{Datasec@{Datasec}!Single\+Scheduler\+Control\+Widget@{Single\+Scheduler\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{Datasec}{Datasec}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Single\+Scheduler\+Control\+Widget\+::\+Datasec\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classSingleSchedulerControlWidget_a5b662da906b80bb884245b96fc23dd68}{}\label{classSingleSchedulerControlWidget_a5b662da906b80bb884245b96fc23dd68}
+Variable for schedule information \index{Single\+Scheduler\+Control\+Widget@{Single\+Scheduler\+Control\+Widget}!Datatransition@{Datatransition}}
+\index{Datatransition@{Datatransition}!Single\+Scheduler\+Control\+Widget@{Single\+Scheduler\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{Datatransition}{Datatransition}}]{\setlength{\rightskip}{0pt plus 5cm}int Single\+Scheduler\+Control\+Widget\+::\+Datatransition\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classSingleSchedulerControlWidget_afc9b8081291095f9e6fdb1a9a048a2ba}{}\label{classSingleSchedulerControlWidget_afc9b8081291095f9e6fdb1a9a048a2ba}
+Variable for schedule information \index{Single\+Scheduler\+Control\+Widget@{Single\+Scheduler\+Control\+Widget}!Datayear@{Datayear}}
+\index{Datayear@{Datayear}!Single\+Scheduler\+Control\+Widget@{Single\+Scheduler\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{Datayear}{Datayear}}]{\setlength{\rightskip}{0pt plus 5cm}int Single\+Scheduler\+Control\+Widget\+::\+Datayear\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classSingleSchedulerControlWidget_aef67a4f23fd8f100efb80e23c56c231b}{}\label{classSingleSchedulerControlWidget_aef67a4f23fd8f100efb80e23c56c231b}
+Variable for schedule information \index{Single\+Scheduler\+Control\+Widget@{Single\+Scheduler\+Control\+Widget}!date\+Select\+\_\+@{date\+Select\+\_\+}}
+\index{date\+Select\+\_\+@{date\+Select\+\_\+}!Single\+Scheduler\+Control\+Widget@{Single\+Scheduler\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{date\+Select\+\_\+}{dateSelect_}}]{\setlength{\rightskip}{0pt plus 5cm}Wt\+::\+W\+Text$\ast$ Single\+Scheduler\+Control\+Widget\+::date\+Select\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classSingleSchedulerControlWidget_a42e8c83f6d9c385f217d1bbd1e6e5038}{}\label{classSingleSchedulerControlWidget_a42e8c83f6d9c385f217d1bbd1e6e5038}
+Displays Date \index{Single\+Scheduler\+Control\+Widget@{Single\+Scheduler\+Control\+Widget}!delete\+Button@{delete\+Button}}
+\index{delete\+Button@{delete\+Button}!Single\+Scheduler\+Control\+Widget@{Single\+Scheduler\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{delete\+Button}{deleteButton}}]{\setlength{\rightskip}{0pt plus 5cm}Wt\+::\+W\+Push\+Button$\ast$ Single\+Scheduler\+Control\+Widget\+::delete\+Button\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classSingleSchedulerControlWidget_ad90ddf9ce495e587d6457cda5422858c}{}\label{classSingleSchedulerControlWidget_ad90ddf9ce495e587d6457cda5422858c}
+Delete Button \index{Single\+Scheduler\+Control\+Widget@{Single\+Scheduler\+Control\+Widget}!delete\+Confirm@{delete\+Confirm}}
+\index{delete\+Confirm@{delete\+Confirm}!Single\+Scheduler\+Control\+Widget@{Single\+Scheduler\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{delete\+Confirm}{deleteConfirm}}]{\setlength{\rightskip}{0pt plus 5cm}bool Single\+Scheduler\+Control\+Widget\+::delete\+Confirm\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classSingleSchedulerControlWidget_a194a0b611fadec029f0e7c55154ed903}{}\label{classSingleSchedulerControlWidget_a194a0b611fadec029f0e7c55154ed903}
+Variable for confirming Delete \index{Single\+Scheduler\+Control\+Widget@{Single\+Scheduler\+Control\+Widget}!hour\+Input\+\_\+@{hour\+Input\+\_\+}}
+\index{hour\+Input\+\_\+@{hour\+Input\+\_\+}!Single\+Scheduler\+Control\+Widget@{Single\+Scheduler\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{hour\+Input\+\_\+}{hourInput_}}]{\setlength{\rightskip}{0pt plus 5cm}Wt\+::\+W\+Combo\+Box$\ast$ Single\+Scheduler\+Control\+Widget\+::hour\+Input\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classSingleSchedulerControlWidget_a058831973716290b1ca72bb40d3cc4eb}{}\label{classSingleSchedulerControlWidget_a058831973716290b1ca72bb40d3cc4eb}
+Select Hour \index{Single\+Scheduler\+Control\+Widget@{Single\+Scheduler\+Control\+Widget}!hue\+Edit\+\_\+@{hue\+Edit\+\_\+}}
+\index{hue\+Edit\+\_\+@{hue\+Edit\+\_\+}!Single\+Scheduler\+Control\+Widget@{Single\+Scheduler\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{hue\+Edit\+\_\+}{hueEdit_}}]{\setlength{\rightskip}{0pt plus 5cm}Wt\+::\+W\+Line\+Edit$\ast$ Single\+Scheduler\+Control\+Widget\+::hue\+Edit\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classSingleSchedulerControlWidget_ac184a13b1ff7561a7e2e5f790dc42bd3}{}\label{classSingleSchedulerControlWidget_ac184a13b1ff7561a7e2e5f790dc42bd3}
+Light\textquotesingle{}s hue selection \index{Single\+Scheduler\+Control\+Widget@{Single\+Scheduler\+Control\+Widget}!hue\+Scale\+Slider\+\_\+@{hue\+Scale\+Slider\+\_\+}}
+\index{hue\+Scale\+Slider\+\_\+@{hue\+Scale\+Slider\+\_\+}!Single\+Scheduler\+Control\+Widget@{Single\+Scheduler\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{hue\+Scale\+Slider\+\_\+}{hueScaleSlider_}}]{\setlength{\rightskip}{0pt plus 5cm}Wt\+::\+W\+Slider$\ast$ Single\+Scheduler\+Control\+Widget\+::hue\+Scale\+Slider\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classSingleSchedulerControlWidget_af8f29e2d94ac91c19f7b44ac947f7f7d}{}\label{classSingleSchedulerControlWidget_af8f29e2d94ac91c19f7b44ac947f7f7d}
+Light\textquotesingle{}s hue selection \index{Single\+Scheduler\+Control\+Widget@{Single\+Scheduler\+Control\+Widget}!ip@{ip}}
+\index{ip@{ip}!Single\+Scheduler\+Control\+Widget@{Single\+Scheduler\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{ip}{ip}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Single\+Scheduler\+Control\+Widget\+::ip = \char`\"{}\char`\"{}\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classSingleSchedulerControlWidget_a218706e43a5777961386c8bdee383192}{}\label{classSingleSchedulerControlWidget_a218706e43a5777961386c8bdee383192}
+Variable for ip \index{Single\+Scheduler\+Control\+Widget@{Single\+Scheduler\+Control\+Widget}!light\+\_\+@{light\+\_\+}}
+\index{light\+\_\+@{light\+\_\+}!Single\+Scheduler\+Control\+Widget@{Single\+Scheduler\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{light\+\_\+}{light_}}]{\setlength{\rightskip}{0pt plus 5cm}Wt\+::\+W\+Text$\ast$ Single\+Scheduler\+Control\+Widget\+::light\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classSingleSchedulerControlWidget_a91f77910545268fdd89df0f9903dbb1a}{}\label{classSingleSchedulerControlWidget_a91f77910545268fdd89df0f9903dbb1a}
+Displays the selected Light \index{Single\+Scheduler\+Control\+Widget@{Single\+Scheduler\+Control\+Widget}!min\+Input\+\_\+@{min\+Input\+\_\+}}
+\index{min\+Input\+\_\+@{min\+Input\+\_\+}!Single\+Scheduler\+Control\+Widget@{Single\+Scheduler\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{min\+Input\+\_\+}{minInput_}}]{\setlength{\rightskip}{0pt plus 5cm}Wt\+::\+W\+Combo\+Box$\ast$ Single\+Scheduler\+Control\+Widget\+::min\+Input\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classSingleSchedulerControlWidget_aba279034b626322922706c0ce95468c6}{}\label{classSingleSchedulerControlWidget_aba279034b626322922706c0ce95468c6}
+Select Min \index{Single\+Scheduler\+Control\+Widget@{Single\+Scheduler\+Control\+Widget}!name@{name}}
+\index{name@{name}!Single\+Scheduler\+Control\+Widget@{Single\+Scheduler\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{name}{name}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Single\+Scheduler\+Control\+Widget\+::name\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classSingleSchedulerControlWidget_a5d3c98481e521dbcbde9d78ef0422c70}{}\label{classSingleSchedulerControlWidget_a5d3c98481e521dbcbde9d78ef0422c70}
+Variable for name of light \index{Single\+Scheduler\+Control\+Widget@{Single\+Scheduler\+Control\+Widget}!name\+Edit\+\_\+@{name\+Edit\+\_\+}}
+\index{name\+Edit\+\_\+@{name\+Edit\+\_\+}!Single\+Scheduler\+Control\+Widget@{Single\+Scheduler\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{name\+Edit\+\_\+}{nameEdit_}}]{\setlength{\rightskip}{0pt plus 5cm}Wt\+::\+W\+Line\+Edit$\ast$ Single\+Scheduler\+Control\+Widget\+::name\+Edit\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classSingleSchedulerControlWidget_adea2cd6431251b3e725a2e71ea53e98e}{}\label{classSingleSchedulerControlWidget_adea2cd6431251b3e725a2e71ea53e98e}
+light\textquotesingle{}s name to be changed \index{Single\+Scheduler\+Control\+Widget@{Single\+Scheduler\+Control\+Widget}!name\+ID@{name\+ID}}
+\index{name\+ID@{name\+ID}!Single\+Scheduler\+Control\+Widget@{Single\+Scheduler\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{name\+ID}{nameID}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Single\+Scheduler\+Control\+Widget\+::name\+ID = \char`\"{}\char`\"{}\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classSingleSchedulerControlWidget_ae803e75c73103097b72fc1e192a2c737}{}\label{classSingleSchedulerControlWidget_ae803e75c73103097b72fc1e192a2c737}
+Variable for Name\+ID \index{Single\+Scheduler\+Control\+Widget@{Single\+Scheduler\+Control\+Widget}!one\+Light\+\_\+@{one\+Light\+\_\+}}
+\index{one\+Light\+\_\+@{one\+Light\+\_\+}!Single\+Scheduler\+Control\+Widget@{Single\+Scheduler\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{one\+Light\+\_\+}{oneLight_}}]{\setlength{\rightskip}{0pt plus 5cm}Wt\+::\+W\+Text$\ast$ Single\+Scheduler\+Control\+Widget\+::one\+Light\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classSingleSchedulerControlWidget_acfe14aa1c8dc0058376716cefc746dd9}{}\label{classSingleSchedulerControlWidget_acfe14aa1c8dc0058376716cefc746dd9}
+First\+Light \index{Single\+Scheduler\+Control\+Widget@{Single\+Scheduler\+Control\+Widget}!port@{port}}
+\index{port@{port}!Single\+Scheduler\+Control\+Widget@{Single\+Scheduler\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{port}{port}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Single\+Scheduler\+Control\+Widget\+::port = \char`\"{}\char`\"{}\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classSingleSchedulerControlWidget_aa5647267c15e301af0a354f12c71d2af}{}\label{classSingleSchedulerControlWidget_aa5647267c15e301af0a354f12c71d2af}
+Variable for Port \index{Single\+Scheduler\+Control\+Widget@{Single\+Scheduler\+Control\+Widget}!sat\+Scale\+Slider\+\_\+@{sat\+Scale\+Slider\+\_\+}}
+\index{sat\+Scale\+Slider\+\_\+@{sat\+Scale\+Slider\+\_\+}!Single\+Scheduler\+Control\+Widget@{Single\+Scheduler\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{sat\+Scale\+Slider\+\_\+}{satScaleSlider_}}]{\setlength{\rightskip}{0pt plus 5cm}Wt\+::\+W\+Slider$\ast$ Single\+Scheduler\+Control\+Widget\+::sat\+Scale\+Slider\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classSingleSchedulerControlWidget_a777b6c22a218902cb4410c6019aeb485}{}\label{classSingleSchedulerControlWidget_a777b6c22a218902cb4410c6019aeb485}
+Light\textquotesingle{}s sat selection \index{Single\+Scheduler\+Control\+Widget@{Single\+Scheduler\+Control\+Widget}!schedule\+Button@{schedule\+Button}}
+\index{schedule\+Button@{schedule\+Button}!Single\+Scheduler\+Control\+Widget@{Single\+Scheduler\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{schedule\+Button}{scheduleButton}}]{\setlength{\rightskip}{0pt plus 5cm}Wt\+::\+W\+Push\+Button$\ast$ Single\+Scheduler\+Control\+Widget\+::schedule\+Button\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classSingleSchedulerControlWidget_ae8dd8c0b3020fcff9d237f5c16ab5396}{}\label{classSingleSchedulerControlWidget_ae8dd8c0b3020fcff9d237f5c16ab5396}
+Schedule Button \index{Single\+Scheduler\+Control\+Widget@{Single\+Scheduler\+Control\+Widget}!schedule\+ID@{schedule\+ID}}
+\index{schedule\+ID@{schedule\+ID}!Single\+Scheduler\+Control\+Widget@{Single\+Scheduler\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{schedule\+ID}{scheduleID}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Single\+Scheduler\+Control\+Widget\+::schedule\+ID = \char`\"{}\char`\"{}\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classSingleSchedulerControlWidget_a715d00f6515686a6df0a7e5a4b0ececd}{}\label{classSingleSchedulerControlWidget_a715d00f6515686a6df0a7e5a4b0ececd}
+Variable for Schedule\+ID \index{Single\+Scheduler\+Control\+Widget@{Single\+Scheduler\+Control\+Widget}!schedule\+Info\+Edit\+\_\+@{schedule\+Info\+Edit\+\_\+}}
+\index{schedule\+Info\+Edit\+\_\+@{schedule\+Info\+Edit\+\_\+}!Single\+Scheduler\+Control\+Widget@{Single\+Scheduler\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{schedule\+Info\+Edit\+\_\+}{scheduleInfoEdit_}}]{\setlength{\rightskip}{0pt plus 5cm}Wt\+::\+W\+Text$\ast$ Single\+Scheduler\+Control\+Widget\+::schedule\+Info\+Edit\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classSingleSchedulerControlWidget_a52857293e1ffa711d8e32c5905fca173}{}\label{classSingleSchedulerControlWidget_a52857293e1ffa711d8e32c5905fca173}
+Displays the schedule Info \index{Single\+Scheduler\+Control\+Widget@{Single\+Scheduler\+Control\+Widget}!schedule\+Time\+Edit\+\_\+@{schedule\+Time\+Edit\+\_\+}}
+\index{schedule\+Time\+Edit\+\_\+@{schedule\+Time\+Edit\+\_\+}!Single\+Scheduler\+Control\+Widget@{Single\+Scheduler\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{schedule\+Time\+Edit\+\_\+}{scheduleTimeEdit_}}]{\setlength{\rightskip}{0pt plus 5cm}Wt\+::\+W\+Text$\ast$ Single\+Scheduler\+Control\+Widget\+::schedule\+Time\+Edit\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classSingleSchedulerControlWidget_a7ec275b7a9811ca553e873fc12402c56}{}\label{classSingleSchedulerControlWidget_a7ec275b7a9811ca553e873fc12402c56}
+Displays the Schedule Time Info \index{Single\+Scheduler\+Control\+Widget@{Single\+Scheduler\+Control\+Widget}!sec\+Input\+\_\+@{sec\+Input\+\_\+}}
+\index{sec\+Input\+\_\+@{sec\+Input\+\_\+}!Single\+Scheduler\+Control\+Widget@{Single\+Scheduler\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{sec\+Input\+\_\+}{secInput_}}]{\setlength{\rightskip}{0pt plus 5cm}Wt\+::\+W\+Combo\+Box$\ast$ Single\+Scheduler\+Control\+Widget\+::sec\+Input\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classSingleSchedulerControlWidget_ac469a523613e142f84735b39d2ebc178}{}\label{classSingleSchedulerControlWidget_ac469a523613e142f84735b39d2ebc178}
+Select Sec \index{Single\+Scheduler\+Control\+Widget@{Single\+Scheduler\+Control\+Widget}!session\+\_\+@{session\+\_\+}}
+\index{session\+\_\+@{session\+\_\+}!Single\+Scheduler\+Control\+Widget@{Single\+Scheduler\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{session\+\_\+}{session_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Session}$\ast$ Single\+Scheduler\+Control\+Widget\+::session\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classSingleSchedulerControlWidget_a4cd226273646c8c761bb4762d5d561f3}{}\label{classSingleSchedulerControlWidget_a4cd226273646c8c761bb4762d5d561f3}
+keeps track of light status \index{Single\+Scheduler\+Control\+Widget@{Single\+Scheduler\+Control\+Widget}!three\+Light\+\_\+@{three\+Light\+\_\+}}
+\index{three\+Light\+\_\+@{three\+Light\+\_\+}!Single\+Scheduler\+Control\+Widget@{Single\+Scheduler\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{three\+Light\+\_\+}{threeLight_}}]{\setlength{\rightskip}{0pt plus 5cm}Wt\+::\+W\+Text$\ast$ Single\+Scheduler\+Control\+Widget\+::three\+Light\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classSingleSchedulerControlWidget_a132611ac95921a1f32888a15b09a16a5}{}\label{classSingleSchedulerControlWidget_a132611ac95921a1f32888a15b09a16a5}
+Third Light \index{Single\+Scheduler\+Control\+Widget@{Single\+Scheduler\+Control\+Widget}!transition\+Scale\+Slider\+\_\+@{transition\+Scale\+Slider\+\_\+}}
+\index{transition\+Scale\+Slider\+\_\+@{transition\+Scale\+Slider\+\_\+}!Single\+Scheduler\+Control\+Widget@{Single\+Scheduler\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{transition\+Scale\+Slider\+\_\+}{transitionScaleSlider_}}]{\setlength{\rightskip}{0pt plus 5cm}Wt\+::\+W\+Slider$\ast$ Single\+Scheduler\+Control\+Widget\+::transition\+Scale\+Slider\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classSingleSchedulerControlWidget_a5d56e0945847bd44dc494842b7ac8c58}{}\label{classSingleSchedulerControlWidget_a5d56e0945847bd44dc494842b7ac8c58}
+Light\textquotesingle{}s transition selection \index{Single\+Scheduler\+Control\+Widget@{Single\+Scheduler\+Control\+Widget}!two\+Light\+\_\+@{two\+Light\+\_\+}}
+\index{two\+Light\+\_\+@{two\+Light\+\_\+}!Single\+Scheduler\+Control\+Widget@{Single\+Scheduler\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{two\+Light\+\_\+}{twoLight_}}]{\setlength{\rightskip}{0pt plus 5cm}Wt\+::\+W\+Text$\ast$ Single\+Scheduler\+Control\+Widget\+::two\+Light\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classSingleSchedulerControlWidget_a37a5c0996f517813a1b0ffdcaf67108b}{}\label{classSingleSchedulerControlWidget_a37a5c0996f517813a1b0ffdcaf67108b}
+Second\+Light \index{Single\+Scheduler\+Control\+Widget@{Single\+Scheduler\+Control\+Widget}!user\+ID@{user\+ID}}
+\index{user\+ID@{user\+ID}!Single\+Scheduler\+Control\+Widget@{Single\+Scheduler\+Control\+Widget}}
+\subsubsection[{\texorpdfstring{user\+ID}{userID}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Single\+Scheduler\+Control\+Widget\+::user\+ID = \char`\"{}\char`\"{}\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classSingleSchedulerControlWidget_ae067a0f04e22f78c73a5a372661ecc68}{}\label{classSingleSchedulerControlWidget_ae067a0f04e22f78c73a5a372661ecc68}
+Variable for user\+ID 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Single\+Scheduler\+Control.\+h\item 
+Single\+Scheduler\+Control.\+C\end{DoxyCompactItemize}

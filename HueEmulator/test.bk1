@@ -1,0 +1,21 @@
+toolsets = gnu vs2010;
+program test{
+	//includedirs = /usr/local/lib;
+	//libdirs = /usr/local/include;
+	libs = wt wthttp boost_system wtdbo wtdbosqlite3 crypt;
+	cxx-compiler-options = '-std=c++14';
+
+    sources { 
+    	Dictionary.c
+    	hangman.c
+    	HangmanGame.c
+    	HangmanWidget.c
+    	HighScoresWidget.c
+    	ImagesWidget.c
+    	LettersWidget.c
+    	Session.c
+    	User.c
+    	WordWidget.c
+
+    } // could also have been "hello.c"
+}

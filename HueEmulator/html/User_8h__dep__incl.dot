@@ -1,0 +1,46 @@
+digraph "User.h"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="User.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Session.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$Session_8h.html",tooltip="Session handling for the application. "];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="AuthWidget.C",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$AuthWidget_8C.html",tooltip="Creates a registration view for the user to interact with. "];
+  Node2 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="BridgeEditControl.C",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$BridgeEditControl_8C.html",tooltip="Page for editing a bridge&#39;s data. "];
+  Node2 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="GroupsControl.C",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$GroupsControl_8C.html",tooltip="Application for creating and listing groups. "];
+  Node2 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="HueApp.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$HueApp_8h_source.html"];
+  Node6 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="HueApp.C",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$HueApp_8C.html",tooltip="the main application "];
+  Node6 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="Main.C",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$Main_8C.html",tooltip="The main to run the server. "];
+  Node2 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="LightsControl.C",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$LightsControl_8C.html",tooltip="Application for altering states of individual lights. "];
+  Node2 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="SchedulerControl.C",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$SchedulerControl_8C.html",tooltip="Application for creating and listing schedules. "];
+  Node2 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="Session.C",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$Session_8C.html",tooltip="Session handling for the application. "];
+  Node2 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="SingleGroupsControl.C",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$SingleGroupsControl_8C.html",tooltip="Application for deleting and altering states of individual groups. "];
+  Node2 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="UserDetailsModel.C",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$UserDetailsModel_8C.html",tooltip="It models the additional first/last name information needed for registration. "];
+  Node1 -> Node14 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="Bridge.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$Bridge_8h_source.html"];
+  Node14 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 -> Node15 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node15 [label="BridgeUserIds.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$BridgeUserIds_8h_source.html"];
+  Node15 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node15 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 -> Node16 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16 [label="BridgeEditControl.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$BridgeEditControl_8h_source.html"];
+  Node16 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node15 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

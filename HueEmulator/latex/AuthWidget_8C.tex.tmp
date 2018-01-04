@@ -1,0 +1,27 @@
+\hypertarget{AuthWidget_8C}{}\section{Auth\+Widget.\+C File Reference}
+\label{AuthWidget_8C}\index{Auth\+Widget.\+C@{Auth\+Widget.\+C}}
+
+
+Creates a registration view for the user to interact with.  
+
+
+{\ttfamily \#include $<$Wt/\+Auth/\+Registration\+Model$>$}\\*
+{\ttfamily \#include $<$Wt/\+W\+Push\+Button$>$}\\*
+{\ttfamily \#include \char`\"{}Auth\+Widget.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Registration\+View.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Session.\+h\char`\"{}}\\*
+Include dependency graph for Auth\+Widget.\+C\+:
+% FIG 0
+
+
+\subsection{Detailed Description}
+Creates a registration view for the user to interact with. 
+
+Create a custom \hyperlink{classAuthWidget}{Auth\+Widget} to override the pre-\/existing Auth\+::auth\+Widget. This allows us to add a custom registration page to take in more data for the web app.
+
+\begin{DoxyAuthor}{Author}
+Paul Li 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+Nov 28, 2017 
+\end{DoxyDate}
