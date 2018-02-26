@@ -5,6 +5,7 @@ This project is a persistent web server/GUI for Phillips Hue users.
 
 It was built on Linux and requires SteveyO Emulator and Wt Toolkit.
 
+See mp4 file for brief demo.
 
 Features:
 	User account creation/login/logout
